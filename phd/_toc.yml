@@ -2,10 +2,10 @@
 format: jb-book
 root: front
 chapters:
-  - file: abstract
-  - file: introduction
-  - file: goals
-  - file: methods
-  - file: results
-  - file: discussion
-  - file: bibliography
+  - file: chapters/abstract
+  - file: chapters/introduction
+  - file: chapters/goals
+  - file: chapters/methods
+  - file: chapters/results
+  - file: chapters/discussion
+  - file: chapters/bibliography
