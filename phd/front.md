@@ -8,7 +8,10 @@ Sagol School of Neuroscience
 George S. Wise Faculty of Life Sciences and the School of Psychological
 Sciences
 </p>
+
 <hr>
+
+<br />
 
 <p style="text-align: center; font-size: 2em; font-style: italic;">
 Decoding Individual Subject Representation in the Magnetic Resonance Space
@@ -33,7 +36,10 @@ Prof. Yaniv Assaf
 </p>
 
 <br />
+
+<hr>
+
 <br />
-<p style="text-align: center; font-size: 1em;">
+<p style="text-align: center; font-size: 1em">
 October 2022
 </p>
