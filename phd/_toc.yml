@@ -1,8 +1,11 @@
 # Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
 format: jb-book
-root: intro
+root: front
 chapters:
-- file: markdown
-- file: notebooks
+  - file: abstract
+  - file: introduction
+  - file: goals
+  - file: methods
+  - file: results
+  - file: discussion
+  - file: bibliography

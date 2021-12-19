@@ -1,2 +1,11 @@
+# VSCode configuration files
+.vscode
+
 # Virtual environment directory
-venv/*
+venv
+
+# Jupyter files
+**/.ipynb_checkpoints/**
+
+# Build
+phd/_build
