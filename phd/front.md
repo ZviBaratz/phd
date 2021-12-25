@@ -1,45 +1,61 @@
 
 #
 
-<p style="text-align: center; font-size: 1em;">
+<p class="titlepage h6">
+Tel Aviv University
+</p>
+<p class="titlepage h6">
 Sagol School of Neuroscience
 </p>
-<p style="text-align: center; font-size: 1em;">
-George S. Wise Faculty of Life Sciences and the School of Psychological
-Sciences
-</p>
-
-<hr>
 
 <br />
+<br />
+<br />
+<br />
 
-<p style="text-align: center; font-size: 2em; font-style: italic;">
+<p class="titlepage h3">
 Decoding Individual Subject Representation in the Magnetic Resonance Space
 </p>
 
 <br />
 <br />
-<p style="text-align: center; font-size: 1em;">
+<br />
+
+```{image} assets/images/tau_logo.png
+:alt: TAUlogo
+:align: center
+```
+
+<br />
+
+<p class="titlepage h6">
+Thesis submitted for the degree
+</p>
+<p class="titlepage h6">
+"Doctor of Philosophy"
+</p>
+<p class="titlepage h6">
 by
 </p>
-<p style="text-align: center; font-size: 1.25em;">
+<p class="titlepage h5">
 Zvi Baratz
 </p>
 
 <br />
 <br />
-<p style="text-align: center; font-size: 1em;">
+<br />
+
+<p class="titlepage h6">
 Written under the supervision of
 </p>
-<p style="text-align: center; font-size: 1.25em;">
+<p class="titlepage h5">
 Prof. Yaniv Assaf
 </p>
 
 <br />
-
-<hr>
-
 <br />
-<p style="text-align: center; font-size: 1em">
+<br />
+
+<p class="titlepage h6">
 October 2022
 </p>

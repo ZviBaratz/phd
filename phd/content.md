@@ -1,0 +1,6 @@
+# Contents
+
+<hr>
+
+```{tableofcontents}
+```

@@ -1,0 +1,57 @@
+/* Set global font style */
+p,
+h1,
+h2,
+h3,
+input,
+.tocsection,
+li[class^="toctree-l"],
+li[class*=" toctree-l"] {
+    /* font-family: "Book Antiqua", "Palatino", "Palatino Linotype", "Palatino LT STD", Georgia, serif; */
+    /* font-family: "Garamond", Georgia, serif; */
+    font-family: "Times New Roman", Georgia, serif;
+}
+/* Set small-caps heading style */
+h1, h2 {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+/* Reduce all header sizes */
+h1 {
+    font-size: 26px;
+}
+h2 {
+    font-size: 21px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 12px;
+}
+/* Set custom title page styling */
+.titlepage {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1;
+    margin-top: 1;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+/* Justify content */
+p {
+    text-align: justify;
+}
+/* Cover page TAU logo styling */
+img[alt=TAUlogo] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}

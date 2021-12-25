@@ -1,5 +1,6 @@
 # VSCode configuration files
 .vscode
+*.code-workspace
 
 # Virtual environment directory
 venv

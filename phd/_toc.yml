@@ -2,7 +2,13 @@
 format: jb-book
 root: front
 chapters:
-  - file: chapters/abstract
+# - file: acknowledgements
+- file: abstract
+- file: content
+  options:
+    numbered: true
+  sections:
+  - file: lists
   - file: chapters/introduction
   - file: chapters/goals
   - file: chapters/methods

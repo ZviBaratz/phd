@@ -8,7 +8,8 @@
 title: Ph.D. Thesis
 author: Zvi Baratz
 copyright: "2021"
-logo: logo.jpg
+logo: logo.png
+exclude_patterns: ["*skip*"]
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -39,3 +40,10 @@ html:
   use_issues_button: true
   use_repository_button: true
   extra_navbar: ""
+
+# Declare primary language.
+# See: https://jupyterbook.org/advanced/html.html#configuring-to-improve-accessibility
+sphinx:
+  config:
+    language: en
+    bibtex_reference_style: super
