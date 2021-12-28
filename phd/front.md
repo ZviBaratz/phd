@@ -14,7 +14,7 @@ Sagol School of Neuroscience
 <br />
 
 <p class="titlepage h3">
-Decoding Individual Subject Representation in the Magnetic Resonance Space
+Individual Subject Representation in the Magnetic Resonance Space
 </p>
 
 <br />
