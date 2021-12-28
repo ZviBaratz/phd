@@ -21,6 +21,8 @@
   - Diffusion Tensor Imaging
 * - EDA
   - Exploratory Data Analysis
+* - MR
+  - Magnetic Resonance
 * - MRI
   - Magnetic Resonance Imaging
 * - SNR
