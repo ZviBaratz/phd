@@ -25,7 +25,7 @@ In order to maximize available resources, a dedicated database application will 
 
 ### *Establishing the reliability and specificity of the collected measurements*
 
-Assuming the hypothesis is correct, differences in subject representations represent differences in identity. These differences may be quantified and used as distance metric to demonstrate that:
+Assuming the hypothesis is correct, differences in subject representations represent differences in identity. This distance may be quantified and used as a metric to demonstrate that:
 
   1. **Differences in estimated brain features vary significantly more across subjects than within.** A single subject's representation in the MR space should be distinguishably closer to the same subject's representation in a different time point than to another subject's. This idea is comparable to a "brainprint", and will serve to support the underlying assumption that our instruments are accurate and detailed enough to generate an identity-informative representation at all. In the words of Heraclitus: "No man ever steps in the same river twice. For it’s not the same river, and he’s not the same man."
   2. **Same-subject differences in estimated brain features grow over time.** Assuming the variation in the estimated brain features originates more from changes in their true values than it does from noise, it should be possible to demonstrate a correlation between the single-subject representation differences and the difference in time.
