@@ -48,8 +48,14 @@ sphinx:
     language: en
     bibtex_reference_style: super
     myst_substitutions:
+      BFI: "{ref}`BFI <lists:acronyms>`"
       BIDS: "{ref}`BIDS <lists:acronyms>`"
+      DICOM: "{ref}`DICOM <lists:acronyms>`"
+      EDA: "{ref}`EDA <lists:acronyms>`"
+      MR: "{ref}`MR <lists:acronyms>`"
       MRI: "{ref}`MRI <lists:acronyms>`"
+      SNR: "{ref}`SNR <lists:acronyms>`"
+      SQL: "{ref}`SQL <lists:acronyms>`"
 
 # Parse and render settings
 parse:
