@@ -1,3 +1,4 @@
+(content:goals)=
 # Hypothesis and Goals
 
 <hr>
