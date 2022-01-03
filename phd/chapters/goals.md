@@ -23,14 +23,14 @@ In order to maximize available resources, a dedicated database application will 
 3. **Preprocessing pipelines orchestration.** Batch execution of preconfigured preprocessing pipelines will be managed by the application and all execution parameters, inputs, and outputs will be serialized to the database.
 4. **Access and data distribution management.** Collaborators and administrators should be able to easily access the platform, query information, and retrieve data or preprocessing results.
 
-### *Establishing the reliability and specificity of the collected measurements*
+### Establishing the reliability and specificity of the collected measurements
 
 Assuming the hypothesis is correct, differences in subject representations represent differences in identity. This distance may be quantified and used as a metric to demonstrate that:
 
   1. **Differences in estimated brain features vary significantly more across subjects than within.** A single subject's representation in the MR space should be distinguishably closer to the same subject's representation in a different time point than to another subject's. This idea is comparable to a "brainprint", and will serve to support the underlying assumption that our instruments are accurate and detailed enough to generate an identity-informative representation at all. In the words of Heraclitus: "No man ever steps in the same river twice. For it’s not the same river, and he’s not the same man."
   2. **Same-subject differences in estimated brain features grow over time.** Assuming the variation in the estimated brain features originates more from changes in their true values than it does from noise, it should be possible to demonstrate a correlation between the single-subject representation differences and the difference in time.
 
-### *Characterizing the expression of subject traits and demographic information*
+### Characterizing the expression of subject traits and demographic information
 
 Having established the relationship between the estimated brain features and subject identity, the final goal will be to lay a robust foundation for the characterization of various subject traits and demographic information from MRI-derived data. The main obstacle in increasing the specificity of the target subject variable is that the size of the sample dramatically shrinks (more specific information is available for fewer subjects). For the purposes of this study, the following attributes will be used: *sex, dominant hand, age, height, weight, BFI scores*.
 
