@@ -47,3 +47,21 @@ sphinx:
   config:
     language: en
     bibtex_reference_style: super
+    myst_substitutions:
+      BIDS: "{ref}`BIDS <lists:acronyms>`"
+      MRI: "{ref}`MRI <lists:acronyms>`"
+
+# Parse and render settings
+parse:
+  myst_enable_extensions: # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    # - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    # - html_admonition
+    # - html_image
+    - linkify
+    # - replacements
+    # - smartquotes
+    - substitution
+    - tasklist
