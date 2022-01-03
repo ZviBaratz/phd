@@ -1,1 +1,4 @@
+(content:methods)=
 # Methods
+
+<hr>
