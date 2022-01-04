@@ -1,4 +1,4 @@
 (content:discussion)=
-# Dicussion
+# Discussion
 
 <hr>
