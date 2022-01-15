@@ -1,17 +1,45 @@
 # Table of contents
 format: jb-book
 root: front
+defaults:
+  numbered: false
+  titlesonly: false
+  maxdepth: -1
 chapters:
 # - file: acknowledgements
-- file: abstract
-- file: content
-  options:
-    numbered: true
-  sections:
+  - file: abstract
   - file: lists
-  - file: chapters/introduction
-  - file: chapters/goals
-  - file: chapters/methods
-  - file: chapters/results
-  - file: chapters/discussion
+  - file: content
+    options:
+      numbered: true
+    sections:
+      - file: chapters/introduction
+      - file: chapters/hypothesis/objectives
+        sections:
+          - file: chapters/hypothesis/goals
+      - file: chapters/methods/methods
+        sections:
+          - file: chapters/methods/imaging
+          - file: chapters/methods/questionnaire
+      - file: chapters/results
+        sections:
+          - file: chapters/labbing/labbing
+            sections:
+              - file: chapters/labbing/intro
+              - file: chapters/labbing/methods
+              - file: chapters/labbing/results
+              - file: chapters/labbing/discussion
+          - file: chapters/measurements/measurements
+            sections:
+              - file: chapters/measurements/intro
+              - file: chapters/measurements/methods
+              - file: chapters/measurements/results
+              - file: chapters/measurements/discussion
+          - file: chapters/traits/traits
+            sections:
+              - file: chapters/traits/intro
+              - file: chapters/traits/methods
+              - file: chapters/traits/results
+              - file: chapters/traits/discussion
+      - file: chapters/discussion
   - file: chapters/bibliography

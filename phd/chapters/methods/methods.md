@@ -1,5 +1,5 @@
-(content:results)=
-# Results
+(methods)=
+# Methods
 
 <hr>
 

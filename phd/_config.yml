@@ -48,14 +48,22 @@ sphinx:
     language: en
     bibtex_reference_style: super
     myst_substitutions:
+      ABIDE: "{ref}`ABIDE <lists:acronyms>`"
       BFI: "{ref}`BFI <lists:acronyms>`"
       BIDS: "{ref}`BIDS <lists:acronyms>`"
       DICOM: "{ref}`DICOM <lists:acronyms>`"
+      dMRI: "{ref}`dMRI <lists:acronyms>`"
       EDA: "{ref}`EDA <lists:acronyms>`"
+      fMRI: "{ref}`fMRI <lists:acronyms>`"
+      HCP: "{ref}`HCP <lists:acronyms>`"
+      MP_RAGE: "{ref}`MP RAGE <lists:acronyms>`"
       MR: "{ref}`MR <lists:acronyms>`"
       MRI: "{ref}`MRI <lists:acronyms>`"
+      rsfMRI: "{ref}`rs-fMRI <lists:acronyms>`"
+      sMRI: "{ref}`sMRI <lists:acronyms>`"
       SNR: "{ref}`SNR <lists:acronyms>`"
       SQL: "{ref}`SQL <lists:acronyms>`"
+      SD: "{ref}`SD <lists:acronyms>`"
 
 # Parse and render settings
 parse:
