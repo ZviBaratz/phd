@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/phd/__init__.py
+src/phd.egg-info/PKG-INFO
+src/phd.egg-info/SOURCES.txt
+src/phd.egg-info/dependency_links.txt
+src/phd.egg-info/requires.txt
+src/phd.egg-info/top_level.txt
+src/phd/methods/__init__.py
+src/phd/methods/tables.py
+src/phd/utils/__init__.py
+src/phd/utils/tables.py
