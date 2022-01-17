@@ -46,9 +46,10 @@ html:
 sphinx:
   config:
     language: en
-    bibtex_reference_style: super
+    bibtex_reference_style: author_year
     myst_substitutions:
       ABIDE: "{ref}`ABIDE <lists:acronyms>`"
+      ADNI: "{ref}`ADNI <lists:acronyms>`"
       BFI: "{ref}`BFI <lists:acronyms>`"
       BIDS: "{ref}`BIDS <lists:acronyms>`"
       DICOM: "{ref}`DICOM <lists:acronyms>`"
@@ -56,7 +57,7 @@ sphinx:
       EDA: "{ref}`EDA <lists:acronyms>`"
       fMRI: "{ref}`fMRI <lists:acronyms>`"
       HCP: "{ref}`HCP <lists:acronyms>`"
-      MP_RAGE: "{ref}`MP RAGE <lists:acronyms>`"
+      MPRAGE: "{ref}`MPRAGE <lists:acronyms>`"
       MR: "{ref}`MR <lists:acronyms>`"
       MRI: "{ref}`MRI <lists:acronyms>`"
       rsfMRI: "{ref}`rs-fMRI <lists:acronyms>`"
@@ -64,6 +65,8 @@ sphinx:
       SNR: "{ref}`SNR <lists:acronyms>`"
       SQL: "{ref}`SQL <lists:acronyms>`"
       SD: "{ref}`SD <lists:acronyms>`"
+      T1w: "{ref}`T1w <lists:acronyms>`"
+      T2w: "{ref}`T2w <lists:acronyms>`"
 
 # Parse and render settings
 parse:

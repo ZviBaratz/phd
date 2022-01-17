@@ -18,6 +18,8 @@
 
 * - ABIDE
   - Autism Brain Imaging Data Exchange
+* - ADNI
+  - Alzheimer’s Disease Neuroimaging Initiative
 * - BFI
   - Big Five Inventory
 * - BIDS
@@ -34,7 +36,7 @@
   - Functional Magnetic Resonance Imaging
 * - HCP
   - Human Connectome Project
-* - MP RAGE
+* - MPRAGE
   - Magnetization-prepared 180 degrees radio-frequency Pulses and Rapid Gradient-Echo
 * - MR
   - Magnetic Resonance
@@ -50,6 +52,10 @@
   - Signal-to-noise Ratio
 * - SQL
   - Structured Query Language
+* - T1w
+  - T1-weighted
+* - T2w
+  - T2-weighted
 ```
 
 <!-- Another format:
