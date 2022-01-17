@@ -10,3 +10,6 @@ venv
 
 # Build
 src/book/_build
+
+# Other
+**.pyc
