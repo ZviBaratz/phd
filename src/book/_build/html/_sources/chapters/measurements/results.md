@@ -1,4 +1,0 @@
-(measurements:results)=
-# Results
-
-<hr>

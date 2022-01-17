@@ -9,4 +9,4 @@ venv
 **/.ipynb_checkpoints/**
 
 # Build
-phd/_build
+src/book/_build

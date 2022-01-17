@@ -1,4 +1,0 @@
-(content:introduction)=
-# Introduction
-
-<hr>

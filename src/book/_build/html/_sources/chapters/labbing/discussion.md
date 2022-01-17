@@ -1,4 +1,0 @@
-(labbing:discussion)=
-# Discussion
-
-<hr>

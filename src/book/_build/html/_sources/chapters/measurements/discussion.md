@@ -1,4 +1,0 @@
-(measurements:discussion)=
-# Discussion
-
-<hr>

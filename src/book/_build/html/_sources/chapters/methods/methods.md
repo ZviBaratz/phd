@@ -1,7 +1,0 @@
-(methods)=
-# Methods
-
-<hr>
-
-```{tableofcontents}
-```

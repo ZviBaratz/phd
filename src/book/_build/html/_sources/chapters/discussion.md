@@ -1,4 +1,0 @@
-(content:discussion)=
-# Discussion
-
-<hr>

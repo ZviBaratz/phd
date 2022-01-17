@@ -1,2 +1,0 @@
-(traits:intro)=
-# Introduction

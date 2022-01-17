@@ -1,5 +1,0 @@
-(objectives)=
-# Research Objectives
-
-```{tableofcontents}
-```

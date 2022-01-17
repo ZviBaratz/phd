@@ -1,4 +1,0 @@
-(traits:results)=
-# Results
-
-<hr>

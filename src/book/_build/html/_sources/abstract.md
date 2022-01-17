@@ -1,4 +1,0 @@
-(abstract)=
-# Abstract
-
-<hr>

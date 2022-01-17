@@ -1,4 +1,0 @@
-(traits:discussion)=
-# Discussion
-
-<hr>

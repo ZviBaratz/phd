@@ -1,7 +1,0 @@
-(content)=
-# Contents
-
-<hr>
-
-```{tableofcontents}
-```
