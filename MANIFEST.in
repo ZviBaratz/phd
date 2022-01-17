@@ -1,1 +1,2 @@
-recursive-include src/book/ *.csv
+recursive-include src/book *
+global-exclude *.py[cod]
