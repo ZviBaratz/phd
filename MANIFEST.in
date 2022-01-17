@@ -1,2 +1,2 @@
-graft src/book
+graft src
 global-exclude *.py[cod]
