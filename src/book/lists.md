@@ -36,6 +36,8 @@
   - Functional Magnetic Resonance Imaging
 * - HCP
   - Human Connectome Project
+* - LORIS
+  - Longitudinal Online Research and Imaging System
 * - MPRAGE
   - Magnetization-prepared 180 degrees radio-frequency Pulses and Rapid Gradient-Echo
 * - MR

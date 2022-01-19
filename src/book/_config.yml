@@ -57,6 +57,7 @@ sphinx:
       EDA: "{ref}`EDA <lists:acronyms>`"
       fMRI: "{ref}`fMRI <lists:acronyms>`"
       HCP: "{ref}`HCP <lists:acronyms>`"
+      LORIS: "{ref}`LORIS <lists:acronyms>`"
       MPRAGE: "{ref}`MPRAGE <lists:acronyms>`"
       MR: "{ref}`MR <lists:acronyms>`"
       MRI: "{ref}`MRI <lists:acronyms>`"
