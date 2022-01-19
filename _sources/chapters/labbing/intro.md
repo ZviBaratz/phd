@@ -13,9 +13,9 @@
 
 ### Existing Solutions
 
-#### XNAT
+#### LORIS
 
-#### Flywheel
+#### XNAT
 
 #### Brainlife.io
 
