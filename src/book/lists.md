@@ -16,6 +16,8 @@
 ```{list-table} Acronyms
 :name: acronym-table
 
+* - ABCD
+  - Adolescent Brain Cognitive Development
 * - ABIDE
   - Autism Brain Imaging Data Exchange
 * - ADNI
