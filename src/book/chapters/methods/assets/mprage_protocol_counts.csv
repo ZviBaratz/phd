@@ -1,4 +1,4 @@
-Count,Repetition Time (TR),Echo Time (TE),Inversion Time (TI),Flip Angle,Spatial Resolution (mm)
+Count,Repetition Time (TR),Echo Time (TE),Inversion Time (TI),Flip Angle,Spatial Resolution (mm<sup>3</sup>)
 842,2400.0,2.78,1000.0,8.0,"[0.898, 0.898, 0.9]"
 528,2400.0,2.78,1000.0,8.0,"[0.902, 0.902, 0.9]"
 216,2530.0,2.88,1100.0,7.0,"[1.0, 1.0, 1.0]"
