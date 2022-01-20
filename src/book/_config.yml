@@ -61,6 +61,7 @@ sphinx:
       MPRAGE: "{ref}`MPRAGE <lists:acronyms>`"
       MR: "{ref}`MR <lists:acronyms>`"
       MRI: "{ref}`MRI <lists:acronyms>`"
+      NIfTI: "{ref}`NIfTI <lists:acronyms>`"
       rsfMRI: "{ref}`rs-fMRI <lists:acronyms>`"
       sMRI: "{ref}`sMRI <lists:acronyms>`"
       SNR: "{ref}`SNR <lists:acronyms>`"
