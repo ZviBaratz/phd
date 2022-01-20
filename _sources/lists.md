@@ -46,6 +46,8 @@
   - Magnetic Resonance
 * - MRI
   - Magnetic Resonance Imaging
+* - NIfTI
+  - Neuroimaging Informatics Technology Initiative
 * - rsfMRI
   - Resting-state Functional Magnetic Resonance Imaging
 * - SD
