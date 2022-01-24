@@ -366,28 +366,33 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#neuroimaging-data-management">
-   4.1.1.2. Neuroimaging Data Management
+  <a class="reference internal nav-link" href="#neuroimaging-research-data-management">
+   4.1.1.2. Neuroimaging Research Data Management
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definition">
+     4.1.1.2.1. Definition
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#existing-solutions">
-     4.1.1.2.1. Existing Solutions
+     4.1.1.2.2. Existing Solutions
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#loris">
-       4.1.1.2.1.1. LORIS
+       4.1.1.2.2.1. LORIS
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#xnat">
-       4.1.1.2.1.2. XNAT
+       4.1.1.2.2.2. XNAT
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#brainlife-io">
-       4.1.1.2.1.3. Brainlife.io
+       4.1.1.2.2.3. Brainlife.io
       </a>
      </li>
     </ul>
@@ -425,28 +430,33 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#neuroimaging-data-management">
-   4.1.1.2. Neuroimaging Data Management
+  <a class="reference internal nav-link" href="#neuroimaging-research-data-management">
+   4.1.1.2. Neuroimaging Research Data Management
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definition">
+     4.1.1.2.1. Definition
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#existing-solutions">
-     4.1.1.2.1. Existing Solutions
+     4.1.1.2.2. Existing Solutions
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#loris">
-       4.1.1.2.1.1. LORIS
+       4.1.1.2.2.1. LORIS
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#xnat">
-       4.1.1.2.1.2. XNAT
+       4.1.1.2.2.2. XNAT
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#brainlife-io">
-       4.1.1.2.1.3. Brainlife.io
+       4.1.1.2.2.3. Brainlife.io
       </a>
      </li>
     </ul>
@@ -470,27 +480,42 @@
   <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
 <span id="labbing-intro"></span><h1><span class="section-number">4.1.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
 <hr>
+<p>Working with a large and diverse neuroimaging dataset is a challenging task not particular to this thesis <span id="id1">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>, <a class="reference internal" href="../bibliography.html#id22">Borghi and Gulick, 2018</a>]</span>. The following section will provide a quick overview of existing public datasets and explore how they are shared and what tools are most commonly utilized by researchers to use them to produce scientific findings.</p>
 <div class="section" id="public-large-scale-neuroimaging-datasets">
 <h2><span class="section-number">4.1.1.1. </span>Public Large-scale Neuroimaging Datasets<a class="headerlink" href="#public-large-scale-neuroimaging-datasets" title="Permalink to this headline">¶</a></h2>
-<p>Centralized data collection and distribution efforts are key to the advancement of neuroscientific research <span id="id1">[<a class="reference internal" href="../bibliography.html#id19">Milham <em>et al.</em>, 2018</a>]</span>. Larger publicly available samples enable the detection and study of phenomena with smaller effect sizes more rapidly, by more people, and with more confidence <span id="id2">[<a class="reference internal" href="../bibliography.html#id13">Smith and Nichols, 2018</a>, <a class="reference internal" href="../bibliography.html#id14">Laird, 2021</a>, <a class="reference internal" href="../bibliography.html#id15">Madan, 2021</a>]</span>. Data sharing enhances the reporoducibility of findings, reduces time and costs for new research, promotes transparency, and encourages collaboration across fields <span id="id3">[<a class="reference internal" href="../bibliography.html#id19">Milham <em>et al.</em>, 2018</a>, <a class="reference internal" href="../bibliography.html#id16">Mar <em>et al.</em>, 2013</a>, <a class="reference internal" href="../bibliography.html#id17">Poldrack and Gorgolewski, 2014</a>, <a class="reference internal" href="../bibliography.html#id18">Madan, 2017</a>]</span>. In recent years, such public datsets have become more numerous and increasingly accessible. The following table, taken from a practical guide to end-users (researchers interested in using public neuroimaging datasets) published in <em>Nature Human Behaviour</em> (<a class="reference external" href="https://www.nature.com/nathumbehav/">https://www.nature.com/nathumbehav/</a>) <span id="id4">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>]</span>, offers a summary of currently available datasets, including sample size, modalities, processing stages, and access policy:</p>
+<p>Centralized data collection and distribution efforts are key to the advancement of neuroscientific research <span id="id2">[<a class="reference internal" href="../bibliography.html#id19">Milham <em>et al.</em>, 2018</a>, <a class="reference internal" href="../bibliography.html#id14">Laird, 2021</a>]</span>. Larger publicly available samples enable the detection and study of phenomena with smaller effect sizes more rapidly, by more people, and with more confidence <span id="id3">[<a class="reference internal" href="../bibliography.html#id14">Laird, 2021</a>, <a class="reference internal" href="../bibliography.html#id13">Smith and Nichols, 2018</a>, <a class="reference internal" href="../bibliography.html#id15">Madan, 2021</a>]</span>. Data sharing enhances the reporoducibility of findings, reduces time and costs for new research, promotes transparency, and encourages collaboration across fields <span id="id4">[<a class="reference internal" href="../bibliography.html#id19">Milham <em>et al.</em>, 2018</a>, <a class="reference internal" href="../bibliography.html#id16">Mar <em>et al.</em>, 2013</a>, <a class="reference internal" href="../bibliography.html#id17">Poldrack and Gorgolewski, 2014</a>, <a class="reference internal" href="../bibliography.html#id18">Madan, 2017</a>]</span>. In recent years, such public datsets have become more numerous and increasingly accessible <span id="id5">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>, <a class="reference internal" href="../bibliography.html#id22">Borghi and Gulick, 2018</a>, <a class="reference internal" href="../bibliography.html#id14">Laird, 2021</a>]</span>. The following table, taken from a practical guide to end-users (researchers interested in using public neuroimaging datasets) published in <em>Nature Human Behaviour</em> (<a class="reference external" href="https://www.nature.com/nathumbehav/">https://www.nature.com/nathumbehav/</a>) <span id="id6">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>]</span>, offers a summary of currently available datasets, including sample size, modalities, processing stages, and access policy:</p>
 <div class="figure align-default" id="markdown-fig">
 <a class="bg-primary mb-1 reference internal image-reference" href="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41562-020-01005-4/MediaObjects/41562_2020_1005_Fig1_HTML.png?as=webp"><img alt="Neuroimaging Datasets Summary" class="bg-primary mb-1" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41562-020-01005-4/MediaObjects/41562_2020_1005_Fig1_HTML.png?as=webp" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text"><strong>Taken from “A hitchhiker’s guide to working with large, open-source neuroimaging datasets” <span id="id5">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>]</span>.</strong><br /><strong>a</strong>, For each dataset listed in the leftmost column, sample size is indicated, along with the type of data included (‘Data modalities’). ‘Data level’ refers to the level of preprocessing: white circle, raw data; grey circle, some level of preprocessed data; black, processed data (for example, statistical maps, connectivity matrices, etc.). <strong>b</strong>, For each open repository (i.e., a collection of open datasets) listed in the leftmost column, an estimate of the number of open datasets is listed. Datasets of particular interest are highlighted (‘Featured large datasets’). Sample sizes and the number of open datasets are current as of October 2020. Users are encouraged to visit the website associated with each dataset before use, as sample sizes, access conditions, etc. may change.</span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text"><strong>Reprinted from “A hitchhiker’s guide to working with large, open-source neuroimaging   datasets” <span id="id7">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>]</span>.</strong><br /><strong>a</strong>, For each dataset listed in the leftmost column, sample size is indicated, along with the type of data included (‘Data modalities’). ‘Data level’ refers to the level of preprocessing: white circle, raw data; grey circle, some level of preprocessed data; black, processed data (for example, statistical maps, connectivity matrices, etc.). <strong>b</strong>, For each open repository (i.e., a collection of open datasets) listed in the leftmost column, an estimate of the number of open datasets is listed. Datasets of particular interest are highlighted (‘Featured large datasets’). Sample sizes and the number of open datasets are current as of October 2020. Users are encouraged to visit the website associated with each dataset before use, as sample sizes, access conditions, etc. may change.</span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">¶</a></p>
 </div>
-<p>This unprecedented scale and availability of data has proven impact on the field of neuroimaging <span id="id6">[<a class="reference internal" href="../bibliography.html#id19">Milham <em>et al.</em>, 2018</a>]</span>. However, there are still practical issues that hinder the ability of researchers to fully leverage these assets to optimize the quantity and quality of their scientific findings, both individually and in collaboration. The management of subject information and both raw and packaged <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a> data (i.e. converted to <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">NIfTI</span></a> and organized to conform with the <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a> standard) along with preprocessing results, in scale, raises challenges. In one report, it is estimated that it generally takes two or three researchers working on a project based on data from public datasets roughly 6 to 9 months to download, process, and prepare the data for analysis <span id="id7">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>]</span>. This period of time is also fertile ground for the introduction of more degrees of freedom to the analytical workflow (as well as human error), severly undermining the reproducibility of the results <span id="id8">[<a class="reference internal" href="../bibliography.html#id20">Botvinik-Nezer <em>et al.</em>, 2020</a>]</span>. To better facilitate large-scale neuroimaging research, dedicated data and analysis management solutions are required.</p>
+<p>This unprecedented scale and availability of data has proven impact on the field of neuroimaging <span id="id8">[<a class="reference internal" href="../bibliography.html#id19">Milham <em>et al.</em>, 2018</a>]</span>. However, there are still practical issues that hinder the ability of researchers to fully leverage these assets to optimize the quantity and quality of their scientific findings, both individually and in collaboration <span id="id9">[<a class="reference internal" href="../bibliography.html#id22">Borghi and Gulick, 2018</a>]</span>. The management of subject information and both raw and packaged <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a> data (i.e. converted to <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">NIfTI</span></a> and organized to conform with the <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a> standard) along with preprocessing results and any other, non-MRI data, in scale, can quickly prove to be a more complicated task than often anticipated. In one report, it is estimated that it generally takes two or three researchers working on a project based on data from public datasets roughly 6 to 9 months to download, process, and prepare the data for analysis <span id="id10">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>]</span>. This period of time is also fertile ground for the introduction of more degrees of freedom to the analytical workflow (as well as human error), severly undermining the reproducibility of the results <span id="id11">[<a class="reference internal" href="../bibliography.html#id20">Botvinik-Nezer <em>et al.</em>, 2020</a>]</span>. To better facilitate large-scale neuroimaging research, dedicated data and analysis management solutions are required.</p>
 </div>
-<div class="section" id="neuroimaging-data-management">
-<h2><span class="section-number">4.1.1.2. </span>Neuroimaging Data Management<a class="headerlink" href="#neuroimaging-data-management" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="neuroimaging-research-data-management">
+<h2><span class="section-number">4.1.1.2. </span>Neuroimaging Research Data Management<a class="headerlink" href="#neuroimaging-research-data-management" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="definition">
+<h3><span class="section-number">4.1.1.2.1. </span>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h3>
+<p>A complete neuroimaging Research Data Management (<a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a>) solution would be one that enables researchers to seamlessly integrate raw, independently acquired data, processing workflows, and results, with publicly shared datasets and their corresponding derivatives. For the purposes of this thesis, a neuroimaging data acquisition is assumed to be an <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a> session originally encoded in the <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a> format, but most commonly converted to <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">NIfTI</span></a> and packaged as part of a <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a>-compliant dataset. The fundamental requirements from an <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a> system include:</p>
+<ul class="simple">
+<li><p><strong>General research information management.</strong> Collected data needs to be associated with a particular study (or study group, e.g. general population, control, task, etc.), and studies should be assigned collaborators (researchers), thereby granting access. The entities and relationships required to adequately model the research process may be conceptualized and illustrated in a great number of ways, <a class="reference internal" href="#research-entities-schema"><span class="std std-numref">Fig. 4.2</span></a> proposes one such conceptual model. To support research data management, an <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a> would need to have some variation of this general schema.</p></li>
+</ul>
+<div class="figure align-default" id="research-entities-schema">
+<a class="reference internal image-reference" href="../../_images/research_entities.png"><img alt="A schematic representation of research data entities and relationships." src="../../_images/research_entities.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Proposed conceptual crow’s foot Entity-Relationship (<a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">ER</span></a>) diagram for research data management.</span><a class="headerlink" href="#research-entities-schema" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p><strong>Raw <a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a> metadata extraction and database management.</strong></p></li>
+</ul>
+</div>
 <div class="section" id="existing-solutions">
-<h3><span class="section-number">4.1.1.2.1. </span>Existing Solutions<a class="headerlink" href="#existing-solutions" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.1.1.2.2. </span>Existing Solutions<a class="headerlink" href="#existing-solutions" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="loris">
-<h4><span class="section-number">4.1.1.2.1.1. </span>LORIS<a class="headerlink" href="#loris" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">4.1.1.2.2.1. </span>LORIS<a class="headerlink" href="#loris" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="xnat">
-<h4><span class="section-number">4.1.1.2.1.2. </span>XNAT<a class="headerlink" href="#xnat" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">4.1.1.2.2.2. </span>XNAT<a class="headerlink" href="#xnat" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="brainlife-io">
-<h4><span class="section-number">4.1.1.2.1.3. </span><a class="reference external" href="http://Brainlife.io">Brainlife.io</a><a class="headerlink" href="#brainlife-io" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">4.1.1.2.2.3. </span><a class="reference external" href="http://Brainlife.io">Brainlife.io</a><a class="headerlink" href="#brainlife-io" title="Permalink to this headline">¶</a></h4>
 </div>
 </div>
 </div>
