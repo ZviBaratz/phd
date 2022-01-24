@@ -34,6 +34,8 @@
   - Diffusion Tensor Imaging
 * - EDA
   - Exploratory Data Analysis
+* - ER
+  - Entity-relationship
 * - fMRI
   - Functional Magnetic Resonance Imaging
 * - HCP
@@ -48,6 +50,8 @@
   - Magnetic Resonance Imaging
 * - NIfTI
   - Neuroimaging Informatics Technology Initiative
+* - RDM
+  - Research Data Management
 * - rsfMRI
   - Resting-state Functional Magnetic Resonance Imaging
 * - SD
