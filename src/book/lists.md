@@ -38,8 +38,12 @@
   - Entity-relationship
 * - fMRI
   - Functional Magnetic Resonance Imaging
+* - GUI
+  - Graphical User Interface
 * - HCP
   - Human Connectome Project
+* - JSON
+  - JavaScript Object Notation
 * - LORIS
   - Longitudinal Online Research and Imaging System
 * - MPRAGE
@@ -50,6 +54,8 @@
   - Magnetic Resonance Imaging
 * - NIfTI
   - Neuroimaging Informatics Technology Initiative
+* - PHI
+  - Personal Health Information
 * - RDM
   - Research Data Management
 * - rsfMRI
