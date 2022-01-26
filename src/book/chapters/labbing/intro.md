@@ -38,10 +38,10 @@ A complete neuroimaging Research Data Management ({{RDM}}) solution would be one
     ```{figure} ./assets/data_flow.png
     ---
     name: data-flow-diagram
-    alt: A schematic representation of the fundamental requirements from a       neuroimaging RDM system.
+    alt: A schematic representation of the fundamental requirements from a neuroimaging RDM system.
     width: 750px
     ---
-    Schematic representation of the fundamental requirements from a       neuroimaging {{RDM}} system. Numbers circled in green correspond to the numbers of the requirements as listed above.
+    Schematic representation of the fundamental requirements from a       neuroimaging {{RDM}} system. Numbers circled in green correspond to the numbers of the requirements as listed above. Blue user represents an admin or lab manager providing general research information.
     ```
 
 There is also an additional requirement, which is not strictly in the scope of an {{RDM}}, but would also be necessary for collaborating on a large-scale dataset:
