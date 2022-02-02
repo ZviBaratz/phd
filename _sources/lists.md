@@ -26,6 +26,8 @@
   - Big Five Inventory
 * - BIDS
   - Brain Imaging Data Structure
+* - COINS
+  - Collaborative Informatics Neuroimaging Suite
 * - DICOM
   - Digital Imaging and Communications in Medicine
 * - dMRI
@@ -38,12 +40,16 @@
   - Entity-relationship
 * - fMRI
   - Functional Magnetic Resonance Imaging
+* - FOSS
+  - Free and Open-source Software
 * - GUI
   - Graphical User Interface
 * - HCP
   - Human Connectome Project
 * - JSON
   - JavaScript Object Notation
+* - JSP
+  - Jakarta Server Pages
 * - LORIS
   - Longitudinal Online Research and Imaging System
 * - MPRAGE
@@ -56,6 +62,8 @@
   - Neuroimaging Informatics Technology Initiative
 * - PHI
   - Personal Health Information
+* - PHP
+  - PHP: Hypertext Preprocessor
 * - RDM
   - Research Data Management
 * - rsfMRI
@@ -72,33 +80,6 @@
   - T1-weighted
 * - T2w
   - T2-weighted
+* - XNAT
+  - Extensible Neuroimaging Archive Toolkit
 ```
-
-<!-- Another format:
-
-BIDS
-: Brain Imaging Data Structure
-
-BFI
-: Big Five Inventory
-
-DICOM
-: Digital Imaging and Communications in Medicine
-
-DTI
-: Diffusion Tensor Imaging
-
-EDA
-: Exploratory Data Analysis
-
-MR
-: Magnetic Resonance
-
-MRI
-: Magnetic Resonance Imaging
-
-SNR
-: Signal-to-noise Ratio
-
-SQL
-: Structured Query Language -->
