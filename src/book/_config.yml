@@ -52,20 +52,24 @@ sphinx:
       ADNI: "{ref}`ADNI <lists:acronyms>`"
       BFI: "{ref}`BFI <lists:acronyms>`"
       BIDS: "{ref}`BIDS <lists:acronyms>`"
+      COINS: "{ref}`COINS <lists:acronyms>`"
       DICOM: "{ref}`DICOM <lists:acronyms>`"
       dMRI: "{ref}`dMRI <lists:acronyms>`"
       EDA: "{ref}`EDA <lists:acronyms>`"
       ER: "{ref}`ER <lists:acronyms>`"
       fMRI: "{ref}`fMRI <lists:acronyms>`"
+      FOSS: "{ref}`FOSS <lists:acronyms>`"
       GUI: "{ref}`GUI <lists:acronyms>`"
       HCP: "{ref}`HCP <lists:acronyms>`"
       JSON: "{ref}`JSON <lists:acronyms>`"
+      JSP: "{ref}`JSP <lists:acronyms>`"
       LORIS: "{ref}`LORIS <lists:acronyms>`"
       MPRAGE: "{ref}`MPRAGE <lists:acronyms>`"
       MR: "{ref}`MR <lists:acronyms>`"
       MRI: "{ref}`MRI <lists:acronyms>`"
       NIfTI: "{ref}`NIfTI <lists:acronyms>`"
       PHI: "{ref}`PHI <lists:acronyms>`"
+      PHP: "{ref}`PHP <lists:acronyms>`"
       RDM: "{ref}`RDM <lists:acronyms>`"
       rsfMRI: "{ref}`rs-fMRI <lists:acronyms>`"
       sMRI: "{ref}`sMRI <lists:acronyms>`"
@@ -74,6 +78,10 @@ sphinx:
       SD: "{ref}`SD <lists:acronyms>`"
       T1w: "{ref}`T1w <lists:acronyms>`"
       T2w: "{ref}`T2w <lists:acronyms>`"
+      XNAT: "{ref}`XNAT <lists:acronyms>`"
+      # HTML & CSS
+      greenCheckmark: '<p class="table-icon" style="color: green;"><i class="fas fa-check-circle"></i></p>'
+      redCross: '<p class="table-icon" style="color: red;"><i class="fas fa-times-circle"></i></p>'
 
 # Parse and render settings
 parse:

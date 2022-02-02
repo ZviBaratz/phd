@@ -48,6 +48,16 @@ h6 {
 p {
     text-align: justify;
 }
+/* Table formatting */
+table p.table-icon {
+    text-align: center;
+}
+table p {
+    text-align: left;
+}
+table td,th {
+    vertical-align: middle!important;
+}
 /* Cover page TAU logo styling */
 img[alt=TAUlogo] {
     display: block;
