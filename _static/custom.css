@@ -67,8 +67,8 @@ img[alt=TAUlogo] {
 }
 /* Removed acronym link highlighting */
 span.acronym-ref a {
-    color: rgba(var(--pst-color-paragraph),1)!important;
+    color: rgba(51,51,51,1)!important;
 }
 span.caption-text, span.caption-number {
-    color: rgba(var(--pst-color-paragraph),1);
+    color: rgba(51,51,51,1);
 }
