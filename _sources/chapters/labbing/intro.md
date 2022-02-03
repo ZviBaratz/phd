@@ -56,7 +56,7 @@ For the purposes of this thesis, the desired {{RDM}} solution is one that is ent
 
 A number of neuroimaging {{RDM}} systems have been developed to support particular research centers and collaborations across the world. Some of the most notable examples are the Extensible Neuroimaging Archive Toolkit ({{XNAT}}, see https://www.xnat.org/) {cite}`marcusExtensibleNeuroimagingArchive2007, herrickXNATCentralOpen2016`, Longitudinal Online Research and Imaging System ({{LORIS}}, see https://loris.ca/) {cite}`dasLORISWebbasedData2012`, and the newest addition, [brainlife.io](https://brainlife.io). All three are open-source and in active development, however, none offered both the required functionality and the means to create a sustainable, independent deployment of the application without specialized expertise at the time of writing. {numref}`existing-rdms` offers a summary of the technological stacks and {{DICOM}} or {{BIDS}}-related functionality provided by these applications.
 
-```{list-table} A summary of existing open-source neuroimaging {{RDM}} applications' technological stacks and the required {{DICOM}} or {{BIDS}}-related functionality. All information was independently gathered from openly accessibly project websites, documentation, or code repositories.<br><span style="font-size: 0.8rem;">* brainlife.io has a new and exciting semi-automated web-based {{DICOM}} to {{BIDS}} conversion tool, *ezBIDS*, currently in development and approaching a stable release.</span>
+```{list-table} A summary of existing open-source neuroimaging {{RDM}} applications' technological stacks and the required {{DICOM}} or {{BIDS}}-related functionality. All information was independently gathered from openly accessibly project websites, documentation, or code repositories.<br><span style="font-size: 0.8rem;">* <span>brainlife.io</span> has a new and exciting semi-automated web-based {{DICOM}} to {{BIDS}} conversion tool, *ezBIDS*, currently in development and approaching a stable release.</span>
 :header-rows: 1
 :name: existing-rdms
 
@@ -81,7 +81,7 @@ A number of neuroimaging {{RDM}} systems have been developed to support particul
   - {{ redCross }}
   - {{ greenCheckmark }}
   - [github.com/aces](https://github.com/aces)
-* - brainlife.io
+* - <span>brainlife.io</span>
   - Mixed microservice architecture
   - {{ redCross }}
   - {{ greenCheckmarkStarred }}
