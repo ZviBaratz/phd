@@ -26,8 +26,12 @@
   - Big Five Inventory
 * - BIDS
   - Brain Imaging Data Structure
+* - CI
+  - Continuous Integration
 * - COINS
   - Collaborative Informatics Neuroimaging Suite
+* - CSS
+  - Cascading Style Sheets
 * - DICOM
   - Digital Imaging and Communications in Medicine
 * - dMRI
@@ -46,6 +50,8 @@
   - Graphical User Interface
 * - HCP
   - Human Connectome Project
+* - HTML
+  - HyperText Markup Language
 * - JSON
   - JavaScript Object Notation
 * - JSP

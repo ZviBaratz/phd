@@ -65,3 +65,10 @@ img[alt=TAUlogo] {
     margin-right: auto;
     width: 35%;
 }
+/* Removed acronym link highlighting */
+span.acronym-ref a {
+    color: rgba(var(--pst-color-paragraph),1)!important;
+}
+span.caption-text, span.caption-number {
+    color: rgba(var(--pst-color-paragraph),1);
+}
