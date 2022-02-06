@@ -22,6 +22,8 @@
   - Autism Brain Imaging Data Exchange
 * - ADNI
   - Alzheimer’s Disease Neuroimaging Initiative
+* - API
+  - Application Programming Interface
 * - BFI
   - Big Five Inventory
 * - BIDS
@@ -32,6 +34,8 @@
   - Collaborative Informatics Neuroimaging Suite
 * - CSS
   - Cascading Style Sheets
+* - DBMS
+  - Database Management System
 * - DICOM
   - Digital Imaging and Communications in Medicine
 * - dMRI
@@ -66,10 +70,16 @@
   - Magnetic Resonance Imaging
 * - NIfTI
   - Neuroimaging Informatics Technology Initiative
+* - ORM
+  - Object–relational Mapping
 * - PHI
   - Personal Health Information
 * - PHP
   - PHP: Hypertext Preprocessor
+* - REST
+  - Representational state transfer
+* - RDBMS
+  - Relational Database Management System
 * - RDM
   - Research Data Management
 * - rsfMRI

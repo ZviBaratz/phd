@@ -3,14 +3,39 @@
 
 <hr>
 
+A dedicated {{GitHub}} organization titled "The Labbing Project" (see https://github.com/TheLabbingProject) has been created to centralize development efforts. The following section will detail the technological stack used to build the application.
+
+(labbing:methods:backend)=
 ## Web Framework
 
+Enabling secure remote access and providing robust infrastructure that can easily be deployed and scaled requires an uncompromising Web application development framework. There are a number of Python-native high-level Web frameworks (for a comprehensive review, see https://wiki.python.org/moin/WebFrameworks). However, the most popular option (by {{GitHub}} star counts at the time of writing) is {{Django}}.
+
+(labbing:methods:backend:django)=
 ### Django
 
+{{Django}} (see https://www.djangoproject.com/) is a widely used free and open-source Web application development framework with a number of outstanding advantages. It is actively maintained by an independent non-profit organization and used by well-known websites, including [Instagram](https://www.instagram.com/), [Mozilla](https://www.mozilla.org/), [Pinterest](https://www.pinterest.com/), and more (see [Overview](https://www.djangoproject.com/start/overview/) page in the {{Django}} project's website). The framework's architecture promotes a modular design that is easily extensible and reusable. It also excels in database management, and includes a powerful Object-relational mapper ({{ORM}}) which greatly reduces the complexity of database administration and interaction by enabling the representation of data models as simple Python classes. Many aspects of routine Web application development, such as Web security, user administration, session management, caching, logging, testing, etc., are integrated into the framework in compliance with the highest standards in the field. The documentation site (see https://docs.djangoproject.com/) is exceptionally extensive and offers tutorials and educational content, thereby significantly reducing the learning-curve for potential contributors from the research community. Python's renowned capacity of abstraction and intuitive syntax combined with {{Django}}'s fully-featured, scalable design, grants non-professional programmers unprecedented accessibility to actively participate in high-level Web develpment.
+
+(labbing:methods:backend:django:api)=
+#### Application Programming Interface (API)
+
+{{DRF}} (see https://www.django-rest-framework.org/) was used to generate a {{REST}} {{API}} for the application, exposing comprehensive database management and querying capabilities using simple Web requests. In addition, returning generic, {{JSON}}-encoded responses enables flexible interaction with any number of external services or independent user interfaces.
+
+(labbing:methods:backend:database)=
 ## Database
 
+{{Django}} officially supports a number of databases (see https://docs.djangoproject.com/en/dev/ref/databases/), with {{PostgreSQL}} being a leading choice for applications with higher demands in terms of database performance and flexibility.
+
+(labbing:methods:backend:database:postgresql)=
 ### PostgreSQL
 
+{{PostgreSQL}} is a free and open-source relational database management system ({{RDBMS}}). It is one of the most popular {{DBMS}}s in general (e.g. see https://db-engines.com/en/ranking), boasting some of the most advanced functionality in terms of both security and performance. {{Django}}'s {{PostgreSQL}} backend uses the psycopg (see https://www.psycopg.org/) Python adapter, which is written mostly in the C programming language, and provides a feature-rich, fast, and secure integration with the application's components.
+
+(labbing:methods:frontend)=
 ## Front-end Framework
 
+While {{Django}} does include a Web templating system (the {{Django}} Template Language, see https://docs.djangoproject.com/en/dev/topics/templates/) allowing for the generation of dynamic Web pages, initial attempts to leverage it and maintain the stack as minimal and exclusively Python-dependent as possible have failed to produce satisfactory results. In order for the application to offer a modern and responsive user experience, a dedicated front-end Web development framework was deemed required.
+
+(labbing:methods:frontend:vuejs)=
 ### Vue.js
+
+{{VueJS}} is a popular free and open-source {{JavaScript}} framework. It is lightweight, modular, rich in documentation and learning materials, and oriented towards both novice and expert developers. While some familiarity with {{HTML}}, {{CSS}}, and {{JavaScript}} is required, {{VueJS}} greatly simplifies the complexities of rendering Web content in a browser. By interacting with the Web application's {{API}}, the front-end application offers a convenient graphical user interface ({{GUI}}) for researchers to query and retrieve data and derivatives from the server.

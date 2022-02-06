@@ -369,6 +369,13 @@
     <a class="reference internal nav-link" href="#django">
      4.1.2.1.1. Django
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#application-programming-interface-api">
+       4.1.2.1.1.1. Application Programming Interface (API)
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -425,6 +432,13 @@
     <a class="reference internal nav-link" href="#django">
      4.1.2.1.1. Django
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#application-programming-interface-api">
+       4.1.2.1.1.1. Application Programming Interface (API)
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -464,22 +478,33 @@
   <div class="tex2jax_ignore mathjax_ignore section" id="materials-and-methods">
 <span id="labbing-methods"></span><h1><span class="section-number">4.1.2. </span>Materials and Methods<a class="headerlink" href="#materials-and-methods" title="Permalink to this headline">¶</a></h1>
 <hr>
+<p>A dedicated <span class="muted-ref"><a class="reference external" href="https://www.github.com/">GitHub</a></span> organization titled “The Labbing Project” (see <a class="reference external" href="https://github.com/TheLabbingProject">https://github.com/TheLabbingProject</a>) has been created to centralize development efforts. The following section will detail the technological stack used to build the application.</p>
 <div class="section" id="web-framework">
-<h2><span class="section-number">4.1.2.1. </span>Web Framework<a class="headerlink" href="#web-framework" title="Permalink to this headline">¶</a></h2>
+<span id="labbing-methods-backend"></span><h2><span class="section-number">4.1.2.1. </span>Web Framework<a class="headerlink" href="#web-framework" title="Permalink to this headline">¶</a></h2>
+<p>Enabling secure remote access and providing robust infrastructure that can easily be deployed and scaled requires an uncompromising Web application development framework. There are a number of Python-native high-level Web frameworks (for a comprehensive review, see <a class="reference external" href="https://wiki.python.org/moin/WebFrameworks">https://wiki.python.org/moin/WebFrameworks</a>). However, the most popular option (by <span class="muted-ref"><a class="reference external" href="https://www.github.com/">GitHub</a></span> star counts at the time of writing) is <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span>.</p>
 <div class="section" id="django">
-<h3><span class="section-number">4.1.2.1.1. </span>Django<a class="headerlink" href="#django" title="Permalink to this headline">¶</a></h3>
+<span id="labbing-methods-backend-django"></span><h3><span class="section-number">4.1.2.1.1. </span>Django<a class="headerlink" href="#django" title="Permalink to this headline">¶</a></h3>
+<p><span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> (see <a class="reference external" href="https://www.djangoproject.com/">https://www.djangoproject.com/</a>) is a widely used free and open-source Web application development framework with a number of outstanding advantages. It is actively maintained by an independent non-profit organization and used by well-known websites, including <a class="reference external" href="https://www.instagram.com/">Instagram</a>, <a class="reference external" href="https://www.mozilla.org/">Mozilla</a>, <a class="reference external" href="https://www.pinterest.com/">Pinterest</a>, and more (see <a class="reference external" href="https://www.djangoproject.com/start/overview/">Overview</a> page in the <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> project’s website). The framework’s architecture promotes a modular design that is easily extensible and reusable. It also excels in database management, and includes a powerful Object-relational mapper (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">ORM</span></a></span>) which greatly reduces the complexity of database administration and interaction by enabling the representation of data models as simple Python classes. Many aspects of routine Web application development, such as Web security, user administration, session management, caching, logging, testing, etc., are integrated into the framework in compliance with the highest standards in the field. The documentation site (see <a class="reference external" href="https://docs.djangoproject.com/">https://docs.djangoproject.com/</a>) is exceptionally extensive and offers tutorials and educational content, thereby significantly reducing the learning-curve for potential contributors from the research community. Python’s renowned capacity of abstraction and intuitive syntax combined with <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span>’s fully-featured, scalable design, grants non-professional programmers unprecedented accessibility to actively participate in high-level Web develpment.</p>
+<div class="section" id="application-programming-interface-api">
+<span id="labbing-methods-backend-django-api"></span><h4><span class="section-number">4.1.2.1.1.1. </span>Application Programming Interface (API)<a class="headerlink" href="#application-programming-interface-api" title="Permalink to this headline">¶</a></h4>
+<p><span class="muted-ref"><a class="reference external" href="https://www.django-rest-framework.org/">Django REST framework</a></span> (see <a class="reference external" href="https://www.django-rest-framework.org/">https://www.django-rest-framework.org/</a>) was used to generate a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">REST</span></a></span> <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">API</span></a></span> for the application, exposing comprehensive database management and querying capabilities using simple Web requests. In addition, returning generic, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">JSON</span></a></span>-encoded responses enables flexible interaction with any number of external services or independent user interfaces.</p>
+</div>
 </div>
 </div>
 <div class="section" id="database">
-<h2><span class="section-number">4.1.2.2. </span>Database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h2>
+<span id="labbing-methods-backend-database"></span><h2><span class="section-number">4.1.2.2. </span>Database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h2>
+<p><span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> officially supports a number of databases (see <a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/databases/">https://docs.djangoproject.com/en/dev/ref/databases/</a>), with <span class="muted-ref"><a class="reference external" href="https://www.postgresql.org/">PostgreSQL</a></span> being a leading choice for applications with higher demands in terms of database performance and flexibility.</p>
 <div class="section" id="postgresql">
-<h3><span class="section-number">4.1.2.2.1. </span>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this headline">¶</a></h3>
+<span id="labbing-methods-backend-database-postgresql"></span><h3><span class="section-number">4.1.2.2.1. </span>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this headline">¶</a></h3>
+<p><span class="muted-ref"><a class="reference external" href="https://www.postgresql.org/">PostgreSQL</a></span> is a free and open-source relational database management system (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDBMS</span></a></span>). It is one of the most popular <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DBMS</span></a></span>s in general (e.g. see <a class="reference external" href="https://db-engines.com/en/ranking">https://db-engines.com/en/ranking</a>), boasting some of the most advanced functionality in terms of both security and performance. <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span>’s <span class="muted-ref"><a class="reference external" href="https://www.postgresql.org/">PostgreSQL</a></span> backend uses the psycopg (see <a class="reference external" href="https://www.psycopg.org/">https://www.psycopg.org/</a>) Python adapter, which is written mostly in the C programming language, and provides a feature-rich, fast, and secure integration with the application’s components.</p>
 </div>
 </div>
 <div class="section" id="front-end-framework">
-<h2><span class="section-number">4.1.2.3. </span>Front-end Framework<a class="headerlink" href="#front-end-framework" title="Permalink to this headline">¶</a></h2>
+<span id="labbing-methods-frontend"></span><h2><span class="section-number">4.1.2.3. </span>Front-end Framework<a class="headerlink" href="#front-end-framework" title="Permalink to this headline">¶</a></h2>
+<p>While <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> does include a Web templating system (the <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> Template Language, see <a class="reference external" href="https://docs.djangoproject.com/en/dev/topics/templates/">https://docs.djangoproject.com/en/dev/topics/templates/</a>) allowing for the generation of dynamic Web pages, initial attempts to leverage it and maintain the stack as minimal and exclusively Python-dependent as possible have failed to produce satisfactory results. In order for the application to offer a modern and responsive user experience, a dedicated front-end Web development framework was deemed required.</p>
 <div class="section" id="vue-js">
-<h3><span class="section-number">4.1.2.3.1. </span>Vue.js<a class="headerlink" href="#vue-js" title="Permalink to this headline">¶</a></h3>
+<span id="labbing-methods-frontend-vuejs"></span><h3><span class="section-number">4.1.2.3.1. </span>Vue.js<a class="headerlink" href="#vue-js" title="Permalink to this headline">¶</a></h3>
+<p><span class="muted-ref"><a class="reference external" href="https://vuejs.org/">Vue.js</a></span> is a popular free and open-source <span class="muted-ref"><a class="reference external" href="https://www.javascript.com/">JavaScript</a></span> framework. It is lightweight, modular, rich in documentation and learning materials, and oriented towards both novice and expert developers. While some familiarity with <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">HTML</span></a></span>, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">CSS</span></a></span>, and <span class="muted-ref"><a class="reference external" href="https://www.javascript.com/">JavaScript</a></span> is required, <span class="muted-ref"><a class="reference external" href="https://vuejs.org/">Vue.js</a></span> greatly simplifies the complexities of rendering Web content in a browser. By interacting with the Web application’s <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">API</span></a></span>, the front-end application offers a convenient graphical user interface (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">GUI</span></a></span>) for researchers to query and retrieve data and derivatives from the server.</p>
 </div>
 </div>
 </div>
