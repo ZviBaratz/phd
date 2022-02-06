@@ -69,9 +69,9 @@ A number of neuroimaging {{RDM}} systems have been developed to support particul
   - Source Code
 * - {{XNAT}}
   - + Linux
-    + <span class="acronym-ref">[Traefik](https://traefik.io/)</span><sup>[1]</sup>
-    + <span class="acronym-ref">[PostgreSQL](https://www.postgresql.org/)</span><sup>[2]</sup>
-    + <span class="acronym-ref">[Apache Tomcat](https://tomcat.apache.org/)</span><sup>[3]</sup>
+    + <span class="muted-ref">[Traefik](https://traefik.io/)</span><sup>[1]</sup>
+    + {{PostgreSQL}}<sup>[2]</sup>
+    + <span class="muted-ref">[Apache Tomcat](https://tomcat.apache.org/)</span><sup>[3]</sup>
   - {{ greenCheckmark }}
   - {{ redCross }}
   - {{ redCross }}
@@ -79,17 +79,18 @@ A number of neuroimaging {{RDM}} systems have been developed to support particul
   - [bitbucket.org/xnatdev](https://bitbucket.org/xnatdev/)
 * - {{LORIS}}
   - + Linux
-    + <span class="acronym-ref">[Apache HTTP Server](https://httpd.apache.org/)</span><sup>[4]</sup>
-    + <span class="acronym-ref">[MySQL](https://www.mysql.com/)</span><sup>[5]</sup>
-    + <span class="acronym-ref">[PHP](https://php.net/)</span><sup>[6]</sup>
-    + <span class="acronym-ref">[React](https://reactjs.org/)</span><sup>[7]</sup>
+    + <span class="muted-ref">[Apache HTTP Server](https://httpd.apache.org/)</span><sup>[4]</sup>
+    + <span class="muted-ref">[MySQL](https://www.mysql.com/)</span><sup>[5]</sup>
+    + <span class="muted-ref">[PHP](https://php.net/)</span><sup>[6]</sup>
+    + <span class="muted-ref">[React](https://reactjs.org/)</span><sup>[7]</sup>
   - {{ greenCheckmark }}
   - {{ redCross }}
   - {{ redCross }}
   - {{ greenCheckmark }}
   - [github.com/aces](https://github.com/aces)
 * - <span>brainlife.io</span>
-  - Mixed microservice architecture
+  - + Mixed microservice architecture
+    + {{VueJS}}
   - {{ redCross }}
   - {{ greenCheckmarkStarred }}
   - {{ greenCheckmark }}
