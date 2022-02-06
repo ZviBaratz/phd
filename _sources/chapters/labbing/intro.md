@@ -61,7 +61,7 @@ A number of neuroimaging {{RDM}} systems have been developed to support particul
 :name: existing-rdms
 
 * - Name
-  - Technical Stack
+  - Technological Stack
   - {{DICOM}} Import
   - {{DICOM}} to {{BIDS}} Conversion
   - {{BIDS}} Import
