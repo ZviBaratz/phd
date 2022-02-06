@@ -33,7 +33,7 @@ Enabling secure remote access and providing robust infrastructure that can easil
 (labbing:methods:frontend)=
 ## Front-end Framework
 
-While {{Django}} does include a Web templating system (the {{Django}} Template Language, see https://docs.djangoproject.com/en/dev/topics/templates/) allowing for the generation of dynamic Web pages, initial attempts to leverage it and maintain the stack as minimal and exclusively Python-dependent as possible have failed to produce satisfactory results. In order for the application to offer a modern and responsive user experience, a dedicated front-end Web development framework was deemed required.
+While {{Django}} does include a Web templating system (the {{Django}} Template Language, see https://docs.djangoproject.com/en/dev/topics/templates/) allowing for the generation of dynamic Web pages, initial attempts to leverage it and maintain the stack as minimal and exclusively Python-dependent as possible have failed to produce satisfactory results. In order for the application to offer a modern and responsive user experience, a dedicated front-end Web development framework was deemed necessary.
 
 (labbing:methods:frontend:vuejs)=
 ### Vue.js
