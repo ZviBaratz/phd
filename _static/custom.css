@@ -58,6 +58,9 @@ table p {
 table td,th {
     vertical-align: middle!important;
 }
+table ul.simple {
+    padding-left: 10px;
+}
 /* Cover page TAU logo styling */
 img[alt=TAUlogo] {
     display: block;

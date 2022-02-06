@@ -50,13 +50,13 @@ A complete neuroimaging Research Data Management ({{RDM}}) solution would be one
 
 The benefit of {{FOSS}} and collaborative software development on scientific research in general {cite}`fortunatoCaseFreeOpen2021` and neuroscientific research in particular {cite}`gleesonCommitmentOpenSource2017, whiteFutureOpenOpenSource2019, halchenkoOpenNotEnough2012` has become a central topic of discussion in recent years. Working with and collaborating on open-source code repositories, including version control, testing, documentation, continuous integration ({{CI}}), and much more, is rapidly becoming a fundamental part of the technical capability expected from reseachers in the field {cite}`mullerPythonNeuroscience2015`. Relevant educational content has become effectively ubiquituous in workshops and other educational programs, and an increasing number of contemporary initiatives are embracing the community-oriented philosophy and standards. This shift in the zeitgeist is largely owed to the widespread adoption of Python and the general-purpose programming language tools and paradigms it offers and encourages.
 
-For the purposes of this thesis, the desired {{RDM}} solution is one that is entirely free and open-source, and is designed as a collaborative, community-oriented software development project. Because most researchers are not experienced with commonplace web development technologies (e.g. NodeJS, {{PHP}}, {{HTML}}, {{CSS}}, etc.), as much of the codebase should be written in Python as possible. This will encourage user involvement, foster awareness to infrastructural details and processing decisions, and ultimately serve to support the credibility and reproducibility of the derived findings.
+For the purposes of this thesis, the desired {{RDM}} solution is one that is entirely free and open-source, and is designed as a collaborative, community-oriented software development project. Because most researchers are not experienced with commonplace web development technologies (e.g. NodeJS, {{PHP}}, Java, etc.), as much of the codebase should be written in Python as possible. This will encourage user involvement, foster awareness to infrastructural details and processing decisions, and ultimately serve to support the credibility and reproducibility of the derived findings.
 
 ### Existing Solutions
 
 A number of neuroimaging {{RDM}} systems have been developed to support particular research centers and collaborations across the world. Some of the most notable examples are the Extensible Neuroimaging Archive Toolkit ({{XNAT}}, see https://www.xnat.org/) {cite}`marcusExtensibleNeuroimagingArchive2007, herrickXNATCentralOpen2016`, Longitudinal Online Research and Imaging System ({{LORIS}}, see https://loris.ca/) {cite}`dasLORISWebbasedData2012`, and the newest addition, [brainlife.io](https://brainlife.io). All three are open-source and in active development, however, none offered both the required functionality and the means to create a sustainable, independent deployment of the application without specialized expertise at the time of writing. {numref}`existing-rdms` offers a summary of the technological stacks and {{DICOM}} or {{BIDS}}-related functionality provided by these applications.
 
-```{list-table} A summary of existing open-source neuroimaging {{RDM}} applications' technological stacks and the required {{DICOM}} or {{BIDS}}-related functionality. All information was independently gathered from openly accessibly project websites, documentation, or code repositories.<br><span style="font-size: 0.8rem;">* <span>brainlife.io</span> has a new and exciting semi-automated web-based {{DICOM}} to {{BIDS}} conversion tool, *ezBIDS*, currently in development and approaching a stable release.</span>
+```{list-table} A summary of existing open-source neuroimaging {{RDM}} applications' technological stacks and the required {{DICOM}} or {{BIDS}}-related functionality. All information was independently gathered from openly accessibly project websites, documentation, or code repositories.<br><span style="font-size: 0.8rem;">* <span>brainlife.io</span> has a new and exciting semi-automated web-based {{DICOM}} to {{BIDS}} conversion tool, *ezBIDS*, currently in development and approaching a stable release.</span><br><span style="font-size: 0.7rem;">[1] https://traefik.io/ [2] https://www.postgresql.org/ [3] https://tomcat.apache.org/ [4] https://httpd.apache.org/ [5] https://www.mysql.com/ [6] https://php.net/ [7] https://reactjs.org/</span>
 :header-rows: 1
 :name: existing-rdms
 
@@ -68,14 +68,21 @@ A number of neuroimaging {{RDM}} systems have been developed to support particul
   - Deployment Documentation
   - Source Code
 * - {{XNAT}}
-  - Mixed, with the core written in {{JSP}} (Java)
+  - + Linux
+    + <span class="acronym-ref">[Traefik](https://traefik.io/)</span><sup>[1]</sup>
+    + <span class="acronym-ref">[PostgreSQL](https://www.postgresql.org/)</span><sup>[2]</sup>
+    + <span class="acronym-ref">[Apache Tomcat](https://tomcat.apache.org/)</span><sup>[3]</sup>
   - {{ greenCheckmark }}
   - {{ redCross }}
   - {{ redCross }}
   - {{ greenCheckmark }}
   - [bitbucket.org/xnatdev](https://bitbucket.org/xnatdev/)
 * - {{LORIS}}
-  - MySQL<br>{{PHP}}<br>ReactJS
+  - + Linux
+    + <span class="acronym-ref">[Apache HTTP Server](https://httpd.apache.org/)</span><sup>[4]</sup>
+    + <span class="acronym-ref">[MySQL](https://www.mysql.com/)</span><sup>[5]</sup>
+    + <span class="acronym-ref">[PHP](https://php.net/)</span><sup>[6]</sup>
+    + <span class="acronym-ref">[React](https://reactjs.org/)</span><sup>[7]</sup>
   - {{ greenCheckmark }}
   - {{ redCross }}
   - {{ redCross }}
@@ -90,6 +97,6 @@ A number of neuroimaging {{RDM}} systems have been developed to support particul
   - [github.com/brainlife](https://github.com/brainlife)
 ```
 
-For the purposes of this thesis, the ability to manage a large {{DICOM}} dataset combined with external {{BIDS}} datasets and fluently associate the included or provided research information is a core requirement. In addition, none of the existing solution's technological stacks are Python-based, making it significantly less likely for most researchers to be able to actively participate in their development.
+The ability to manage a large {{DICOM}} dataset combined with external {{BIDS}} datasets and fluently associate the included or provided research information is a core requirement of this thesis which is not yet properly handled by existing tools. In addition, none of the applications' technological stacks are Python-based, making it significantly less likely for most researchers to be able to actively participate in their development.
 
 To overcome this technical difficulty, the first part of this thesis introduces a dedicated, Python-based, open-source and community-oriented {{RDM}} application.
