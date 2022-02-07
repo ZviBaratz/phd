@@ -44,6 +44,16 @@ Execution of analytical workflows in a scalable manner requires an advanced, dis
 
 *django-celery-results* (see https://django-celery-results.readthedocs.io/) and *django-celery-beat* (see https://django-celery-beat.readthedocs.io/) are also enabled by default and complement {{Celery}} with database-integrated task monitoring and support for periodic task scheduling (respectively).
 
+(labbing:methods:backend:distribution)=
+## Data Distribution
+
+While the application's {{REST}} {{API}} does provide endpoints for downloading both data instances and analysis results, distributing large collections of files necessitates a more controlled approach.
+
+(labbing:methods:backend:distribution:paramiko)=
+### Paramiko
+
+{{Paramiko}} (see https://www.paramiko.org/) is a free and open-source Python implementation of the {{SSH}}v2 protocol. It enables highly controlled {{SFTP}} session negotiation over {{SSH}}, thereby allowing researchers to safely transport files to any {{SSH}} accessible machine.
+
 (labbing:methods:frontend)=
 ## Front-end Framework
 
