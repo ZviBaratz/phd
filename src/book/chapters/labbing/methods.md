@@ -35,12 +35,14 @@ Enabling secure remote access and providing robust infrastructure that can easil
 (labbing:methods:backend:tasks)=
 ## Task Orchestration
 
-Execution of analytical workflows in a scalable manner requires an advanced, distributed task queuing system. Preprocessing and feature extraction pipelines used in neuroimaging range from simple transformations to exceptionally resource-heavy, long-running tasks. Being able to initialize background processes in batch and monitor progress is of central importance to the application.
+Execution of analytical workflows in a scalable manner requires an advanced, distributed task queuing system. Preprocessing and feature extraction pipelines used in neuroimaging range from simple transformations to exceptionally resource-heavy, long-running tasks. Being able to initialize background processes across threads and machines in batch and monitor progress is a core requirement.
 
 (labbing:methods:backend:tasks:celery)=
 ### Celery
 
-{{Celery}} is the most popular task queue manager written in Python (by {{GitHub}} stars count at the time of writing). It is free and open-source, actively maintained, in widespread use in industry, and provides native support for integration with {{Django}} projects (see https://docs.celeryproject.org/en/stable/django/).
+{{Celery}} is the most popular task queue manager written in Python (by {{GitHub}} stars count at the time of writing). It is free and open-source, actively maintained, in widespread use in industry, and provides native support for integration with {{Django}} projects (see https://docs.celeryproject.org/en/stable/django/). By default, {{Celery}} uses RabbitMQ (see https://www.rabbitmq.com/) to send and receive messages, however, other message brokers such as Redis (see https://redis.io/) and Amazon SQS (see https://aws.amazon.com/sqs/) are also supported.
+
+*django-celery-results* (see https://django-celery-results.readthedocs.io/) and *django-celery-beat* (see https://django-celery-beat.readthedocs.io/) are also enabled by default and complement {{Celery}} with database-integrated task monitoring and support for periodic task scheduling (respectively).
 
 (labbing:methods:frontend)=
 ## Front-end Framework
