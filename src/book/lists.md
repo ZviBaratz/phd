@@ -86,12 +86,16 @@
   - Resting-state Functional Magnetic Resonance Imaging
 * - SD
   - Standard Deviation
+* - SFTP
+  - Secure File Transfer Protocol
 * - sMRI
   - Structural Magnetic Resonance Imaging
 * - SNR
   - Signal-to-noise Ratio
 * - SQL
   - Structured Query Language
+* - SSH
+  - Secure Shell
 * - T1w
   - T1-weighted
 * - T2w
