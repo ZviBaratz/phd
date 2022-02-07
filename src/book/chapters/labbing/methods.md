@@ -32,6 +32,16 @@ Enabling secure remote access and providing robust infrastructure that can easil
 
 {{PostgreSQL}} is a free and open-source relational database management system ({{RDBMS}}). It is one of the most popular {{DBMS}}s in general (e.g. see https://db-engines.com/en/ranking), boasting some of the most advanced functionality in terms of both security and performance. {{Django}}'s {{PostgreSQL}} backend uses the psycopg (see https://www.psycopg.org/) Python adapter, which is written mostly in the C programming language, and provides a feature-rich, fast, and secure integration with the application's components.
 
+(labbing:methods:backend:tasks)=
+## Task Orchestration
+
+Execution of analytical workflows in a scalable manner requires an advanced, distributed task queuing system. Preprocessing and feature extraction pipelines used in neuroimaging range from simple transformations to exceptionally resource-heavy, long-running tasks. Being able to initialize background processes in batch and monitor progress is of central importance to the application.
+
+(labbing:methods:backend:tasks:celery)=
+### Celery
+
+{{Celery}} is the most popular task queue manager written in Python (by {{GitHub}} stars count at the time of writing). It is free and open-source, actively maintained, in widespread use in industry, and provides native support for integration with {{Django}} projects (see https://docs.celeryproject.org/en/stable/django/).
+
 (labbing:methods:frontend)=
 ## Front-end Framework
 
