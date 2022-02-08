@@ -93,7 +93,10 @@ sphinx:
       SSH: "{{ PREMUTED }}{ref}`SSH <lists:acronyms>`{{ POSTMUTED }}"
       T1w: "{{ PREMUTED }}{ref}`T1w <lists:acronyms>`{{ POSTMUTED }}"
       T2w: "{{ PREMUTED }}{ref}`T2w <lists:acronyms>`{{ POSTMUTED }}"
+      TE: "{{ PREMUTED }}{ref}`TE <lists:acronyms>`{{ POSTMUTED }}"
+      TI: "{{ PREMUTED }}{ref}`TI <lists:acronyms>`{{ POSTMUTED }}"
       TLS: "{{ PREMUTED }}{ref}`TLS <lists:acronyms>`{{ POSTMUTED }}"
+      TR: "{{ PREMUTED }}{ref}`TR <lists:acronyms>`{{ POSTMUTED }}"
       WSGI: "{{ PREMUTED }}{ref}`WSGI <lists:acronyms>`{{ POSTMUTED }}"
       XNAT: "{{ PREMUTED }}{ref}`XNAT <lists:acronyms>`{{ POSTMUTED }}"
       # HTML & CSS
