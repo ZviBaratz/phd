@@ -103,6 +103,9 @@ sphinx:
       # Other links
       Celery: "{{ PREMUTED }}[Celery](https://docs.celeryproject.org/){{ POSTMUTED }}"
       Django: "{{ PREMUTED }}[Django](https://www.djangoproject.com/){{ POSTMUTED }}"
+      djangoanalyses: "{{ PREMUTED }}[*django_analyses*](https://www.github.com/TheLabbingProject/django_analyses){{ POSTMUTED }}"
+      djangodicom: "{{ PREMUTED }}[*django_dicom*](https://www.github.com/TheLabbingProject/django_dicom){{ POSTMUTED }}"
+      djangomri: "{{ PREMUTED }}[*django_mri*](https://www.github.com/TheLabbingProject/django_mri){{ POSTMUTED }}"
       DRF: "{{ PREMUTED }}[Django REST framework](https://www.django-rest-framework.org/){{ POSTMUTED }}"
       GitHub: "{{ PREMUTED }}[GitHub](https://www.github.com/){{ POSTMUTED }}"
       gunicorn: "{{ PREMUTED }}[gunicorn](https://gunicorn.org/){{ POSTMUTED }}"
