@@ -30,7 +30,11 @@ The integration of references to files and database access to metadata informati
 
 ### *django_dicom*
 
-{{djangodicom}} is used to import *.dcm* files, extract metadata from the headers, and keep an organized archive of the included {{DICOM}} entities (see [Part 3 Section A.1.2](https://dicom.nema.org/dicom/2013/output/chtml/part03/chapter_A.html) of the {{DICOM}} Standard as well as the {{djangodicom}} container, highlighted in yellow in {numref}`labbing-schema`). All attributes associated with each information entity included in a {{DICOM}} header are serialized to the database together with principal acquisition parameters (e.g. {{TE}}, {{TI}}, {{TR}}, etc).
+{{djangodicom}} is used to import *.dcm* files, extract metadata from the headers, and keep an organized archive of the included {{DICOM}} entities (see [Part 3 Section A.1.2](https://dicom.nema.org/dicom/2013/output/chtml/part03/chapter_A.html) of the {{DICOM}} Standard as well as the {{djangodicom}} container, highlighted in yellow in {numref}`labbing-schema`). All attributes associated with each information entity included in a {{DICOM}} header are serialized to the database together with principal acquisition parameters (e.g. {{TE}}, {{TI}}, {{TR}}, etc.).
+
+#### *dicom_parser*
+
+Header information is read using {{dicomparser}} (see https://www.github.com/open-dicom/dicom_parser), a wrapper around {{pydicom}} (see https://pydicom.github.io/) developed specifically for the purposes of the app. While {{pydicom}} focuses on low-level header parsing in compliance with the {{DICOM}} Standard, {{dicomparser}} provides a higher-level {{API}} to facilitate type conversion and vendor-specific metadata extraction tasks. In addition, {{dicomparser}} includes a general-purpose "sequence detection" utility, enabling the configuration of commonplace heuristics for automated categorization of the scanning protocol (e.g. {{MPRAGE}}, {{FLAIR}}, {{fMRI}}, {{dMRI}}, etc.).
 
 ### *django_mri*
 
