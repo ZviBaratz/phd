@@ -56,6 +56,10 @@
   - Human Connectome Project
 * - HTML
   - HyperText Markup Language
+* - HTTP
+  - Hypertext Transfer Protocol
+* - HTTPS
+  - Hypertext Transfer Protocol Secure
 * - JSON
   - JavaScript Object Notation
 * - JSP
@@ -100,6 +104,10 @@
   - T1-weighted
 * - T2w
   - T2-weighted
+* - TLS
+  - Transport Layer Security
+* - WSGI
+  - Web Server Gateway Interface
 * - XNAT
   - Extensible Neuroimaging Archive Toolkit
 ```
