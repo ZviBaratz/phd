@@ -104,8 +104,14 @@
   - T1-weighted
 * - T2w
   - T2-weighted
+* - TE
+  - Echo Time
+* - TI
+  - Inversion Time
 * - TLS
   - Transport Layer Security
+* - TR
+  - Repetition Time
 * - WSGI
   - Web Server Gateway Interface
 * - XNAT

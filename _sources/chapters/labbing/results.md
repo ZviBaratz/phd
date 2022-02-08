@@ -30,7 +30,7 @@ The integration of references to files and database access to metadata informati
 
 ### *django_dicom*
 
-{{djangodicom}} is used to import *.dcm* files, extract metadata from the headers, and keep an organized archive of the included {{DICOM}} entities (see [Part 3 Section A.1.2](https://dicom.nema.org/dicom/2013/output/chtml/part03/chapter_A.html) of the {{DICOM}} Standard).
+{{djangodicom}} is used to import *.dcm* files, extract metadata from the headers, and keep an organized archive of the included {{DICOM}} entities (see [Part 3 Section A.1.2](https://dicom.nema.org/dicom/2013/output/chtml/part03/chapter_A.html) of the {{DICOM}} Standard as well as the {{djangodicom}} container, highlighted in yellow in {numref}`labbing-schema`). All attributes associated with each information entity included in a {{DICOM}} header are serialized to the database together with principal acquisition parameters (e.g. {{TE}}, {{TI}}, {{TR}}, etc).
 
 ### *django_mri*
 
