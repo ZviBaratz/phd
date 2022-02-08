@@ -46,6 +46,8 @@
   - Exploratory Data Analysis
 * - ER
   - Entity-relationship
+* - FLAIR
+  - Fluid-attenuated Inversion-Recovery
 * - fMRI
   - Functional Magnetic Resonance Imaging
 * - FOSS
