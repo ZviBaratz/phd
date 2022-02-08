@@ -22,6 +22,16 @@ Enabling secure remote access and providing robust infrastructure that can easil
 
 {{DRF}} (see https://www.django-rest-framework.org/) was used to generate a {{REST}} {{API}} for the application, exposing comprehensive database management and querying capabilities using simple web requests. In addition, returning generic, {{JSON}}-encoded responses enables flexible interaction with any number of external services or independent user interfaces.
 
+(labbing:methods:backend:django:application-server)=
+### Application Server
+
+An application server is used to translate {{HTTP}} requests between the web server (i.e. the machine running the web application) and the web application. {{gunicorn}} (see https://gunicorn.org/) is a free and open-source {{WSGI}} {{HTTP}} server commonly used for this purpose. It is fast, secure, highly configurable, and simple to use.
+
+(labbing:methods:backend:django:web-server)=
+### Web Server
+
+{{NGINX}} (see https://www.nginx.com/) is an open-source high-performance web server, reverse proxy, load balancer, and more. It is used as an intermediary between the web application and incoming requests and serves the returned static content. In also enables secure access over {{HTTPS}} using a {{TLS}} certificate.
+
 (labbing:methods:backend:database)=
 ## Database
 

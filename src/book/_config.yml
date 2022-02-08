@@ -69,6 +69,8 @@ sphinx:
       GUI: "{{ PREMUTED }}{ref}`GUI <lists:acronyms>`{{ POSTMUTED }}"
       HCP: "{{ PREMUTED }}{ref}`HCP <lists:acronyms>`{{ POSTMUTED }}"
       HTML: "{{ PREMUTED }}{ref}`HTML <lists:acronyms>`{{ POSTMUTED }}"
+      HTTP: "{{ PREMUTED }}{ref}`HTTP <lists:acronyms>`{{ POSTMUTED }}"
+      HTTPS: "{{ PREMUTED }}{ref}`HTTPS <lists:acronyms>`{{ POSTMUTED }}"
       JSON: "{{ PREMUTED }}{ref}`JSON <lists:acronyms>`{{ POSTMUTED }}"
       JSP: "{{ PREMUTED }}{ref}`JSP <lists:acronyms>`{{ POSTMUTED }}"
       LORIS: "{{ PREMUTED }}{ref}`LORIS <lists:acronyms>`{{ POSTMUTED }}"
@@ -91,6 +93,8 @@ sphinx:
       SSH: "{{ PREMUTED }}{ref}`SSH <lists:acronyms>`{{ POSTMUTED }}"
       T1w: "{{ PREMUTED }}{ref}`T1w <lists:acronyms>`{{ POSTMUTED }}"
       T2w: "{{ PREMUTED }}{ref}`T2w <lists:acronyms>`{{ POSTMUTED }}"
+      TLS: "{{ PREMUTED }}{ref}`TLS <lists:acronyms>`{{ POSTMUTED }}"
+      WSGI: "{{ PREMUTED }}{ref}`WSGI <lists:acronyms>`{{ POSTMUTED }}"
       XNAT: "{{ PREMUTED }}{ref}`XNAT <lists:acronyms>`{{ POSTMUTED }}"
       # HTML & CSS
       greenCheckmark: '<p class="table-icon" style="color: green;"><i class="fas fa-check-circle"></i></p>'
@@ -101,7 +105,9 @@ sphinx:
       Django: "{{ PREMUTED }}[Django](https://www.djangoproject.com/){{ POSTMUTED }}"
       DRF: "{{ PREMUTED }}[Django REST framework](https://www.django-rest-framework.org/){{ POSTMUTED }}"
       GitHub: "{{ PREMUTED }}[GitHub](https://www.github.com/){{ POSTMUTED }}"
+      gunicorn: "{{ PREMUTED }}[gunicorn](https://gunicorn.org/){{ POSTMUTED }}"
       JavaScript: "{{ PREMUTED }}[JavaScript](https://www.javascript.com/){{ POSTMUTED }}"
+      NGINX: "{{ PREMUTED }}[NGINX](https://www.nginx.com/){{ POSTMUTED }}"
       Paramiko: "{{ PREMUTED }}[Paramiko](https://www.paramiko.org/){{ POSTMUTED }}"
       PostgreSQL: "{{ PREMUTED }}[PostgreSQL](https://www.postgresql.org/){{ POSTMUTED }}"
       pylabber: "{{ PREMUTED }}[*pylabber*](https://www.github.com/TheLabbingProject/pylabber){{ POSTMUTED }}"
