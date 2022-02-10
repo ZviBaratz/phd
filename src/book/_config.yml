@@ -105,21 +105,26 @@ sphinx:
       greenCheckmarkStarred: '<p class="table-icon" style="color: green;"><i class="fas fa-check-circle"></i><span style="color: black;">*</span></p>'
       redCross: '<p class="table-icon" style="color: red;"><i class="fas fa-times-circle"></i></p>'
       # Other links
-      Celery: "{{ PREMUTED }}[Celery](https://docs.celeryproject.org/){{ POSTMUTED }}"
+      CAT: "{{ PREMUTED }}[*CAT*](http://www.neuro.uni-jena.de/cat/){{ POSTMUTED }}"
+      Celery: "{{ PREMUTED }}[*Celery*](https://docs.celeryproject.org/){{ POSTMUTED }}"
       dicomparser: "{{ PREMUTED }}[*dicom_parser*](https://www.github.com/open-dicom/dicom_parser){{ POSTMUTED }}"
       Django: "{{ PREMUTED }}[Django](https://www.djangoproject.com/){{ POSTMUTED }}"
       djangoanalyses: "{{ PREMUTED }}[*django_analyses*](https://www.github.com/TheLabbingProject/django_analyses){{ POSTMUTED }}"
       djangodicom: "{{ PREMUTED }}[*django_dicom*](https://www.github.com/TheLabbingProject/django_dicom){{ POSTMUTED }}"
       djangomri: "{{ PREMUTED }}[*django_mri*](https://www.github.com/TheLabbingProject/django_mri){{ POSTMUTED }}"
       DRF: "{{ PREMUTED }}[Django REST framework](https://www.django-rest-framework.org/){{ POSTMUTED }}"
+      fmriprep: "{{ PREMUTED }}[*fMRIPrep*](https://fmriprep.org/){{ POSTMUTED }}"
+      freesurfer: "{{ PREMUTED }}[*FreeSurfer*](https://surfer.nmr.mgh.harvard.edu/){{ POSTMUTED }}"
       GitHub: "{{ PREMUTED }}[GitHub](https://www.github.com/){{ POSTMUTED }}"
-      gunicorn: "{{ PREMUTED }}[gunicorn](https://gunicorn.org/){{ POSTMUTED }}"
+      gunicorn: "{{ PREMUTED }}[*gunicorn*](https://gunicorn.org/){{ POSTMUTED }}"
       JavaScript: "{{ PREMUTED }}[JavaScript](https://www.javascript.com/){{ POSTMUTED }}"
       NGINX: "{{ PREMUTED }}[NGINX](https://www.nginx.com/){{ POSTMUTED }}"
-      Paramiko: "{{ PREMUTED }}[Paramiko](https://www.paramiko.org/){{ POSTMUTED }}"
+      nipype: "{{ PREMUTED }}[*nipype*](https://nipype.readthedocs.io/){{ POSTMUTED }}"
+      Paramiko: "{{ PREMUTED }}[*Paramiko*](https://www.paramiko.org/){{ POSTMUTED }}"
       PostgreSQL: "{{ PREMUTED }}[PostgreSQL](https://www.postgresql.org/){{ POSTMUTED }}"
       pydicom: "{{ PREMUTED }}[*pydicom*](https://pydicom.github.io/){{ POSTMUTED }}"
       pylabber: "{{ PREMUTED }}[*pylabber*](https://www.github.com/TheLabbingProject/pylabber){{ POSTMUTED }}"
+      qsiprep: "{{ PREMUTED }}[*QSIPrep*](https://qsiprep.readthedocs.io/){{ POSTMUTED }}"
       VueJS: "{{ PREMUTED }}[Vue.js](https://vuejs.org/){{ POSTMUTED }}"
 
 # Parse and render settings
