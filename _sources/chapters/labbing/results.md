@@ -32,6 +32,25 @@ width: 750px
 
 The integration of references to files and database access to metadata information is handled using reusable {{Django}} apps and conforms with the {{Django}} framework's general design philosophy. Other than reusability, encapsulation of domain-specific logic also contributes to both the maintainability and extensibility of the code-base.
 
+(labbing:results:apps:django-analyses)=
+### *django_analyses*
+
+{{djangoanalyses}} provides database-driven analysis registration and execution management (see the {{djangoanalyses}} container, highlighted in red in {numref}`labbing-schema`).
+
+(labbing:results:apps:django-analyses:analysis)=
+#### Analysis Integration
+
+Analysis interfaces (i.e. Python classes or functions used to initialize the execution of an analysis) are registered with a particular analysis version, which represents it in the database and holds references to the appropriate input and output specifications. When an analysis version is executed, a new run instance is created to combine the information about the analysis version with the provided inputs and eventually outputs (or traceback information, if an exception was raised).
+
+Node instances are used as execution templates and provide a constant reference to runs of a specific analysis version with a particular configuration. Controlled execution of analyses with {{Celery}} is handled by providing nodes with input data and returning the created (or existing) run instances.
+
+(labbing:results:apps:django-analyses:pipeline)=
+#### Pipeline Integration
+
+Pipelines, or workflows, may be registered in the database as a sequence of pipes. Each pipe describes the flow of data from one node's output to another node's input specification. A dedicated "pipeline runner" class is provided by the app to control the ordered execution of nodes according to the dependecies outlined by the pipes.
+
+For more information about {{djangoanalyses}} and complete usage examples, see the app's <span class="muted-ref">[documentation site](https://django-analyses.readthedocs.io/)</span> (available at https://django-analyses.readthedocs.io/).
+
 (labbing:results:apps:django-dicom)=
 ### *django_dicom*
 
@@ -40,15 +59,16 @@ The integration of references to files and database access to metadata informati
 (labbing:results:apps:django-dicom:dicom-parser)=
 #### *dicom_parser*
 
-Header information is read using {{dicomparser}} (see https://www.github.com/open-dicom/dicom_parser), a wrapper around {{pydicom}} (see https://pydicom.github.io/) developed specifically for the purposes of the app. While {{pydicom}} focuses on low-level header parsing in compliance with the {{DICOM}} Standard, {{dicomparser}} provides a higher-level {{API}} to facilitate type conversion and vendor-specific metadata extraction tasks. In addition, {{dicomparser}} includes a general-purpose "sequence detection" utility, enabling the configuration of commonplace heuristics for automated categorization of the scanning protocol (e.g. {{MPRAGE}}, {{FLAIR}}, {{fMRI}}, {{dMRI}}, etc.).
+Header information is read using {{dicomparser}} (see https://www.github.com/open-dicom/dicom_parser), a wrapper around {{pydicom}} (see https://pydicom.github.io/) developed specifically for the purposes of the app. While {{pydicom}} focuses on low-level header parsing in compliance with the {{DICOM}} Standard, {{dicomparser}} provides a higher-level {{API}} to facilitate type conversion and vendor-specific metadata extraction methods. In addition, {{dicomparser}} includes a "sequence detection" utility, enabling the configuration of commonplace heuristics for automated categorization of the scanning protocol (e.g. {{MPRAGE}}, {{FLAIR}}, {{fMRI}}, {{dMRI}}, etc.).
 
 (labbing:results:apps:django-mri)=
 ### *django_mri*
 
-{{djangomri}} provides an abstraction layer which is ultimately meant to keep the users practically agnostic of file-format and metadata extraction processes. It uses {{djangodicom}} alongside a supplementary {{NIfTI}} database table to simplify interaction with {{MRI}} data by providing abstract "scan" and "session" representations. The "scan" data model keeps a reference to source files and automates whatever possible to allow shifting the focus from infrastructure and technical details to processing and results.
+{{djangomri}} provides an abstraction layer which is ultimately meant to keep the users practically agnostic of file-format and metadata extraction processes (see the {{djangomri}} container, highlighted in orange in {numref}`labbing-schema`). It uses {{djangodicom}} alongside a supplementary {{NIfTI}} database table to simplify interaction with {{MRI}} data by providing abstract "scan" and "session" representations. The scan data model keeps a reference to source files and automates whatever possible to allow shifting the focus from infrastructure and technical details to processing and results.
 
-(labbing:results:apps:django-analyses)=
-### *django_analyses*
+In terms of file management, {{dicomparser}}'s sequence detection functionality provides information which is essential for automated {{BIDS}}-compliant organization. By taking advantage of the configured heuristics, {{djangomri}} maintains a "global" {{BIDS}} dataset, which holds the combined datasets of multiple studies. All research information is maintained in the database and any available {{BIDS}} app may be applied (see https://bids-apps.neuroimaging.io/).
+
+Finally, {{djangomri}} makes extensive use of {{djangoanalyses}} and {{nipype}} {cite}`gorgolewskiNipypeFlexibleLightweight2011` to provide the specifications and analysis interfaces (see {ref}`labbing:results:apps:django-analyses:analysis`) for numerous neuroimaging processing tools, including {{fmriprep}} {cite}`estebanFMRIPrepRobustPreprocessing2019`, {{freesurfer}} {cite}`fischlFreeSurfer2012`, {{qsiprep}} {cite}`cieslakQSIPrepIntegrativePlatform2021`, {{CAT}} (see http://www.neuro.uni-jena.de/cat/), and more.
 
 (labbing:results:front-end)=
 ## Front-end Application
