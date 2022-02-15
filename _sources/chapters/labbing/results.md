@@ -15,7 +15,7 @@ Even though it is built to support neuroimaging-based academic research, the cor
 
 {{pylabber}} (see https://www.github.com/TheLabbingProject/pylabber) is the base project repository (see {ref}`labbing:methods:backend:django` section in {ref}`labbing:methods`) for the complete web application. In addition to centralizing configurations and resources, it includes two general-purpose research apps:
 
-* *accounts*: Manages laboratory and researcher information, as well as data distribution. Administrators can register new laboratories and users (researchers), and users can provide {{SSH}} credentials to remote machines to configure export destinations.
+* *accounts*: Manages laboratory and researcher information, as well as data distribution. Administrators can register new laboratories and users (researchers), and users can provide {{SSH}} credentials (used to negotiate {{SFTP}} transport sessions) to remote machines, termed export destinations. Raw data as well as analysis results export methods are provided, and {{Celery}} tasks are available for initiating controlled and monitored export sessions as background processes.
 * *research*: Manages general research-related entities. Relies on external apps to associate models representing data acquisitions (such as an {{MRI}} session) to the appropriate subject, and models representing data instances (such as an {{MRI}} scan) to study groups. The decision to move group association from subjects to data instances was made in order to allow for flexible association of any part of the acquired data to any number of study groups. Each study may be assigned a number of study groups, as well as a number of experimental procedures. An experimental procedure consists of an ordered sequence of steps which may be categorized as either tasks or data acquisitions (see the *research* container nested within the *pylabber* container and highlighted in purple in {numref}`labbing-schema`).
 
 ```{figure} ./assets/labbing_schema.png
@@ -26,6 +26,21 @@ width: 750px
 ---
 [Crow's foot](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model#Crow's_foot_notation) Entity-Relationship ({{ER}}) diagram illustrating the database tables managed by the application and relationships between them.
 ```
+
+(labbing:results:project:admin)=
+### Admin Interface
+
+{{Django}} provides powerful automated admin interface generation utilities (see https://docs.djangoproject.com/en/dev/ref/contrib/admin/). The application makes extensive use of these features to provide highly detailed admin access to all the application's models (i.e. database tables) including {{CRUD}} operations, useful filters, and summary plots.
+
+```{figure} ./assets/subjects_admin.png
+---
+name: subjects-admin
+alt: Subject model admin interface list view.
+width: 750px
+---
+The subject model's admin interface list view. Sex, dominant hand, and date of birth distribution plots are displayed to offer a visual summary of the displayed queryset. A general search field allows searching by first name, last name, or ID number. More filters are available on the right panel. Other models' list views are available on the left panel.
+```
+
 
 (labbing:results:apps)=
 ## Reusable Django Apps
@@ -40,7 +55,7 @@ The integration of references to files and database access to metadata informati
 (labbing:results:apps:django-analyses:analysis)=
 #### Analysis Integration
 
-Analysis interfaces (i.e. Python classes or functions used to initialize the execution of an analysis) are registered with a particular analysis version, which represents it in the database and holds references to the appropriate input and output specifications. When an analysis version is executed, a new run instance is created to combine the information about the analysis version with the provided inputs and eventually outputs (or traceback information, if an exception was raised).
+Analysis interfaces (i.e. Python classes or functions used to initialize the execution of an analysis) are registered with a particular analysis version, which represents it in the database and holds references to the appropriate input and output specifications. When an analysis version is executed, a new run instance is created to combine the information about the analysis version with the provided inputs and eventually outputs (or traceback information, if an exception was raised). If the same analysis version with the same input configuration is required again, the existing run instance is returned.
 
 Node instances are used as execution templates and provide a constant reference to runs of a specific analysis version with a particular configuration. Controlled execution of analyses with {{Celery}} is handled by providing nodes with input data and returning the created (or existing) run instances.
 
@@ -76,3 +91,13 @@ Finally, {{djangomri}} makes extensive use of {{djangoanalyses}} and {{nipype}} 
 (labbing:results:front-end:vuelabber)=
 ### *vuelabber*
 
+A front-end application created with {{VueJS}} is used to provide users with a modern-looking and highly functional graphical user interface. Communication between the front-end and the server is based on the application's {{REST}} {{API}} (see {ref}`labbing:methods:backend:django:api`) and may easily be extended, customized, and even replaced.
+
+```{figure} ./assets/subjects_vue.png
+---
+name: subjects-vue
+alt: Subject list view in Vue.js front-end application.
+width: 750px
+---
+Subjects list view as displayed in the {{VueJS}} front-end application. More detailed research information and filters are available compared to the admin interface, along with the same summary plots.
+```

@@ -38,9 +38,12 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -371,8 +374,8 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#application-programming-interface-api">
-       4.1.2.1.1.1. Application Programming Interface (API)
+      <a class="reference internal nav-link" href="#application-programming-interface">
+       4.1.2.1.1.1. Application Programming Interface
       </a>
      </li>
     </ul>
@@ -468,8 +471,8 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#application-programming-interface-api">
-       4.1.2.1.1.1. Application Programming Interface (API)
+      <a class="reference internal nav-link" href="#application-programming-interface">
+       4.1.2.1.1.1. Application Programming Interface
       </a>
      </li>
     </ul>
@@ -554,8 +557,8 @@
 <span id="labbing-methods-backend-django"></span><h3><span class="section-number">4.1.2.1.1. </span>Django<a class="headerlink" href="#django" title="Permalink to this headline">¶</a></h3>
 <p><span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> (see <a class="reference external" href="https://www.djangoproject.com/">https://www.djangoproject.com/</a>) is a widely used free and open-source web application development framework with a number of outstanding advantages. It is actively maintained by an independent non-profit organization and used by well-known websites, including <a class="reference external" href="https://www.instagram.com/">Instagram</a>, <a class="reference external" href="https://www.mozilla.org/">Mozilla</a>, <a class="reference external" href="https://www.pinterest.com/">Pinterest</a>, and more (see <a class="reference external" href="https://www.djangoproject.com/start/overview/">Overview</a> page in the <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> project’s website). The framework’s architecture promotes a modular design that is easily extensible and reusable. It also excels in database management, and includes a powerful Object-relational mapper (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">ORM</span></a></span>) which greatly reduces the complexity of database administration and interaction by enabling the representation of data models as simple Python classes. Many aspects of routine web application development, such as web security, user administration, session management, caching, logging, testing, etc., are integrated into the framework in compliance with the highest standards in the field. The documentation site (see <a class="reference external" href="https://docs.djangoproject.com/">https://docs.djangoproject.com/</a>) is exceptionally extensive and offers tutorials and educational content, thereby significantly reducing the learning-curve for potential contributors from the research community. Python’s renowned capacity of abstraction and intuitive syntax combined with <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span>’s fully-featured, scalable design, grants non-professional programmers unprecedented accessibility to actively participate in high-level web develpment.</p>
 <p><span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> web applications are written as a single <em>project</em>, providing general application-wide settings and resources, and <em>apps</em>, providing some custom, loosly-coupled and reusable functionality (for more information, see the <a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/applications/">“Applications”</a> and <a class="reference external" href="https://docs.djangoproject.com/en/dev/misc/design-philosophies/">“Design philosophies”</a> sections in the <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> project’s documentation site). This architecture enables the creation of a particularly stable and maintainable foundation by tremendously facilitating the extension, modification, or replacement of different parts as requirements change over time or across deployments.</p>
-<div class="section" id="application-programming-interface-api">
-<span id="labbing-methods-backend-django-api"></span><h4><span class="section-number">4.1.2.1.1.1. </span>Application Programming Interface (API)<a class="headerlink" href="#application-programming-interface-api" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="application-programming-interface">
+<span id="labbing-methods-backend-django-api"></span><h4><span class="section-number">4.1.2.1.1.1. </span>Application Programming Interface<a class="headerlink" href="#application-programming-interface" title="Permalink to this headline">¶</a></h4>
 <p><span class="muted-ref"><a class="reference external" href="https://www.django-rest-framework.org/">Django REST framework</a></span> (see <a class="reference external" href="https://www.django-rest-framework.org/">https://www.django-rest-framework.org/</a>) was used to generate a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">REST</span></a></span> <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">API</span></a></span> for the application, exposing comprehensive database management and querying capabilities using simple web requests. In addition, returning generic, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">JSON</span></a></span>-encoded responses enables flexible interaction with any number of external services or independent user interfaces.</p>
 </div>
 </div>

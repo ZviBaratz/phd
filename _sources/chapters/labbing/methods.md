@@ -18,7 +18,7 @@ Enabling secure remote access and providing robust infrastructure that can easil
 {{Django}} web applications are written as a single *project*, providing general application-wide settings and resources, and *apps*, providing some custom, loosly-coupled and reusable functionality (for more information, see the ["Applications"](https://docs.djangoproject.com/en/dev/ref/applications/) and ["Design philosophies"](https://docs.djangoproject.com/en/dev/misc/design-philosophies/) sections in the {{Django}} project's documentation site). This architecture enables the creation of a particularly stable and maintainable foundation by tremendously facilitating the extension, modification, or replacement of different parts as requirements change over time or across deployments.
 
 (labbing:methods:backend:django:api)=
-#### Application Programming Interface (API)
+#### Application Programming Interface
 
 {{DRF}} (see https://www.django-rest-framework.org/) was used to generate a {{REST}} {{API}} for the application, exposing comprehensive database management and querying capabilities using simple web requests. In addition, returning generic, {{JSON}}-encoded responses enables flexible interaction with any number of external services or independent user interfaces.
 
