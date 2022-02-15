@@ -58,6 +58,7 @@ sphinx:
       BIDS: "{{ PREMUTED }}{ref}`BIDS <lists:acronyms>`{{ POSTMUTED }}"
       CI: "{{ PREMUTED }}{ref}`CI <lists:acronyms>`{{ POSTMUTED }}"
       COINS: "{{ PREMUTED }}{ref}`COINS <lists:acronyms>`{{ POSTMUTED }}"
+      CRUD: "{{ PREMUTED }}{ref}`CRUD <lists:acronyms>`{{ POSTMUTED }}"
       CSS: "{{ PREMUTED }}{ref}`CSS <lists:acronyms>`{{ POSTMUTED }}"
       DBMS: "{{ PREMUTED }}{ref}`DBMS <lists:acronyms>`{{ POSTMUTED }}"
       DICOM: "{{ PREMUTED }}{ref}`DICOM <lists:acronyms>`{{ POSTMUTED }}"

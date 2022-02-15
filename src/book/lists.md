@@ -32,6 +32,8 @@
   - Continuous Integration
 * - COINS
   - Collaborative Informatics Neuroimaging Suite
+* - CRUD
+  - Create, Read, Update, Delete
 * - CSS
   - Cascading Style Sheets
 * - DBMS
