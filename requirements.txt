@@ -1,7 +1,0 @@
-ghp-import
-jupyter-book
-jupyterlab_code_formatter
-jupyter_nbextensions_configurator
-matplotlib
-numpy
-pandas

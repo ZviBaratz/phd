@@ -88,6 +88,8 @@
   - Representational state transfer
 * - RDBMS
   - Relational Database Management System
+* - RF
+  - Radio Frequency
 * - RDM
   - Research Data Management
 * - rsfMRI
@@ -108,6 +110,8 @@
   - T1-weighted
 * - T2w
   - T2-weighted
+* - TAU
+  - Tel Aviv University
 * - TE
   - Echo Time
 * - TI
