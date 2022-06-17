@@ -4,11 +4,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>4.1.1. Introduction &#8212; Ph.D. Thesis</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,21 +20,17 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,18 +38,18 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://zvibaratz.github.io/phd/front.html/chapters/labbing/intro.html" />
     <link rel="shortcut icon" href="../../_static/favicon.jpg"/>
@@ -66,7 +64,21 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -75,9 +87,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -283,86 +296,176 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/chapters/labbing/intro.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/ZviBaratz/PhD"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/ZviBaratz/PhD/issues/new?title=Issue%20on%20page%20%2Fchapters/labbing/intro.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
         </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/ZviBaratz/PhD"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ZviBaratz/PhD/issues/new?title=Issue%20on%20page%20%2Fchapters/labbing/intro.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/chapters/labbing/intro.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#public-large-scale-neuroimaging-datasets">
    4.1.1.1. Public Large-scale Neuroimaging Datasets
@@ -394,12 +497,11 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Introduction</h1>
@@ -447,55 +549,62 @@
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
-<span id="labbing-intro"></span><h1><span class="section-number">4.1.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
+<span id="labbing-intro"></span><h1><span class="section-number">4.1.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
 <hr>
-<p>Working with a large and diverse neuroimaging dataset is a challenging task not particular to this thesis <span id="id1">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>, <a class="reference internal" href="../bibliography.html#id22">Borghi and Gulick, 2018</a>]</span>. The following section will provide a quick overview of existing public datasets and explore how they are shared and what tools are most commonly utilized by researchers to use them to produce scientific findings.</p>
-<div class="section" id="public-large-scale-neuroimaging-datasets">
-<h2><span class="section-number">4.1.1.1. </span>Public Large-scale Neuroimaging Datasets<a class="headerlink" href="#public-large-scale-neuroimaging-datasets" title="Permalink to this headline">¶</a></h2>
-<p>Centralized data collection and distribution efforts are key to the advancement of neuroscientific research <span id="id2">[<a class="reference internal" href="../bibliography.html#id19">Milham <em>et al.</em>, 2018</a>, <a class="reference internal" href="../bibliography.html#id14">Laird, 2021</a>, <a class="reference internal" href="../bibliography.html#id34">Van Horn and Toga, 2009</a>]</span>. Larger publicly available samples enable the detection and study of phenomena with smaller effect sizes more rapidly, by more people, and with more confidence <span id="id3">[<a class="reference internal" href="../bibliography.html#id14">Laird, 2021</a>, <a class="reference internal" href="../bibliography.html#id13">Smith and Nichols, 2018</a>, <a class="reference internal" href="../bibliography.html#id15">Madan, 2021</a>]</span>. Data sharing enhances the reporoducibility of findings, reduces time and costs for new research, promotes transparency, and encourages collaboration across fields <span id="id4">[<a class="reference internal" href="../bibliography.html#id19">Milham <em>et al.</em>, 2018</a>, <a class="reference internal" href="../bibliography.html#id16">Mar <em>et al.</em>, 2013</a>, <a class="reference internal" href="../bibliography.html#id17">Poldrack and Gorgolewski, 2014</a>, <a class="reference internal" href="../bibliography.html#id18">Madan, 2017</a>]</span>. In recent years, such public datsets have become more numerous and increasingly accessible <span id="id5">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>, <a class="reference internal" href="../bibliography.html#id22">Borghi and Gulick, 2018</a>, <a class="reference internal" href="../bibliography.html#id14">Laird, 2021</a>]</span>. The following table, taken from a practical guide to end-users (researchers interested in using public neuroimaging datasets) published in <em>Nature Human Behaviour</em> (<a class="reference external" href="https://www.nature.com/nathumbehav/">https://www.nature.com/nathumbehav/</a>) <span id="id6">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>]</span>, offers a summary of currently available datasets, including sample size, modalities, processing stages, and access policy:</p>
-<div class="figure align-default" id="markdown-fig">
+<p>Working with a large and diverse neuroimaging dataset is a challenging task not particular to this thesis <span id="id1">[<a class="reference internal" href="../bibliography.html#id12" title="Corey Horien, Stephanie Noble, Abigail S. Greene, Kangjoo Lee, Daniel S. Barron, Siyuan Gao, David O’Connor, Mehraveh Salehi, Javid Dadashkarimi, Xilin Shen, Evelyn M. R. Lake, R. Todd Constable, and Dustin Scheinost. A hitchhiker’s guide to working with large, open-source neuroimaging datasets. Nature Human Behaviour, 5(2):185–193, February 2021. Bandiera_abtest: a Cg_type: Nature Research Journals Number: 2 Primary_atype: Reviews Publisher: Nature Publishing Group Subject_term: Cognitive neuroscience;Databases Subject_term_id: cognitive-neuroscience;databases. URL: https://www.nature.com/articles/s41562-020-01005-4, doi:10.1038/s41562-020-01005-4.">Horien <em>et al.</em>, 2021</a>, <a class="reference internal" href="../bibliography.html#id22" title="John A. Borghi and Ana E. Van Gulick. Data management and sharing in neuroimaging: Practices and perceptions of MRI researchers. PLOS ONE, 13(7):e0200562, July 2018. Publisher: Public Library of Science. URL: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0200562, doi:10.1371/journal.pone.0200562.">Borghi and Gulick, 2018</a>]</span>. The following section will provide a quick overview of existing public datasets and explore how they are shared and what tools are most commonly utilized by researchers to use them to produce scientific findings.</p>
+<section id="public-large-scale-neuroimaging-datasets">
+<h2><span class="section-number">4.1.1.1. </span>Public Large-scale Neuroimaging Datasets<a class="headerlink" href="#public-large-scale-neuroimaging-datasets" title="Permalink to this headline">#</a></h2>
+<p>Centralized data collection and distribution efforts are key to the advancement of neuroscientific research <span id="id2">[<a class="reference internal" href="../bibliography.html#id19" title="Michael P. Milham, R. Cameron Craddock, Jake J. Son, Michael Fleischmann, Jon Clucas, Helen Xu, Bonhwang Koo, Anirudh Krishnakumar, Bharat B. Biswal, F. Xavier Castellanos, Stan Colcombe, Adriana Di Martino, Xi-Nian Zuo, and Arno Klein. Assessment of the impact of shared brain imaging data on the scientific literature. Nature Communications, 9(1):2818, December 2018. URL: http://www.nature.com/articles/s41467-018-04976-1, doi:10.1038/s41467-018-04976-1.">Milham <em>et al.</em>, 2018</a>, <a class="reference internal" href="../bibliography.html#id14" title="Angela R. Laird. Large, open datasets for human connectomics research: Considerations for reproducible and responsible data use. NeuroImage, 244:118579, December 2021. URL: https://www.sciencedirect.com/science/article/pii/S1053811921008521, doi:10.1016/j.neuroimage.2021.118579.">Laird, 2021</a>, <a class="reference internal" href="../bibliography.html#id34" title="John Darrell Van Horn and Arthur W. Toga. Is it time to re-prioritize neuroimaging databases and digital repositories? NeuroImage, 47(4):1720–1734, October 2009. URL: https://www.sciencedirect.com/science/article/pii/S1053811909003632, doi:10.1016/j.neuroimage.2009.03.086.">Van Horn and Toga, 2009</a>]</span>. Larger publicly available samples enable the detection and study of phenomena with smaller effect sizes more rapidly, by more people, and with more confidence <span id="id3">[<a class="reference internal" href="../bibliography.html#id14" title="Angela R. Laird. Large, open datasets for human connectomics research: Considerations for reproducible and responsible data use. NeuroImage, 244:118579, December 2021. URL: https://www.sciencedirect.com/science/article/pii/S1053811921008521, doi:10.1016/j.neuroimage.2021.118579.">Laird, 2021</a>, <a class="reference internal" href="../bibliography.html#id13" title="Stephen M. Smith and Thomas E. Nichols. Statistical Challenges in “Big Data” Human Neuroimaging. Neuron, 97(2):263–268, January 2018. URL: https://www.sciencedirect.com/science/article/pii/S0896627317311418, doi:10.1016/j.neuron.2017.12.018.">Smith and Nichols, 2018</a>, <a class="reference internal" href="../bibliography.html#id15" title="Christopher R. Madan. Scan Once, Analyse Many: Using Large Open-Access Neuroimaging Datasets to Understand the Brain. Neuroinformatics, May 2021. URL: https://doi.org/10.1007/s12021-021-09519-6, doi:10.1007/s12021-021-09519-6.">Madan, 2021</a>]</span>. Data sharing enhances the reporoducibility of findings, reduces time and costs for new research, promotes transparency, and encourages collaboration across fields <span id="id4">[<a class="reference internal" href="../bibliography.html#id19" title="Michael P. Milham, R. Cameron Craddock, Jake J. Son, Michael Fleischmann, Jon Clucas, Helen Xu, Bonhwang Koo, Anirudh Krishnakumar, Bharat B. Biswal, F. Xavier Castellanos, Stan Colcombe, Adriana Di Martino, Xi-Nian Zuo, and Arno Klein. Assessment of the impact of shared brain imaging data on the scientific literature. Nature Communications, 9(1):2818, December 2018. URL: http://www.nature.com/articles/s41467-018-04976-1, doi:10.1038/s41467-018-04976-1.">Milham <em>et al.</em>, 2018</a>, <a class="reference internal" href="../bibliography.html#id16" title="Raymond A. Mar, R. Nathan Spreng, and Colin G. DeYoung. How to produce personality neuroscience research with high statistical power and low additional cost. Cognitive, Affective, &amp; Behavioral Neuroscience, 13(3):674–685, September 2013. URL: http://link.springer.com/10.3758/s13415-013-0202-6, doi:10.3758/s13415-013-0202-6.">Mar <em>et al.</em>, 2013</a>, <a class="reference internal" href="../bibliography.html#id17" title="Russell A Poldrack and Krzysztof J Gorgolewski. Making big data open: data sharing in neuroimaging. Nature Neuroscience, 17(11):1510–1517, November 2014. URL: http://www.nature.com/articles/nn.3818, doi:10.1038/nn.3818.">Poldrack and Gorgolewski, 2014</a>, <a class="reference internal" href="../bibliography.html#id18" title="Christopher R. Madan. Advances in Studying Brain Morphology: The Benefits of Open-Access Data. Frontiers in Human Neuroscience, 2017. URL: https://www.frontiersin.org/article/10.3389/fnhum.2017.00405.">Madan, 2017</a>]</span>. In recent years, such public datsets have become more numerous and increasingly accessible <span id="id5">[<a class="reference internal" href="../bibliography.html#id12" title="Corey Horien, Stephanie Noble, Abigail S. Greene, Kangjoo Lee, Daniel S. Barron, Siyuan Gao, David O’Connor, Mehraveh Salehi, Javid Dadashkarimi, Xilin Shen, Evelyn M. R. Lake, R. Todd Constable, and Dustin Scheinost. A hitchhiker’s guide to working with large, open-source neuroimaging datasets. Nature Human Behaviour, 5(2):185–193, February 2021. Bandiera_abtest: a Cg_type: Nature Research Journals Number: 2 Primary_atype: Reviews Publisher: Nature Publishing Group Subject_term: Cognitive neuroscience;Databases Subject_term_id: cognitive-neuroscience;databases. URL: https://www.nature.com/articles/s41562-020-01005-4, doi:10.1038/s41562-020-01005-4.">Horien <em>et al.</em>, 2021</a>, <a class="reference internal" href="../bibliography.html#id22" title="John A. Borghi and Ana E. Van Gulick. Data management and sharing in neuroimaging: Practices and perceptions of MRI researchers. PLOS ONE, 13(7):e0200562, July 2018. Publisher: Public Library of Science. URL: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0200562, doi:10.1371/journal.pone.0200562.">Borghi and Gulick, 2018</a>, <a class="reference internal" href="../bibliography.html#id14" title="Angela R. Laird. Large, open datasets for human connectomics research: Considerations for reproducible and responsible data use. NeuroImage, 244:118579, December 2021. URL: https://www.sciencedirect.com/science/article/pii/S1053811921008521, doi:10.1016/j.neuroimage.2021.118579.">Laird, 2021</a>]</span>. The following table, taken from a practical guide to end-users (researchers interested in using public neuroimaging datasets) published in <em>Nature Human Behaviour</em> (<a class="reference external" href="https://www.nature.com/nathumbehav/">https://www.nature.com/nathumbehav/</a>) <span id="id6">[<a class="reference internal" href="../bibliography.html#id12" title="Corey Horien, Stephanie Noble, Abigail S. Greene, Kangjoo Lee, Daniel S. Barron, Siyuan Gao, David O’Connor, Mehraveh Salehi, Javid Dadashkarimi, Xilin Shen, Evelyn M. R. Lake, R. Todd Constable, and Dustin Scheinost. A hitchhiker’s guide to working with large, open-source neuroimaging datasets. Nature Human Behaviour, 5(2):185–193, February 2021. Bandiera_abtest: a Cg_type: Nature Research Journals Number: 2 Primary_atype: Reviews Publisher: Nature Publishing Group Subject_term: Cognitive neuroscience;Databases Subject_term_id: cognitive-neuroscience;databases. URL: https://www.nature.com/articles/s41562-020-01005-4, doi:10.1038/s41562-020-01005-4.">Horien <em>et al.</em>, 2021</a>]</span>, offers a summary of currently available datasets, including sample size, modalities, processing stages, and access policy:</p>
+<figure class="align-default" id="markdown-fig">
 <a class="bg-primary mb-1 reference internal image-reference" href="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41562-020-01005-4/MediaObjects/41562_2020_1005_Fig1_HTML.png?as=webp"><img alt="Neuroimaging Datasets Summary" class="bg-primary mb-1" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41562-020-01005-4/MediaObjects/41562_2020_1005_Fig1_HTML.png?as=webp" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text"><strong>Reprinted from “A hitchhiker’s guide to working with large, open-source neuroimaging   datasets” <span id="id7">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>]</span>.</strong><br /><strong>a</strong>, For each dataset listed in the leftmost column, sample size is indicated, along with the type of data included (‘Data modalities’). ‘Data level’ refers to the level of preprocessing: white circle, raw data; grey circle, some level of preprocessed data; black, processed data (for example, statistical maps, connectivity matrices, etc.). <strong>b</strong>, For each open repository (i.e., a collection of open datasets) listed in the leftmost column, an estimate of the number of open datasets is listed. Datasets of particular interest are highlighted (‘Featured large datasets’). Sample sizes and the number of open datasets are current as of October 2020. Users are encouraged to visit the website associated with each dataset before use, as sample sizes, access conditions, etc. may change.</span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">¶</a></p>
-</div>
-<p>This unprecedented scale and availability of data has proven impact on the field of neuroimaging <span id="id8">[<a class="reference internal" href="../bibliography.html#id19">Milham <em>et al.</em>, 2018</a>]</span>. However, there are still practical issues that hinder the ability of researchers to fully leverage these assets to optimize the quantity and quality of their scientific findings, individually or in collaboration <span id="id9">[<a class="reference internal" href="../bibliography.html#id22">Borghi and Gulick, 2018</a>, <a class="reference internal" href="../bibliography.html#id38">Routier <em>et al.</em>, 2021</a>]</span>. The management of subject information and both raw and packaged <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a></span> data (i.e. converted to <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">NIfTI</span></a></span> and organized to conform with the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span> standard) along with preprocessing results and any other, non-<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a></span> data, in scale, can quickly prove to be a more complicated task than often anticipated. In one report, it is estimated that it generally takes two or three researchers working on a project based on data from public datasets roughly 6 to 9 months to download, process, and prepare the data for analysis <span id="id10">[<a class="reference internal" href="../bibliography.html#id12">Horien <em>et al.</em>, 2021</a>]</span>. This period of time is also fertile ground for the introduction of more degrees of freedom to the analytical workflow (as well as human error), severly undermining the reproducibility of the results <span id="id11">[<a class="reference internal" href="../bibliography.html#id20">Botvinik-Nezer <em>et al.</em>, 2020</a>]</span>. To better facilitate large-scale neuroimaging research, dedicated data and analysis management solutions are required.</p>
-</div>
-<div class="section" id="neuroimaging-research-data-management">
-<h2><span class="section-number">4.1.1.2. </span>Neuroimaging Research Data Management<a class="headerlink" href="#neuroimaging-research-data-management" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="requirements">
-<h3><span class="section-number">4.1.1.2.1. </span>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h3>
+<figcaption>
+<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text"><strong>Reprinted from “A hitchhiker’s guide to working with large, open-source neuroimaging   datasets” <span id="id7">[<a class="reference internal" href="../bibliography.html#id12" title="Corey Horien, Stephanie Noble, Abigail S. Greene, Kangjoo Lee, Daniel S. Barron, Siyuan Gao, David O’Connor, Mehraveh Salehi, Javid Dadashkarimi, Xilin Shen, Evelyn M. R. Lake, R. Todd Constable, and Dustin Scheinost. A hitchhiker’s guide to working with large, open-source neuroimaging datasets. Nature Human Behaviour, 5(2):185–193, February 2021. Bandiera_abtest: a Cg_type: Nature Research Journals Number: 2 Primary_atype: Reviews Publisher: Nature Publishing Group Subject_term: Cognitive neuroscience;Databases Subject_term_id: cognitive-neuroscience;databases. URL: https://www.nature.com/articles/s41562-020-01005-4, doi:10.1038/s41562-020-01005-4.">Horien <em>et al.</em>, 2021</a>]</span>.</strong><br /><strong>a</strong>, For each dataset listed in the leftmost column, sample size is indicated, along with the type of data included (‘Data modalities’). ‘Data level’ refers to the level of preprocessing: white circle, raw data; grey circle, some level of preprocessed data; black, processed data (for example, statistical maps, connectivity matrices, etc.). <strong>b</strong>, For each open repository (i.e., a collection of open datasets) listed in the leftmost column, an estimate of the number of open datasets is listed. Datasets of particular interest are highlighted (‘Featured large datasets’). Sample sizes and the number of open datasets are current as of October 2020. Users are encouraged to visit the website associated with each dataset before use, as sample sizes, access conditions, etc. may change.</span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>This unprecedented scale and availability of data has proven impact on the field of neuroimaging <span id="id8">[<a class="reference internal" href="../bibliography.html#id19" title="Michael P. Milham, R. Cameron Craddock, Jake J. Son, Michael Fleischmann, Jon Clucas, Helen Xu, Bonhwang Koo, Anirudh Krishnakumar, Bharat B. Biswal, F. Xavier Castellanos, Stan Colcombe, Adriana Di Martino, Xi-Nian Zuo, and Arno Klein. Assessment of the impact of shared brain imaging data on the scientific literature. Nature Communications, 9(1):2818, December 2018. URL: http://www.nature.com/articles/s41467-018-04976-1, doi:10.1038/s41467-018-04976-1.">Milham <em>et al.</em>, 2018</a>]</span>. However, there are still practical issues that hinder the ability of researchers to fully leverage these assets to optimize the quantity and quality of their scientific findings, individually or in collaboration <span id="id9">[<a class="reference internal" href="../bibliography.html#id22" title="John A. Borghi and Ana E. Van Gulick. Data management and sharing in neuroimaging: Practices and perceptions of MRI researchers. PLOS ONE, 13(7):e0200562, July 2018. Publisher: Public Library of Science. URL: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0200562, doi:10.1371/journal.pone.0200562.">Borghi and Gulick, 2018</a>, <a class="reference internal" href="../bibliography.html#id38" title="Alexandre Routier, Ninon Burgos, Mauricio Díaz, Michael Bacci, Simona Bottani, Omar El-Rifai, Sabrina Fontanella, Pietro Gori, Jérémy Guillon, Alexis Guyot, Ravi Hassanaly, Thomas Jacquemont, Pascal Lu, Arnaud Marcoux, Tristan Moreau, Jorge Samper-González, Marc Teichmann, Elina Thibeau-Sutre, Ghislain Vaillant, Junhao Wen, Adam Wild, Marie-Odile Habert, Stanley Durrleman, and Olivier Colliot. Clinica: An Open-Source Software Platform for Reproducible Clinical Neuroscience Studies. Frontiers in Neuroinformatics, 15:689675, August 2021. URL: https://www.frontiersin.org/articles/10.3389/fninf.2021.689675/full, doi:10.3389/fninf.2021.689675.">Routier <em>et al.</em>, 2021</a>]</span>. The management of subject information and both raw and packaged <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a></span> data (i.e. converted to <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">NIfTI</span></a></span> and organized to conform with the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span> standard) along with preprocessing results and any other, non-<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a></span> data, in scale, can quickly prove to be a more complicated task than often anticipated. In one report, it is estimated that it generally takes two or three researchers working on a project based on data from public datasets roughly 6 to 9 months to download, process, and prepare the data for analysis <span id="id10">[<a class="reference internal" href="../bibliography.html#id12" title="Corey Horien, Stephanie Noble, Abigail S. Greene, Kangjoo Lee, Daniel S. Barron, Siyuan Gao, David O’Connor, Mehraveh Salehi, Javid Dadashkarimi, Xilin Shen, Evelyn M. R. Lake, R. Todd Constable, and Dustin Scheinost. A hitchhiker’s guide to working with large, open-source neuroimaging datasets. Nature Human Behaviour, 5(2):185–193, February 2021. Bandiera_abtest: a Cg_type: Nature Research Journals Number: 2 Primary_atype: Reviews Publisher: Nature Publishing Group Subject_term: Cognitive neuroscience;Databases Subject_term_id: cognitive-neuroscience;databases. URL: https://www.nature.com/articles/s41562-020-01005-4, doi:10.1038/s41562-020-01005-4.">Horien <em>et al.</em>, 2021</a>]</span>. This period of time is also fertile ground for the introduction of more degrees of freedom to the analytical workflow (as well as human error), severly undermining the reproducibility of the results <span id="id11">[<a class="reference internal" href="../bibliography.html#id20" title="Rotem Botvinik-Nezer, Felix Holzmeister, Colin F. Camerer, Anna Dreber, Juergen Huber, Magnus Johannesson, Michael Kirchler, Roni Iwanir, Jeanette A. Mumford, R. Alison Adcock, Paolo Avesani, Blazej M. Baczkowski, Aahana Bajracharya, Leah Bakst, Sheryl Ball, Marco Barilari, Nadège Bault, Derek Beaton, Julia Beitner, Roland G. Benoit, Ruud M.W.J. Berkers, Jamil P. Bhanji, Bharat B. Biswal, Sebastian Bobadilla-Suarez, Tiago Bortolini, Katherine L. Bottenhorn, Alexander Bowring, Senne Braem, Hayley R. Brooks, Emily G. Brudner, Cristian B. Calderon, Julia A. Camilleri, Jaime J. Castrellon, Luca Cecchetti, Edna C. Cieslik, Zachary J. Cole, Olivier Collignon, Robert W. Cox, William A. Cunningham, Stefan Czoschke, Kamalaker Dadi, Charles P. Davis, Alberto De Luca, Mauricio R. Delgado, Lysia Demetriou, Jeffrey B. Dennison, Xin Di, Erin W. Dickie, Ekaterina Dobryakova, Claire L. Donnat, Juergen Dukart, Niall W. Duncan, Joke Durnez, Amr Eed, Simon B. Eickhoff, Andrew Erhart, Laura Fontanesi, G. Matthew Fricke, Shiguang Fu, Adriana Galván, Remi Gau, Sarah Genon, Tristan Glatard, Enrico Glerean, Jelle J. Goeman, Sergej A. E. Golowin, Carlos González-García, Krzysztof J. Gorgolewski, Cheryl L. Grady, Mikella A. Green, João F. Guassi Moreira, Olivia Guest, Shabnam Hakimi, J. Paul Hamilton, Roeland Hancock, Giacomo Handjaras, Bronson B. Harry, Colin Hawco, Peer Herholz, Gabrielle Herman, Stephan Heunis, Felix Hoffstaedter, Jeremy Hogeveen, Susan Holmes, Chuan-Peng Hu, Scott A. Huettel, Matthew E. Hughes, Vittorio Iacovella, Alexandru D. Iordan, Peder M. Isager, Ayse I. Isik, Andrew Jahn, Matthew R. Johnson, Tom Johnstone, Michael J. E. Joseph, Anthony C. Juliano, Joseph W. Kable, Michalis Kassinopoulos, Cemal Koba, Xiang-Zhen Kong, Timothy R. Koscik, Nuri Erkut Kucukboyaci, Brice A. Kuhl, Sebastian Kupek, Angela R. Laird, Claus Lamm, Robert Langner, Nina Lauharatanahirun, Hongmi Lee, Sangil Lee, Alexander Leemans, Andrea Leo, Elise Lesage, Flora Li, Monica Y.C. Li, Phui Cheng Lim, Evan N. Lintz, Schuyler W. Liphardt, Annabel B. Losecaat Vermeer, Bradley C. Love, Michael L. Mack, Norberto Malpica, Theo Marins, Camille Maumet, Kelsey McDonald, Joseph T. McGuire, Helena Melero, Adriana S. Méndez Leal, Benjamin Meyer, Kristin N. Meyer, Glad Mihai, Georgios D. Mitsis, Jorge Moll, Dylan M. Nielson, Gustav Nilsonne, Michael P. Notter, Emanuele Olivetti, Adrian I. Onicas, Paolo Papale, Kaustubh R. Patil, Jonathan E. Peelle, Alexandre Pérez, Doris Pischedda, Jean-Baptiste Poline, Yanina Prystauka, Shruti Ray, Patricia A. Reuter-Lorenz, Richard C. Reynolds, Emiliano Ricciardi, Jenny R. Rieck, Anais M. Rodriguez-Thompson, Anthony Romyn, Taylor Salo, Gregory R. Samanez-Larkin, Emilio Sanz-Morales, Margaret L. Schlichting, Douglas H. Schultz, Qiang Shen, Margaret A. Sheridan, Jennifer A. Silvers, Kenny Skagerlund, Alec Smith, David V. Smith, Peter Sokol-Hessner, Simon R. Steinkamp, Sarah M. Tashjian, Bertrand Thirion, John N. Thorp, Gustav Tinghög, Loreen Tisdall, Steven H. Tompson, Claudio Toro-Serey, Juan Jesus Torre Tresols, Leonardo Tozzi, Vuong Truong, Luca Turella, Anna E. van 't Veer, Tom Verguts, Jean M. Vettel, Sagana Vijayarajah, Khoi Vo, Matthew B. Wall, Wouter D. Weeda, Susanne Weis, David J. White, David Wisniewski, Alba Xifra-Porxas, Emily A. Yearling, Sangsuk Yoon, Rui Yuan, Kenneth S.L. Yuen, Lei Zhang, Xu Zhang, Joshua E. Zosky, Thomas E. Nichols, Russell A. Poldrack, and Tom Schonberg. Variability in the analysis of a single neuroimaging dataset by many teams. Nature, 582(7810):84–88, June 2020. URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7771346/, doi:10.1038/s41586-020-2314-9.">Botvinik-Nezer <em>et al.</em>, 2020</a>]</span>. To better facilitate large-scale neuroimaging research, dedicated data and analysis management solutions are required.</p>
+</section>
+<section id="neuroimaging-research-data-management">
+<h2><span class="section-number">4.1.1.2. </span>Neuroimaging Research Data Management<a class="headerlink" href="#neuroimaging-research-data-management" title="Permalink to this headline">#</a></h2>
+<section id="requirements">
+<h3><span class="section-number">4.1.1.2.1. </span>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">#</a></h3>
 <p>A complete neuroimaging Research Data Management (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span>) solution would be one that enables researchers to seamlessly integrate raw, independently acquired data, processing workflows, and results, with publicly shared datasets and their corresponding derivatives. For the purposes of this thesis, a neuroimaging data acquisition is assumed to be an <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a></span> session originally encoded in the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> format, but most commonly converted to <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">NIfTI</span></a></span> and packaged as part of a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span>-compliant dataset. The fundamental requirements from an <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span> system would include:</p>
 <ol>
 <li><p><strong>General research information management.</strong> Collected data needs to be associated with a particular study group (e.g. general population, control, task, etc.), and studies should be assigned collaborators (researchers), thereby granting access. The entities and relationships required to adequately model the research process may be conceptualized and illustrated in a great number of ways, <a class="reference internal" href="#research-entities-schema"><span class="std std-numref">Fig. 4.2</span></a> proposes one such conceptual model.</p>
-<div class="figure align-default" id="research-entities-schema">
+<figure class="align-default" id="research-entities-schema">
 <a class="reference internal image-reference" href="../../_images/research_entities.png"><img alt="A schematic representation of research data entities and       relationships." src="../../_images/research_entities.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Proposed conceptual <a class="reference external" href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model#Crow%27s_foot_notation">crow’s foot</a> Entity-Relationship (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">ER</span></a></span>) diagram illustrating research data management entities and their relationships.</span><a class="headerlink" href="#research-entities-schema" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Proposed conceptual <a class="reference external" href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model#Crow%27s_foot_notation">crow’s foot</a> Entity-Relationship (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">ER</span></a></span>) diagram illustrating research data management entities and their relationships.</span><a class="headerlink" href="#research-entities-schema" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </li>
-<li><p><strong>Raw <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> metadata extraction and database management.</strong> Independently resourced data is assumed to be encoded in the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> format, and therefore raw data files include a header section containing study and subject-relevant information. The ability to import <em>.dcm</em> files and maintain a database of the associated <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> entities (see <a class="reference external" href="https://dicom.nema.org/dicom/2013/output/chtml/part03/chapter_A.html">Part 3 Section A.1.2</a> of the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> Standard) is core to the workflow of the great majority of neuroimaging laboratories. Even after metadata extraction and conversion, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> files must be archived and made efficiently queryable for future inspection. Other than the general best-practice of never deleting raw data, information about the influence of acquisition parameters on derived measurements is constantly being updated <span id="id12">[<a class="reference internal" href="../bibliography.html#id25">McNabb <em>et al.</em>, 2020</a>, <a class="reference internal" href="../bibliography.html#id24">Risk <em>et al.</em>, 2018</a>, <a class="reference internal" href="../bibliography.html#id23">Todd <em>et al.</em>, 2016</a>]</span>, along with metadata sharing standards and even conversion methods.</p></li>
-<li><p><strong>Data conversion and standardization.</strong> As established, raw <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> data aggregated in <em>.dcm</em> files needs to be converted to <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">NIfTI</span></a></span> and packaged to comply with the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span> standard. <em>dcm2niix</em> <span id="id13">[<a class="reference internal" href="../bibliography.html#id26">Li <em>et al.</em>, 2016</a>]</span> (<a class="reference external" href="https://github.com/rordenlab/dcm2niix">https://github.com/rordenlab/dcm2niix</a>) provides exceptionally reliable format-conversion functionality, including <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">JSON</span></a></span>-sidecar generation (as specified in the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span> standard). Once converted, the generated <em>.nii</em> and <em>.json</em> files must remain indefinitely associated with their original represenation as a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> series. Organization of the files as a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span>-compliant dataset, however, is still only partially automated. While several tools offering semi-automated configurable workflows (e.g. <em>HeuDiConv</em>, <em>Dcm2Bids</em>) or interactive <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">GUI</span></a></span>s (see <em>ezbids</em>, available at <a class="reference external" href="https://brainlife.io/ezbids/">https://brainlife.io/ezbids/</a> <span id="id14">[<a class="reference internal" href="../bibliography.html#id27">Avesani <em>et al.</em>, 2019</a>]</span>) are in continuous development, a completely automated solution has yet to emerge. In addition, the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span> would need to be able to reorganize and validate the standardization of data “pulled” from external repositories. For <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span>-compliant datasets, this can be handled relatively easily by serialization of the encoded metadata to the database alongside minor reorganization or renaming of the source directories. Other cases, however, such as the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">HCP</span></a></span>, would require more customized translation methods.</p></li>
+<li><p><strong>Raw <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> metadata extraction and database management.</strong> Independently resourced data is assumed to be encoded in the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> format, and therefore raw data files include a header section containing study and subject-relevant information. The ability to import <em>.dcm</em> files and maintain a database of the associated <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> entities (see <a class="reference external" href="https://dicom.nema.org/dicom/2013/output/chtml/part03/chapter_A.html">Part 3 Section A.1.2</a> of the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> Standard) is core to the workflow of the great majority of neuroimaging laboratories. Even after metadata extraction and conversion, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> files must be archived and made efficiently queryable for future inspection. Other than the general best-practice of never deleting raw data, information about the influence of acquisition parameters on derived measurements is constantly being updated <span id="id12">[<a class="reference internal" href="../bibliography.html#id25" title="Carolyn Beth McNabb, Michael Lindner, Shan Shen, Laura Grace Burgess, Kou Murayama, and Tom Johnstone. Inter-slice leakage and intra-slice aliasing in simultaneous multi-slice echo-planar images. Brain Structure and Function, 225(3):1153–1158, April 2020. URL: http://link.springer.com/10.1007/s00429-020-02053-2, doi:10.1007/s00429-020-02053-2.">McNabb <em>et al.</em>, 2020</a>, <a class="reference internal" href="../bibliography.html#id24" title="Benjamin B. Risk, Mary C. Kociuba, and Daniel B. Rowe. Impacts of simultaneous multislice acquisition on sensitivity and specificity in fMRI. NeuroImage, 172:538–553, May 2018. URL: https://www.sciencedirect.com/science/article/pii/S1053811918300788, doi:10.1016/j.neuroimage.2018.01.078.">Risk <em>et al.</em>, 2018</a>, <a class="reference internal" href="../bibliography.html#id23" title="Nick Todd, Steen Moeller, Edward J. Auerbach, Essa Yacoub, Guillaume Flandin, and Nikolaus Weiskopf. Evaluation of 2D multiband EPI imaging for high-resolution, whole-brain, task-based fMRI studies at 3T: Sensitivity and slice leakage artifacts. NeuroImage, 124:32–42, January 2016. URL: https://www.sciencedirect.com/science/article/pii/S1053811915007776, doi:10.1016/j.neuroimage.2015.08.056.">Todd <em>et al.</em>, 2016</a>]</span>, along with metadata sharing standards and even conversion methods.</p></li>
+<li><p><strong>Data conversion and standardization.</strong> As established, raw <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> data aggregated in <em>.dcm</em> files needs to be converted to <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">NIfTI</span></a></span> and packaged to comply with the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span> standard. <em>dcm2niix</em> <span id="id13">[<a class="reference internal" href="../bibliography.html#id26" title="Xiangrui Li, Paul S. Morgan, John Ashburner, Jolinda Smith, and Christopher Rorden. The first step for neuroimaging data analysis: DICOM to NIfTI conversion. Journal of Neuroscience Methods, 264:47–56, May 2016. URL: https://linkinghub.elsevier.com/retrieve/pii/S0165027016300073, doi:10.1016/j.jneumeth.2016.03.001.">Li <em>et al.</em>, 2016</a>]</span> (<a class="reference external" href="https://github.com/rordenlab/dcm2niix">https://github.com/rordenlab/dcm2niix</a>) provides exceptionally reliable format-conversion functionality, including <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">JSON</span></a></span>-sidecar generation (as specified in the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span> standard). Once converted, the generated <em>.nii</em> and <em>.json</em> files must remain indefinitely associated with their original represenation as a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> series. Organization of the files as a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span>-compliant dataset, however, is still only partially automated. While several tools offering semi-automated configurable workflows (e.g. <em>HeuDiConv</em>, <em>Dcm2Bids</em>) or interactive <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">GUI</span></a></span>s (see <em>ezbids</em>, available at <a class="reference external" href="https://brainlife.io/ezbids/">https://brainlife.io/ezbids/</a> <span id="id14">[<a class="reference internal" href="../bibliography.html#id27" title="Paolo Avesani, Brent McPherson, Soichi Hayashi, Cesar F. Caiafa, Robert Henschel, Eleftherios Garyfallidis, Lindsey Kitchell, Daniel Bullock, Andrew Patterson, Emanuele Olivetti, Olaf Sporns, Andrew J. Saykin, Lei Wang, Ivo Dinov, David Hancock, Bradley Caron, Yiming Qian, and Franco Pestilli. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Scientific Data, 6(1):69, December 2019. URL: http://www.nature.com/articles/s41597-019-0073-y, doi:10.1038/s41597-019-0073-y.">Avesani <em>et al.</em>, 2019</a>]</span>) are in continuous development, a completely automated solution has yet to emerge. In addition, the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span> would need to be able to reorganize and validate the standardization of data “pulled” from external repositories. For <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span>-compliant datasets, this can be handled relatively easily by serialization of the encoded metadata to the database alongside minor reorganization or renaming of the source directories. Other cases, however, such as the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">HCP</span></a></span>, would require more customized translation methods.</p></li>
 <li><p><strong>Efficient querying and distribution functionality.</strong> Once archived and packaged, the data must become accessible to the appropriate researchers. The application needs to provide comprehensive querying capabilities, covering both research entity relations and raw acquisition metadata. In addition, once a queryset has been curated, some method of distribution is required in order to dependably export the data to remote servers or workstations.</p>
-<div class="figure align-default" id="data-flow-diagram">
+<figure class="align-default" id="data-flow-diagram">
 <a class="reference internal image-reference" href="../../_images/data_flow.png"><img alt="A schematic representation of the fundamental requirements from a neuroimaging RDM system." src="../../_images/data_flow.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Schematic representation of the fundamental requirements from a       neuroimaging <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span> system. Numbers circled in green correspond to the numbers of the requirements as listed above. Blue user represents an admin or laboratory manager providing general research information.</span><a class="headerlink" href="#data-flow-diagram" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Schematic representation of the fundamental requirements from a       neuroimaging <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span> system. Numbers circled in green correspond to the numbers of the requirements as listed above. Blue user represents an admin or laboratory manager providing general research information.</span><a class="headerlink" href="#data-flow-diagram" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </li>
-<li><p><strong>Analysis workflow registration and orchestration.</strong> While not strictly in the scope of an <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span>, collaboration on a large neuroimaging dataset mandates a shared analytical workflow management tool. The scale of the data and resources required to preprocess it render the raw dataset practically unusable to most researchers <span id="id15">[<a class="reference internal" href="../bibliography.html#id33">Plis <em>et al.</em>, 2016</a>]</span>. Instead, administrators should be able to register analytical pipelines, execute them, and enable access to the results. In addition to enabling researchers to study a much larger dataset than otherwise possible and the more economical allocation of resources, as well as the significant enhancement in reproducibility, having all workflows and their parameters documented and organized provides an opportunity to better understand the effects of various preprocessing parameters on derived results.</p></li>
+<li><p><strong>Analysis workflow registration and orchestration.</strong> While not strictly in the scope of an <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span>, collaboration on a large neuroimaging dataset mandates a shared analytical workflow management tool. The scale of the data and resources required to preprocess it render the raw dataset practically unusable to most researchers <span id="id15">[<a class="reference internal" href="../bibliography.html#id33" title="Sergey M. Plis, Anand D. Sarwate, Dylan Wood, Christopher Dieringer, Drew Landis, Cory Reed, Sandeep R. Panta, Jessica A. Turner, Jody M. Shoemaker, Kim W. Carter, Paul Thompson, Kent Hutchison, and Vince D. Calhoun. COINSTAC: A Privacy Enabled Model and Prototype for Leveraging and Processing Decentralized Brain Imaging Data. Frontiers in Neuroscience, 2016. URL: https://www.frontiersin.org/article/10.3389/fnins.2016.00365.">Plis <em>et al.</em>, 2016</a>]</span>. Instead, administrators should be able to register analytical pipelines, execute them, and enable access to the results. In addition to enabling researchers to study a much larger dataset than otherwise possible and the more economical allocation of resources, as well as the significant enhancement in reproducibility, having all workflows and their parameters documented and organized provides an opportunity to better understand the effects of various preprocessing parameters on derived results.</p></li>
 </ol>
-<div class="section" id="free-and-open-source-software-foss-and-collaborative-science">
-<h4><span class="section-number">4.1.1.2.1.1. </span>Free and Open-source Software (FOSS) and Collaborative Science<a class="headerlink" href="#free-and-open-source-software-foss-and-collaborative-science" title="Permalink to this headline">¶</a></h4>
-<p>The benefit of <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FOSS</span></a></span> and collaborative software development on scientific research in general <span id="id16">[<a class="reference internal" href="../bibliography.html#id35">Fortunato and Galassi, 2021</a>]</span> and neuroscientific research in particular <span id="id17">[<a class="reference internal" href="../bibliography.html#id36">Gleeson <em>et al.</em>, 2017</a>, <a class="reference internal" href="../bibliography.html#id37">White <em>et al.</em>, 2019</a>, <a class="reference internal" href="../bibliography.html#id39">Halchenko and Hanke, 2012</a>]</span> has become a central topic of discussion in recent years. Working with and collaborating on open-source code repositories, including version control, testing, documentation, continuous integration (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">CI</span></a></span>), and much more, is rapidly becoming a fundamental part of the technical capability expected from reseachers in the field <span id="id18">[<a class="reference internal" href="../bibliography.html#id40">Muller <em>et al.</em>, 2015</a>]</span>. Relevant educational content has become effectively ubiquituous in workshops and other educational programs, and an increasing number of contemporary initiatives are embracing the community-oriented philosophy and standards. This shift in the zeitgeist is largely owed to the widespread adoption of Python and the general-purpose programming language tools and paradigms it offers and encourages.</p>
+<section id="free-and-open-source-software-foss-and-collaborative-science">
+<h4><span class="section-number">4.1.1.2.1.1. </span>Free and Open-source Software (FOSS) and Collaborative Science<a class="headerlink" href="#free-and-open-source-software-foss-and-collaborative-science" title="Permalink to this headline">#</a></h4>
+<p>The benefit of <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FOSS</span></a></span> and collaborative software development on scientific research in general <span id="id16">[<a class="reference internal" href="../bibliography.html#id35" title="Laura Fortunato and Mark Galassi. The case for free and open source software in research and scholarship. Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences, 379(2197):20200079, May 2021. Publisher: Royal Society. URL: https://royalsocietypublishing.org/doi/full/10.1098/rsta.2020.0079, doi:10.1098/rsta.2020.0079.">Fortunato and Galassi, 2021</a>]</span> and neuroscientific research in particular <span id="id17">[<a class="reference internal" href="../bibliography.html#id36" title="Padraig Gleeson, Andrew P. Davison, R. Angus Silver, and Giorgio A. Ascoli. A Commitment to Open Source in Neuroscience. Neuron, 96(5):964–965, December 2017. URL: https://www.sciencedirect.com/science/article/pii/S0896627317309819, doi:10.1016/j.neuron.2017.10.013.">Gleeson <em>et al.</em>, 2017</a>, <a class="reference internal" href="../bibliography.html#id37" title="Samantha R. White, Linda M. Amarante, Alexxai V. Kravitz, and Mark Laubach. The Future Is Open: Open-Source Tools for Behavioral Neuroscience Research. eNeuro, 6(4):ENEURO.0223–19.2019, August 2019. URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6712209/, doi:10.1523/ENEURO.0223-19.2019.">White <em>et al.</em>, 2019</a>, <a class="reference internal" href="../bibliography.html#id39" title="Yaroslav Halchenko and Michael Hanke. Open is Not Enough. Let's Take the Next Step: An Integrated, Community-Driven Computing Platform for Neuroscience. Frontiers in Neuroinformatics, 2012. URL: https://www.frontiersin.org/article/10.3389/fninf.2012.00022.">Halchenko and Hanke, 2012</a>]</span> has become a central topic of discussion in recent years. Working with and collaborating on open-source code repositories, including version control, testing, documentation, continuous integration (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">CI</span></a></span>), and much more, is rapidly becoming a fundamental part of the technical capability expected from reseachers in the field <span id="id18">[<a class="reference internal" href="../bibliography.html#id40" title="Eilif Muller, James A. Bednar, Markus Diesmann, Marc-Oliver Gewaltig, Michael Hines, and Andrew P. Davison. Python in neuroscience. Frontiers in Neuroinformatics, 2015. URL: https://www.frontiersin.org/article/10.3389/fninf.2015.00011.">Muller <em>et al.</em>, 2015</a>]</span>. Relevant educational content has become effectively ubiquituous in workshops and other educational programs, and an increasing number of contemporary initiatives are embracing the community-oriented philosophy and standards. This shift in the zeitgeist is largely owed to the widespread adoption of Python and the general-purpose programming language tools and paradigms it offers and encourages.</p>
 <p>For the purposes of this thesis, the desired <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span> solution is one that is entirely free and open-source, and is designed as a collaborative, community-oriented software development project. Because most researchers are not experienced with commonplace web development technologies (e.g. NodeJS, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">PHP</span></a></span>, Java, etc.), as much of the codebase should be written in Python as possible. This will encourage user involvement, foster awareness to infrastructural details and processing decisions, and ultimately serve to support the credibility and reproducibility of the derived findings.</p>
-</div>
-</div>
-<div class="section" id="existing-solutions">
-<h3><span class="section-number">4.1.1.2.2. </span>Existing Solutions<a class="headerlink" href="#existing-solutions" title="Permalink to this headline">¶</a></h3>
-<p>A number of neuroimaging <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span> systems have been developed to support particular research centers and collaborations across the world. Some of the most notable examples are the Extensible Neuroimaging Archive Toolkit (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">XNAT</span></a></span>, see <a class="reference external" href="https://www.xnat.org/">https://www.xnat.org/</a>) <span id="id19">[<a class="reference internal" href="../bibliography.html#id28">Marcus <em>et al.</em>, 2007</a>, <a class="reference internal" href="../bibliography.html#id29">Herrick <em>et al.</em>, 2016</a>]</span>, Longitudinal Online Research and Imaging System (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">LORIS</span></a></span>, see <a class="reference external" href="https://loris.ca/">https://loris.ca/</a>) <span id="id20">[<a class="reference internal" href="../bibliography.html#id32">Das <em>et al.</em>, 2012</a>]</span>, and the newest addition, <a class="reference external" href="https://brainlife.io">brainlife.io</a>. All three are open-source and in active development, however, none offered both the required functionality and the means to create a sustainable, independent deployment of the application without specialized expertise at the time of writing. <a class="reference internal" href="#existing-rdms"><span class="std std-numref">Table 4.1</span></a> offers a summary of the technological stacks and <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> or <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span>-related functionality provided by these applications.</p>
+</section>
+</section>
+<section id="existing-solutions">
+<h3><span class="section-number">4.1.1.2.2. </span>Existing Solutions<a class="headerlink" href="#existing-solutions" title="Permalink to this headline">#</a></h3>
+<p>A number of neuroimaging <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span> systems have been developed to support particular research centers and collaborations across the world. Some of the most notable examples are the Extensible Neuroimaging Archive Toolkit (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">XNAT</span></a></span>, see <a class="reference external" href="https://www.xnat.org/">https://www.xnat.org/</a>) <span id="id19">[<a class="reference internal" href="../bibliography.html#id28" title="Daniel S. Marcus, Timothy R. Olsen, Mohana Ramaratnam, and Randy L. Buckner. The extensible neuroimaging archive toolkit. Neuroinformatics, 5(1):11–33, March 2007. URL: https://doi.org/10.1385/NI:5:1:11, doi:10.1385/NI:5:1:11.">Marcus <em>et al.</em>, 2007</a>, <a class="reference internal" href="../bibliography.html#id29" title="Rick Herrick, William Horton, Timothy Olsen, Michael McKay, Kevin A. Archie, and Daniel S. Marcus. XNAT Central: Open sourcing imaging research data. NeuroImage, 124:1093–1096, January 2016. URL: https://www.sciencedirect.com/science/article/pii/S1053811915005819, doi:10.1016/j.neuroimage.2015.06.076.">Herrick <em>et al.</em>, 2016</a>]</span>, Longitudinal Online Research and Imaging System (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">LORIS</span></a></span>, see <a class="reference external" href="https://loris.ca/">https://loris.ca/</a>) <span id="id20">[<a class="reference internal" href="../bibliography.html#id32" title="Samir Das, Alex Zijdenbos, Dario Vins, Jonathan Harlap, and Alan Evans. LORIS: a web-based data management system for multi-center studies. Frontiers in Neuroinformatics, 2012. URL: https://www.frontiersin.org/article/10.3389/fninf.2011.00037.">Das <em>et al.</em>, 2012</a>]</span>, and the newest addition, <a class="reference external" href="https://brainlife.io">brainlife.io</a>. All three are open-source and in active development, however, none offered both the required functionality and the means to create a sustainable, independent deployment of the application without specialized expertise at the time of writing. <a class="reference internal" href="#existing-rdms"><span class="std std-numref">Table 4.1</span></a> offers a summary of the technological stacks and <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> or <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span>-related functionality provided by these applications.</p>
 <table class="table" id="existing-rdms">
-<caption><span class="caption-number">Table 4.1 </span><span class="caption-text">A summary of existing open-source neuroimaging <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span> applications’ technological stacks and the required <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> or <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span>-related functionality. All information was independently gathered from openly accessibly project websites, documentation, or code repositories.<br><span style="font-size: 0.8rem;">* <span><a class="reference external" href="http://brainlife.io">brainlife.io</a></span> has a new and exciting semi-automated web-based <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> to <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span> conversion tool, <em>ezBIDS</em>, currently in development and approaching a stable release.</span><br><span style="font-size: 0.7rem;">[1] <a class="reference external" href="https://traefik.io/">https://traefik.io/</a> [2] <a class="reference external" href="https://www.postgresql.org/">https://www.postgresql.org/</a> [3] <a class="reference external" href="https://tomcat.apache.org/">https://tomcat.apache.org/</a> [4] <a class="reference external" href="https://httpd.apache.org/">https://httpd.apache.org/</a> [5] <a class="reference external" href="https://www.mysql.com/">https://www.mysql.com/</a> [6] <a class="reference external" href="https://php.net/">https://php.net/</a> [7] <a class="reference external" href="https://reactjs.org/">https://reactjs.org/</a></span></span><a class="headerlink" href="#existing-rdms" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 4.1 </span><span class="caption-text">A summary of existing open-source neuroimaging <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span> applications’ technological stacks and the required <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> or <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span>-related functionality. All information was independently gathered from openly accessibly project websites, documentation, or code repositories.<br><span style="font-size: 0.8rem;">* <span><a class="reference external" href="http://brainlife.io">brainlife.io</a></span> has a new and exciting semi-automated web-based <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> to <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span> conversion tool, <em>ezBIDS</em>, currently in development and approaching a stable release.</span><br><span style="font-size: 0.7rem;">[1] <a class="reference external" href="https://traefik.io/">https://traefik.io/</a> [2] <a class="reference external" href="https://www.postgresql.org/">https://www.postgresql.org/</a> [3] <a class="reference external" href="https://tomcat.apache.org/">https://tomcat.apache.org/</a> [4] <a class="reference external" href="https://httpd.apache.org/">https://httpd.apache.org/</a> [5] <a class="reference external" href="https://www.mysql.com/">https://www.mysql.com/</a> [6] <a class="reference external" href="https://php.net/">https://php.net/</a> [7] <a class="reference external" href="https://reactjs.org/">https://reactjs.org/</a></span></span><a class="headerlink" href="#existing-rdms" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 14%" />
 <col style="width: 14%" />
@@ -573,9 +682,9 @@
 </table>
 <p>The ability to manage a large <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> dataset combined with external <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span> datasets and fluently associate the included or provided research information is a core requirement of this thesis which is not yet properly handled by existing tools. In addition, none of the applications’ technological stacks are Python-based, making it significantly less likely for most researchers to be able to actively participate in their development.</p>
 <p>To overcome this technical difficulty, the first part of this thesis introduces a dedicated, Python-based, open-source and community-oriented <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDM</span></a></span> application.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -599,9 +708,11 @@
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="labbing.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -617,24 +728,28 @@
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Zvi Baratz<br/>
+  
+      &copy; Copyright 2021.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Zvi Baratz<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

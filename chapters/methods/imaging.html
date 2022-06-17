@@ -4,11 +4,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>3.1. Imaging &#8212; Ph.D. Thesis</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,21 +20,17 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,18 +38,18 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://zvibaratz.github.io/phd/front.html/chapters/methods/imaging.html" />
     <link rel="shortcut icon" href="../../_static/favicon.jpg"/>
@@ -66,7 +64,21 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -75,9 +87,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -283,103 +296,205 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/chapters/methods/imaging.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/ZviBaratz/PhD"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/ZviBaratz/PhD/issues/new?title=Issue%20on%20page%20%2Fchapters/methods/imaging.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/ZviBaratz/PhD/master?urlpath=tree/src/book/chapters/methods/imaging.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
         </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/ZviBaratz/PhD/master?urlpath=tree/src/book/chapters/methods/imaging.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/ZviBaratz/PhD"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ZviBaratz/PhD/issues/new?title=Issue%20on%20page%20%2Fchapters/methods/imaging.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/chapters/methods/imaging.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#structural-mri">
    3.1.1. Structural MRI
@@ -418,12 +533,11 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Imaging</h1>
@@ -478,885 +592,230 @@
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="imaging">
-<span id="methods-imaging"></span><h1><span class="section-number">3.1. </span>Imaging<a class="headerlink" href="#imaging" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="structural-mri">
-<h2><span class="section-number">3.1.1. </span>Structural MRI<a class="headerlink" href="#structural-mri" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="t1-weighted">
-<h3><span class="section-number">3.1.1.1. </span>T1-weighted<a class="headerlink" href="#t1-weighted" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="mprage">
-<h4><span class="section-number">3.1.1.1.1. </span>MPRAGE<a class="headerlink" href="#mprage" title="Permalink to this headline">¶</a></h4>
-<p>The three-dimensional magnetization-prepared rapid gradient-echo (3D <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MPRAGE</span></a></span>) <span id="id1">[<a class="reference internal" href="../bibliography.html#id8">Mugler and Brookeman, 1990</a>]</span> is a commonly used <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">T1w</span></a></span> <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">sMRI</span></a></span> scanning sequence which optimizes the contrast between different types of tissue and provides anatomical information with outstanding detail. It is a standard sequence, also included in other contemporary large-scale neuroimaging datasets, such as the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">HCP</span></a></span> <span id="id2">[<a class="reference internal" href="../bibliography.html#id9">Harms <em>et al.</em>, 2018</a>]</span>, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">ABIDE</span></a></span> II <span id="id3">[<a class="reference internal" href="../bibliography.html#id10">Di Martino <em>et al.</em>, 2017</a>]</span>, and <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">ADNI</span></a></span> <span id="id4">[<a class="reference internal" href="../bibliography.html#id11">Hua <em>et al.</em>, 2008</a>]</span>. Some variation does still exist in the scanning parameters, the following table summarizes the prevalence of each distinct protocol specification in the included dataset:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="imaging">
+<span id="methods-imaging"></span><h1><span class="section-number">3.1. </span>Imaging<a class="headerlink" href="#imaging" title="Permalink to this headline">#</a></h1>
+<section id="structural-mri">
+<h2><span class="section-number">3.1.1. </span>Structural MRI<a class="headerlink" href="#structural-mri" title="Permalink to this headline">#</a></h2>
+<section id="t1-weighted">
+<h3><span class="section-number">3.1.1.1. </span>T1-weighted<a class="headerlink" href="#t1-weighted" title="Permalink to this headline">#</a></h3>
+<section id="mprage">
+<h4><span class="section-number">3.1.1.1.1. </span>MPRAGE<a class="headerlink" href="#mprage" title="Permalink to this headline">#</a></h4>
+<p>The three-dimensional magnetization-prepared rapid gradient-echo (3D <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MPRAGE</span></a></span>) <span id="id1">[<a class="reference internal" href="../bibliography.html#id8" title="John P. Mugler and James R. Brookeman. Three-dimensional magnetization-prepared rapid gradient-echo imaging (3D MP RAGE). Magnetic Resonance in Medicine, 15(1):152–157, July 1990. URL: https://onlinelibrary.wiley.com/doi/10.1002/mrm.1910150117, doi:10.1002/mrm.1910150117.">Mugler and Brookeman, 1990</a>]</span> is a commonly used <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">T1w</span></a></span> <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">sMRI</span></a></span> scanning sequence which optimizes the contrast between different types of tissue and provides anatomical information with outstanding detail. It is a standard sequence, also included in other contemporary large-scale neuroimaging datasets, such as the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">HCP</span></a></span> <span id="id2">[<a class="reference internal" href="../bibliography.html#id9" title="Michael P. Harms, Leah H. Somerville, Beau M. Ances, Jesper Andersson, Deanna M. Barch, Matteo Bastiani, Susan Y. Bookheimer, Timothy B. Brown, Randy L. Buckner, Gregory C. Burgess, Timothy S. Coalson, Michael A. Chappell, Mirella Dapretto, Gwenaëlle Douaud, Bruce Fischl, Matthew F. Glasser, Douglas N. Greve, Cynthia Hodge, Keith W. Jamison, Saad Jbabdi, Sridhar Kandala, Xiufeng Li, Ross W. Mair, Silvia Mangia, Daniel Marcus, Daniele Mascali, Steen Moeller, Thomas E. Nichols, Emma C. Robinson, David H. Salat, Stephen M. Smith, Stamatios N. Sotiropoulos, Melissa Terpstra, Kathleen M. Thomas, M. Dylan Tisdall, Kamil Ugurbil, Andre van der Kouwe, Roger P. Woods, Lilla Zöllei, David C. Van Essen, and Essa Yacoub. Extending the Human Connectome Project across ages: Imaging protocols for the Lifespan Development and Aging projects. NeuroImage, 183:972–984, December 2018. URL: https://www.sciencedirect.com/science/article/pii/S1053811918318652, doi:10.1016/j.neuroimage.2018.09.060.">Harms <em>et al.</em>, 2018</a>]</span>, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">ABIDE</span></a></span> II <span id="id3">[<a class="reference internal" href="../bibliography.html#id10" title="Adriana Di Martino, David O'Connor, Bosi Chen, Kaat Alaerts, Jeffrey S. Anderson, Michal Assaf, Joshua H. Balsters, Leslie Baxter, Anita Beggiato, Sylvie Bernaerts, Laura M. E. Blanken, Susan Y. Bookheimer, B. Blair Braden, Lisa Byrge, F. Xavier Castellanos, Mirella Dapretto, Richard Delorme, Damien A. Fair, Inna Fishman, Jacqueline Fitzgerald, Louise Gallagher, R. Joanne Jao Keehn, Daniel P. Kennedy, Janet E. Lainhart, Beatriz Luna, Stewart H. Mostofsky, Ralph-Axel Müller, Mary Beth Nebel, Joel T. Nigg, Kirsten O'Hearn, Marjorie Solomon, Roberto Toro, Chandan J. Vaidya, Nicole Wenderoth, Tonya White, R. Cameron Craddock, Catherine Lord, Bennett Leventhal, and Michael P. Milham. Enhancing studies of the connectome in autism using the autism brain imaging data exchange II. Scientific Data, 4:170010, March 2017. doi:10.1038/sdata.2017.10.">Di Martino <em>et al.</em>, 2017</a>]</span>, and <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">ADNI</span></a></span> <span id="id4">[<a class="reference internal" href="../bibliography.html#id11" title="Xue Hua, Alex D. Leow, Suh Lee, Andrea D. Klunder, Arthur W. Toga, Natasha Lepore, Yi-Yu Chou, Caroline Brun, Ming-Chang Chiang, Marina Barysheva, Clifford R. Jack, Matt A. Bernstein, Paula J. Britson, Chadwick P. Ward, Jennifer L. Whitwell, Bret Borowski, Adam S. Fleisher, Nick C. Fox, Richard G. Boyes, Josephine Barnes, Danielle Harvey, John Kornak, Norbert Schuff, Lauren Boreta, Gene E. Alexander, Michael W. Weiner, Paul M. Thompson, and the Alzheimer's Disease Neuroimaging Initiative. 3D characterization of brain atrophy in Alzheimer's disease and mild cognitive impairment using tensor-based morphometry. NeuroImage, 41(1):19–34, May 2008. URL: https://www.sciencedirect.com/science/article/pii/S1053811908001377, doi:10.1016/j.neuroimage.2008.02.010.">Hua <em>et al.</em>, 2008</a>]</span>. Some variation does still exist in the scanning parameters, the following table summarizes the prevalence of each distinct protocol specification in the included dataset:</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/work/phd/phd/src/phd/utils/tables.py:59: FutureWarning: this method is deprecated in favour of `Styler.hide(axis=&#39;index&#39;)`
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/work/phd/phd/src/phd/methods/tables.py:36: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df = df.append(HCP, ignore_index=True)
+/home/runner/work/phd/phd/src/phd/utils/tables.py:59: FutureWarning: this method is deprecated in favour of `Styler.hide(axis=&#39;index&#39;)`
   return styled.hide_index()
 </pre></div>
 </div>
 <div class="output text_html"><style type="text/css">
-#T_d0bfe  {
+#T_d74a0  {
   font-family: "Times New Roman", Georgia, serif;
 }
-#T_d0bfe th {
+#T_d74a0 th {
   font-size: 1em;
   border: 1px solid grey;
   text-align: center;
 }
-#T_d0bfe td {
+#T_d74a0 td {
   font-size: 1em;
   border: 1px solid grey;
   padding: 2px;
 }
-#T_d0bfe_row0_col0 {
+#T_d74a0_row0_col0 {
   font-size: 1em;
   text-align: center;
   width: 10em;
-  background: linear-gradient(90deg, #d65f5f 36.8%, transparent 36.8%);
+  background: linear-gradient(90deg, #d65f5f 32.4%, transparent 32.4%);
 }
-#T_d0bfe_row0_col1, #T_d0bfe_row1_col1, #T_d0bfe_row3_col1, #T_d0bfe_row7_col1, #T_d0bfe_row12_col1, #T_d0bfe_row22_col1, #T_d0bfe_row24_col1, #T_d0bfe_row43_col1 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #81aed2;
-  color: #f1f1f1;
-}
-#T_d0bfe_row0_col2, #T_d0bfe_row1_col2, #T_d0bfe_row3_col2, #T_d0bfe_row7_col2, #T_d0bfe_row13_col3 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #83afd3;
-  color: #f1f1f1;
-}
-#T_d0bfe_row0_col3, #T_d0bfe_row1_col3, #T_d0bfe_row3_col3, #T_d0bfe_row7_col3, #T_d0bfe_row12_col3, #T_d0bfe_row22_col3, #T_d0bfe_row24_col3, #T_d0bfe_row26_col3, #T_d0bfe_row43_col3 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #84b0d3;
-  color: #f1f1f1;
-}
-#T_d0bfe_row0_col4, #T_d0bfe_row1_col4, #T_d0bfe_row3_col4, #T_d0bfe_row4_col4, #T_d0bfe_row5_col4, #T_d0bfe_row7_col4, #T_d0bfe_row8_col4, #T_d0bfe_row10_col4, #T_d0bfe_row12_col4, #T_d0bfe_row13_col4, #T_d0bfe_row14_col1, #T_d0bfe_row14_col2, #T_d0bfe_row14_col3, #T_d0bfe_row15_col1, #T_d0bfe_row15_col2, #T_d0bfe_row16_col1, #T_d0bfe_row16_col2, #T_d0bfe_row18_col4, #T_d0bfe_row19_col4, #T_d0bfe_row20_col4, #T_d0bfe_row21_col4, #T_d0bfe_row22_col4, #T_d0bfe_row23_col4, #T_d0bfe_row24_col4, #T_d0bfe_row25_col4, #T_d0bfe_row26_col4, #T_d0bfe_row27_col4, #T_d0bfe_row28_col4, #T_d0bfe_row29_col4, #T_d0bfe_row30_col4, #T_d0bfe_row34_col4, #T_d0bfe_row35_col4, #T_d0bfe_row36_col4, #T_d0bfe_row40_col4, #T_d0bfe_row41_col4, #T_d0bfe_row42_col4, #T_d0bfe_row44_col4, #T_d0bfe_row45_col4, #T_d0bfe_row46_col4, #T_d0bfe_row47_col4, #T_d0bfe_row48_col4 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #023858;
-  color: #f1f1f1;
-}
-#T_d0bfe_row0_col5, #T_d0bfe_row1_col5, #T_d0bfe_row2_col5, #T_d0bfe_row3_col5, #T_d0bfe_row4_col5, #T_d0bfe_row5_col5, #T_d0bfe_row6_col5, #T_d0bfe_row7_col5, #T_d0bfe_row8_col5, #T_d0bfe_row9_col5, #T_d0bfe_row10_col5, #T_d0bfe_row11_col5, #T_d0bfe_row12_col5, #T_d0bfe_row13_col5, #T_d0bfe_row14_col5, #T_d0bfe_row15_col5, #T_d0bfe_row16_col5, #T_d0bfe_row17_col5, #T_d0bfe_row18_col5, #T_d0bfe_row19_col5, #T_d0bfe_row20_col5, #T_d0bfe_row21_col5, #T_d0bfe_row22_col5, #T_d0bfe_row23_col5, #T_d0bfe_row24_col5, #T_d0bfe_row25_col5, #T_d0bfe_row26_col5, #T_d0bfe_row27_col5, #T_d0bfe_row28_col5, #T_d0bfe_row29_col5, #T_d0bfe_row30_col5, #T_d0bfe_row31_col5, #T_d0bfe_row32_col5, #T_d0bfe_row33_col5, #T_d0bfe_row34_col5, #T_d0bfe_row35_col5, #T_d0bfe_row36_col5, #T_d0bfe_row37_col5, #T_d0bfe_row38_col5, #T_d0bfe_row39_col5, #T_d0bfe_row40_col5, #T_d0bfe_row41_col5, #T_d0bfe_row42_col5, #T_d0bfe_row43_col5, #T_d0bfe_row44_col5, #T_d0bfe_row45_col5, #T_d0bfe_row46_col5, #T_d0bfe_row47_col5, #T_d0bfe_row48_col5 {
-  font-size: 1em;
-  text-align: center;
-}
-#T_d0bfe_row1_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 23.1%, transparent 23.1%);
-}
-#T_d0bfe_row2_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 9.4%, transparent 9.4%);
-}
-#T_d0bfe_row2_col1, #T_d0bfe_row6_col1, #T_d0bfe_row9_col1, #T_d0bfe_row11_col1, #T_d0bfe_row37_col1, #T_d0bfe_row38_col1, #T_d0bfe_row39_col1 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #6fa7ce;
-  color: #f1f1f1;
-}
-#T_d0bfe_row2_col2, #T_d0bfe_row37_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #62a2cb;
-  color: #f1f1f1;
-}
-#T_d0bfe_row2_col3, #T_d0bfe_row5_col2, #T_d0bfe_row6_col3, #T_d0bfe_row9_col3, #T_d0bfe_row11_col3, #T_d0bfe_row19_col2, #T_d0bfe_row37_col3, #T_d0bfe_row38_col3, #T_d0bfe_row39_col3 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #71a8ce;
-  color: #f1f1f1;
-}
-#T_d0bfe_row2_col4, #T_d0bfe_row6_col4, #T_d0bfe_row9_col4, #T_d0bfe_row11_col4, #T_d0bfe_row17_col4, #T_d0bfe_row37_col4, #T_d0bfe_row38_col4, #T_d0bfe_row39_col4, #T_d0bfe_row43_col4 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #04598c;
-  color: #f1f1f1;
-}
-#T_d0bfe_row3_col0, #T_d0bfe_row4_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 6.6%, transparent 6.6%);
-}
-#T_d0bfe_row4_col1, #T_d0bfe_row5_col1, #T_d0bfe_row8_col1, #T_d0bfe_row10_col1, #T_d0bfe_row17_col1, #T_d0bfe_row18_col1, #T_d0bfe_row28_col1, #T_d0bfe_row29_col1, #T_d0bfe_row30_col1, #T_d0bfe_row34_col1, #T_d0bfe_row35_col1, #T_d0bfe_row36_col1, #T_d0bfe_row40_col1, #T_d0bfe_row41_col1, #T_d0bfe_row42_col1, #T_d0bfe_row44_col1 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #d0d1e6;
-  color: #000000;
-}
-#T_d0bfe_row4_col2, #T_d0bfe_row45_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #b1c2de;
-  color: #000000;
-}
-#T_d0bfe_row4_col3, #T_d0bfe_row5_col3, #T_d0bfe_row8_col3, #T_d0bfe_row10_col3, #T_d0bfe_row17_col3, #T_d0bfe_row18_col3, #T_d0bfe_row25_col3, #T_d0bfe_row28_col3, #T_d0bfe_row30_col3, #T_d0bfe_row35_col3, #T_d0bfe_row44_col3, #T_d0bfe_row45_col3, #T_d0bfe_row46_col3 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #97b7d7;
-  color: #000000;
-}
-#T_d0bfe_row5_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 4.4%, transparent 4.4%);
-}
-#T_d0bfe_row6_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 3.5%, transparent 3.5%);
-}
-#T_d0bfe_row6_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #3b92c1;
-  color: #f1f1f1;
-}
-#T_d0bfe_row7_col0, #T_d0bfe_row8_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 1.7%, transparent 1.7%);
-}
-#T_d0bfe_row8_col2, #T_d0bfe_row35_col2, #T_d0bfe_row47_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #b7c5df;
-  color: #000000;
-}
-#T_d0bfe_row9_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 0.9%, transparent 0.9%);
-}
-#T_d0bfe_row9_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #5c9fc9;
-  color: #f1f1f1;
-}
-#T_d0bfe_row10_col0, #T_d0bfe_row11_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 0.7%, transparent 0.7%);
-}
-#T_d0bfe_row10_col2, #T_d0bfe_row11_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #d6d6e9;
-  color: #000000;
-}
-#T_d0bfe_row12_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 0.4%, transparent 0.4%);
-}
-#T_d0bfe_row12_col2, #T_d0bfe_row15_col3, #T_d0bfe_row15_col4, #T_d0bfe_row33_col3, #T_d0bfe_row33_col4, #T_d0bfe_row48_col1 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #fff7fb;
-  color: #000000;
-}
-#T_d0bfe_row13_col0, #T_d0bfe_row14_col0, #T_d0bfe_row15_col0, #T_d0bfe_row16_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 0.3%, transparent 0.3%);
-}
-#T_d0bfe_row13_col1 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #b4c4df;
-  color: #000000;
-}
-#T_d0bfe_row13_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #4897c4;
-  color: #f1f1f1;
-}
-#T_d0bfe_row14_col4, #T_d0bfe_row16_col4, #T_d0bfe_row31_col4, #T_d0bfe_row32_col4 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #358fc0;
-  color: #f1f1f1;
-}
-#T_d0bfe_row16_col3 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #b5c4df;
-  color: #000000;
-}
-#T_d0bfe_row17_col0, #T_d0bfe_row18_col0, #T_d0bfe_row19_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 0.2%, transparent 0.2%);
-}
-#T_d0bfe_row17_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #8bb2d4;
-  color: #000000;
-}
-#T_d0bfe_row18_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #8eb3d5;
-  color: #000000;
-}
-#T_d0bfe_row19_col1 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #c5cce3;
-  color: #000000;
-}
-#T_d0bfe_row19_col3 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #8cb3d5;
-  color: #000000;
-}
-#T_d0bfe_row20_col0, #T_d0bfe_row21_col0, #T_d0bfe_row22_col0, #T_d0bfe_row23_col0, #T_d0bfe_row24_col0, #T_d0bfe_row25_col0, #T_d0bfe_row26_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 0.1%, transparent 0.1%);
-}
-#T_d0bfe_row20_col1, #T_d0bfe_row20_col3, #T_d0bfe_row21_col1, #T_d0bfe_row21_col3, #T_d0bfe_row42_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #73a9cf;
-  color: #f1f1f1;
-}
-#T_d0bfe_row20_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #f7f0f7;
-  color: #000000;
-}
-#T_d0bfe_row21_col2, #T_d0bfe_row22_col2, #T_d0bfe_row23_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #69a5cc;
-  color: #f1f1f1;
-}
-#T_d0bfe_row23_col1 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #529bc7;
-  color: #f1f1f1;
-}
-#T_d0bfe_row23_col3, #T_d0bfe_row44_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #509ac6;
-  color: #f1f1f1;
-}
-#T_d0bfe_row24_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #ebe6f2;
-  color: #000000;
-}
-#T_d0bfe_row25_col1 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #8fb4d6;
-  color: #000000;
-}
-#T_d0bfe_row25_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #eee8f3;
-  color: #000000;
-}
-#T_d0bfe_row26_col1, #T_d0bfe_row48_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #9cb9d9;
-  color: #000000;
-}
-#T_d0bfe_row26_col2, #T_d0bfe_row40_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #86b0d3;
-  color: #000000;
-}
-#T_d0bfe_row27_col0, #T_d0bfe_row28_col0, #T_d0bfe_row29_col0, #T_d0bfe_row30_col0, #T_d0bfe_row31_col0, #T_d0bfe_row32_col0, #T_d0bfe_row33_col0, #T_d0bfe_row34_col0, #T_d0bfe_row35_col0, #T_d0bfe_row36_col0, #T_d0bfe_row37_col0, #T_d0bfe_row38_col0, #T_d0bfe_row39_col0, #T_d0bfe_row40_col0, #T_d0bfe_row41_col0, #T_d0bfe_row42_col0, #T_d0bfe_row43_col0, #T_d0bfe_row44_col0, #T_d0bfe_row45_col0, #T_d0bfe_row46_col0, #T_d0bfe_row47_col0, #T_d0bfe_row48_col0 {
-  font-size: 1em;
-  text-align: center;
-  width: 10em;
-  background: linear-gradient(90deg, #d65f5f 0.0%, transparent 0.0%);
-}
-#T_d0bfe_row27_col1 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #e3e0ee;
-  color: #000000;
-}
-#T_d0bfe_row27_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #a5bddb;
-  color: #000000;
-}
-#T_d0bfe_row27_col3 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #d1d2e6;
-  color: #000000;
-}
-#T_d0bfe_row28_col2, #T_d0bfe_row38_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #88b1d4;
-  color: #000000;
-}
-#T_d0bfe_row29_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #d8d7e9;
-  color: #000000;
-}
-#T_d0bfe_row29_col3, #T_d0bfe_row34_col3, #T_d0bfe_row42_col3 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #e0dded;
-  color: #000000;
-}
-#T_d0bfe_row30_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #bcc7e1;
-  color: #000000;
-}
-#T_d0bfe_row31_col1, #T_d0bfe_row32_col1, #T_d0bfe_row33_col1 {
+#T_d74a0_row0_col1, #T_d74a0_row1_col1, #T_d74a0_row2_col1 {
   font-size: 1em;
   text-align: center;
   background-color: #046198;
   color: #f1f1f1;
 }
-#T_d0bfe_row31_col2, #T_d0bfe_row32_col2, #T_d0bfe_row33_col2 {
+#T_d74a0_row0_col2, #T_d74a0_row0_col6, #T_d74a0_row1_col6, #T_d74a0_row3_col4, #T_d74a0_row4_col1, #T_d74a0_row4_col3, #T_d74a0_row5_col4, #T_d74a0_row6_col1, #T_d74a0_row6_col3 {
   font-size: 1em;
   text-align: center;
-  background-color: #2383ba;
+  background-color: #fff7fb;
+  color: #000000;
+}
+#T_d74a0_row0_col3, #T_d74a0_row1_col3, #T_d74a0_row2_col3 {
+  font-size: 1em;
+  text-align: center;
+  background-color: #73a9cf;
   color: #f1f1f1;
 }
-#T_d0bfe_row31_col3 {
+#T_d74a0_row0_col4, #T_d74a0_row1_col4, #T_d74a0_row2_col4, #T_d74a0_row2_col6, #T_d74a0_row3_col1, #T_d74a0_row3_col3, #T_d74a0_row3_col6, #T_d74a0_row4_col4, #T_d74a0_row4_col6, #T_d74a0_row5_col1, #T_d74a0_row5_col2, #T_d74a0_row5_col3, #T_d74a0_row5_col6, #T_d74a0_row6_col4, #T_d74a0_row6_col6 {
   font-size: 1em;
   text-align: center;
-  background-color: #034871;
+  background-color: #023858;
   color: #f1f1f1;
 }
-#T_d0bfe_row32_col3, #T_d0bfe_row34_col2 {
+#T_d74a0_row0_col5, #T_d74a0_row1_col5, #T_d74a0_row2_col5, #T_d74a0_row3_col5, #T_d74a0_row4_col5, #T_d74a0_row5_col5, #T_d74a0_row6_col5 {
   font-size: 1em;
   text-align: center;
-  background-color: #b9c6e0;
-  color: #000000;
 }
-#T_d0bfe_row36_col2 {
+#T_d74a0_row1_col0 {
   font-size: 1em;
   text-align: center;
-  background-color: #adc1dd;
-  color: #000000;
+  width: 10em;
+  background: linear-gradient(90deg, #d65f5f 25.2%, transparent 25.2%);
 }
-#T_d0bfe_row36_col3, #T_d0bfe_row41_col3 {
+#T_d74a0_row1_col2, #T_d74a0_row2_col2 {
   font-size: 1em;
   text-align: center;
-  background-color: #dad9ea;
-  color: #000000;
-}
-#T_d0bfe_row39_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #a8bedc;
-  color: #000000;
-}
-#T_d0bfe_row40_col3 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #bbc7e0;
-  color: #000000;
-}
-#T_d0bfe_row41_col2 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #7dacd1;
+  background-color: #056faf;
   color: #f1f1f1;
 }
-#T_d0bfe_row43_col2 {
+#T_d74a0_row2_col0 {
   font-size: 1em;
   text-align: center;
-  background-color: #549cc7;
+  width: 10em;
+  background: linear-gradient(90deg, #d65f5f 24.8%, transparent 24.8%);
+}
+#T_d74a0_row3_col0 {
+  font-size: 1em;
+  text-align: center;
+  width: 10em;
+  background: linear-gradient(90deg, #d65f5f 6.3%, transparent 6.3%);
+}
+#T_d74a0_row3_col2 {
+  font-size: 1em;
+  text-align: center;
+  background-color: #045b8e;
   color: #f1f1f1;
 }
-#T_d0bfe_row45_col1, #T_d0bfe_row46_col1 {
+#T_d74a0_row4_col0 {
   font-size: 1em;
   text-align: center;
-  background-color: #cacee5;
-  color: #000000;
+  width: 10em;
+  background: linear-gradient(90deg, #d65f5f 4.8%, transparent 4.8%);
 }
-#T_d0bfe_row46_col2 {
+#T_d74a0_row4_col2 {
   font-size: 1em;
   text-align: center;
-  background-color: #034267;
+  background-color: #5a9ec9;
   color: #f1f1f1;
 }
-#T_d0bfe_row47_col1 {
+#T_d74a0_row5_col0 {
   font-size: 1em;
   text-align: center;
-  background-color: #abbfdc;
-  color: #000000;
+  width: 10em;
+  background: linear-gradient(90deg, #d65f5f 3.6%, transparent 3.6%);
 }
-#T_d0bfe_row47_col3 {
+#T_d74a0_row6_col0 {
   font-size: 1em;
   text-align: center;
-  background-color: #7bacd1;
+  width: 10em;
+  background: linear-gradient(90deg, #d65f5f 2.9%, transparent 2.9%);
+}
+#T_d74a0_row6_col2 {
+  font-size: 1em;
+  text-align: center;
+  background-color: #04639b;
   color: #f1f1f1;
-}
-#T_d0bfe_row48_col3 {
-  font-size: 1em;
-  text-align: center;
-  background-color: #d5d5e8;
-  color: #000000;
 }
 </style>
-<table id="T_d0bfe">
+<table id="T_d74a0">
   <caption><i>Table 1:</i> MPRAGE counts aggregated by acquisition parameters.</caption>
   <thead>
     <tr>
-      <th id="T_d0bfe_level0_col0" class="col_heading level0 col0" >Count</th>
-      <th id="T_d0bfe_level0_col1" class="col_heading level0 col1" >Repetition Time (TR)</th>
-      <th id="T_d0bfe_level0_col2" class="col_heading level0 col2" >Echo Time (TE)</th>
-      <th id="T_d0bfe_level0_col3" class="col_heading level0 col3" >Inversion Time (TI)</th>
-      <th id="T_d0bfe_level0_col4" class="col_heading level0 col4" >Flip Angle</th>
-      <th id="T_d0bfe_level0_col5" class="col_heading level0 col5" >Spatial Resolution (mm<sup>3</sup>)</th>
+      <th id="T_d74a0_level0_col0" class="col_heading level0 col0" >Count</th>
+      <th id="T_d74a0_level0_col1" class="col_heading level0 col1" >Repetition Time (TR)</th>
+      <th id="T_d74a0_level0_col2" class="col_heading level0 col2" >Echo Time (TE)</th>
+      <th id="T_d74a0_level0_col3" class="col_heading level0 col3" >Inversion Time (TI)</th>
+      <th id="T_d74a0_level0_col4" class="col_heading level0 col4" >Flip Angle</th>
+      <th id="T_d74a0_level0_col5" class="col_heading level0 col5" >Spatial Resolution (mm<sup>3</sup>)</th>
+      <th id="T_d74a0_level0_col6" class="col_heading level0 col6" >Bias Field Corrected</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td id="T_d0bfe_row0_col0" class="data row0 col0" >842</td>
-      <td id="T_d0bfe_row0_col1" class="data row0 col1" >2400</td>
-      <td id="T_d0bfe_row0_col2" class="data row0 col2" >2.78</td>
-      <td id="T_d0bfe_row0_col3" class="data row0 col3" >1000</td>
-      <td id="T_d0bfe_row0_col4" class="data row0 col4" >8</td>
-      <td id="T_d0bfe_row0_col5" class="data row0 col5" >[0.898, 0.898, 0.9]</td>
+      <td id="T_d74a0_row0_col0" class="data row0 col0" >1113</td>
+      <td id="T_d74a0_row0_col1" class="data row0 col1" >2400</td>
+      <td id="T_d74a0_row0_col2" class="data row0 col2" >2.14</td>
+      <td id="T_d74a0_row0_col3" class="data row0 col3" >1000</td>
+      <td id="T_d74a0_row0_col4" class="data row0 col4" >8</td>
+      <td id="T_d74a0_row0_col5" class="data row0 col5" >[0.7, 0.7, 0.7]</td>
+      <td id="T_d74a0_row0_col6" class="data row0 col6" >False</td>
     </tr>
     <tr>
-      <td id="T_d0bfe_row1_col0" class="data row1 col0" >528</td>
-      <td id="T_d0bfe_row1_col1" class="data row1 col1" >2400</td>
-      <td id="T_d0bfe_row1_col2" class="data row1 col2" >2.78</td>
-      <td id="T_d0bfe_row1_col3" class="data row1 col3" >1000</td>
-      <td id="T_d0bfe_row1_col4" class="data row1 col4" >8</td>
-      <td id="T_d0bfe_row1_col5" class="data row1 col5" >[0.902, 0.902, 0.9]</td>
+      <td id="T_d74a0_row1_col0" class="data row1 col0" >865</td>
+      <td id="T_d74a0_row1_col1" class="data row1 col1" >2400</td>
+      <td id="T_d74a0_row1_col2" class="data row1 col2" >2.78</td>
+      <td id="T_d74a0_row1_col3" class="data row1 col3" >1000</td>
+      <td id="T_d74a0_row1_col4" class="data row1 col4" >8</td>
+      <td id="T_d74a0_row1_col5" class="data row1 col5" >[0.9, 0.9, 0.9]</td>
+      <td id="T_d74a0_row1_col6" class="data row1 col6" >False</td>
     </tr>
     <tr>
-      <td id="T_d0bfe_row2_col0" class="data row2 col0" >216</td>
-      <td id="T_d0bfe_row2_col1" class="data row2 col1" >2530</td>
-      <td id="T_d0bfe_row2_col2" class="data row2 col2" >2.88</td>
-      <td id="T_d0bfe_row2_col3" class="data row2 col3" >1100</td>
-      <td id="T_d0bfe_row2_col4" class="data row2 col4" >7</td>
-      <td id="T_d0bfe_row2_col5" class="data row2 col5" >[1.0, 1.0, 1.0]</td>
+      <td id="T_d74a0_row2_col0" class="data row2 col0" >851</td>
+      <td id="T_d74a0_row2_col1" class="data row2 col1" >2400</td>
+      <td id="T_d74a0_row2_col2" class="data row2 col2" >2.78</td>
+      <td id="T_d74a0_row2_col3" class="data row2 col3" >1000</td>
+      <td id="T_d74a0_row2_col4" class="data row2 col4" >8</td>
+      <td id="T_d74a0_row2_col5" class="data row2 col5" >[0.9, 0.9, 0.9]</td>
+      <td id="T_d74a0_row2_col6" class="data row2 col6" >True</td>
     </tr>
     <tr>
-      <td id="T_d0bfe_row3_col0" class="data row3 col0" >152</td>
-      <td id="T_d0bfe_row3_col1" class="data row3 col1" >2400</td>
-      <td id="T_d0bfe_row3_col2" class="data row3 col2" >2.78</td>
-      <td id="T_d0bfe_row3_col3" class="data row3 col3" >1000</td>
-      <td id="T_d0bfe_row3_col4" class="data row3 col4" >8</td>
-      <td id="T_d0bfe_row3_col5" class="data row3 col5" >[0.875, 0.875, 0.9]</td>
+      <td id="T_d74a0_row3_col0" class="data row3 col0" >215</td>
+      <td id="T_d74a0_row3_col1" class="data row3 col1" >2530</td>
+      <td id="T_d74a0_row3_col2" class="data row3 col2" >2.88</td>
+      <td id="T_d74a0_row3_col3" class="data row3 col3" >1100</td>
+      <td id="T_d74a0_row3_col4" class="data row3 col4" >7</td>
+      <td id="T_d74a0_row3_col5" class="data row3 col5" >[1.0, 1.0, 1.0]</td>
+      <td id="T_d74a0_row3_col6" class="data row3 col6" >True</td>
     </tr>
     <tr>
-      <td id="T_d0bfe_row4_col0" class="data row4 col0" >151</td>
-      <td id="T_d0bfe_row4_col1" class="data row4 col1" >1750</td>
-      <td id="T_d0bfe_row4_col2" class="data row4 col2" >2.61</td>
-      <td id="T_d0bfe_row4_col3" class="data row4 col3" >900</td>
-      <td id="T_d0bfe_row4_col4" class="data row4 col4" >8</td>
-      <td id="T_d0bfe_row4_col5" class="data row4 col5" >[1.0, 1.0, 1.0]</td>
+      <td id="T_d74a0_row4_col0" class="data row4 col0" >164</td>
+      <td id="T_d74a0_row4_col1" class="data row4 col1" >1750</td>
+      <td id="T_d74a0_row4_col2" class="data row4 col2" >2.61</td>
+      <td id="T_d74a0_row4_col3" class="data row4 col3" >900</td>
+      <td id="T_d74a0_row4_col4" class="data row4 col4" >8</td>
+      <td id="T_d74a0_row4_col5" class="data row4 col5" >[1.0, 1.0, 1.0]</td>
+      <td id="T_d74a0_row4_col6" class="data row4 col6" >True</td>
     </tr>
     <tr>
-      <td id="T_d0bfe_row5_col0" class="data row5 col0" >100</td>
-      <td id="T_d0bfe_row5_col1" class="data row5 col1" >1750</td>
-      <td id="T_d0bfe_row5_col2" class="data row5 col2" >2.84</td>
-      <td id="T_d0bfe_row5_col3" class="data row5 col3" >900</td>
-      <td id="T_d0bfe_row5_col4" class="data row5 col4" >8</td>
-      <td id="T_d0bfe_row5_col5" class="data row5 col5" >[0.597, 0.597, 0.6]</td>
+      <td id="T_d74a0_row5_col0" class="data row5 col0" >125</td>
+      <td id="T_d74a0_row5_col1" class="data row5 col1" >2530</td>
+      <td id="T_d74a0_row5_col2" class="data row5 col2" >2.99</td>
+      <td id="T_d74a0_row5_col3" class="data row5 col3" >1100</td>
+      <td id="T_d74a0_row5_col4" class="data row5 col4" >7</td>
+      <td id="T_d74a0_row5_col5" class="data row5 col5" >[1.0, 1.0, 1.0]</td>
+      <td id="T_d74a0_row5_col6" class="data row5 col6" >True</td>
     </tr>
     <tr>
-      <td id="T_d0bfe_row6_col0" class="data row6 col0" >80</td>
-      <td id="T_d0bfe_row6_col1" class="data row6 col1" >2530</td>
-      <td id="T_d0bfe_row6_col2" class="data row6 col2" >2.99</td>
-      <td id="T_d0bfe_row6_col3" class="data row6 col3" >1100</td>
-      <td id="T_d0bfe_row6_col4" class="data row6 col4" >7</td>
-      <td id="T_d0bfe_row6_col5" class="data row6 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row7_col0" class="data row7 col0" >40</td>
-      <td id="T_d0bfe_row7_col1" class="data row7 col1" >2400</td>
-      <td id="T_d0bfe_row7_col2" class="data row7 col2" >2.78</td>
-      <td id="T_d0bfe_row7_col3" class="data row7 col3" >1000</td>
-      <td id="T_d0bfe_row7_col4" class="data row7 col4" >8</td>
-      <td id="T_d0bfe_row7_col5" class="data row7 col5" >[0.91, 0.91, 0.9]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row8_col0" class="data row8 col0" >38</td>
-      <td id="T_d0bfe_row8_col1" class="data row8 col1" >1750</td>
-      <td id="T_d0bfe_row8_col2" class="data row8 col2" >2.59</td>
-      <td id="T_d0bfe_row8_col3" class="data row8 col3" >900</td>
-      <td id="T_d0bfe_row8_col4" class="data row8 col4" >8</td>
-      <td id="T_d0bfe_row8_col5" class="data row8 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row9_col0" class="data row9 col0" >20</td>
-      <td id="T_d0bfe_row9_col1" class="data row9 col1" >2530</td>
-      <td id="T_d0bfe_row9_col2" class="data row9 col2" >2.9</td>
-      <td id="T_d0bfe_row9_col3" class="data row9 col3" >1100</td>
-      <td id="T_d0bfe_row9_col4" class="data row9 col4" >7</td>
-      <td id="T_d0bfe_row9_col5" class="data row9 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row10_col0" class="data row10 col0" >16</td>
-      <td id="T_d0bfe_row10_col1" class="data row10 col1" >1750</td>
-      <td id="T_d0bfe_row10_col2" class="data row10 col2" >2.45</td>
-      <td id="T_d0bfe_row10_col3" class="data row10 col3" >900</td>
-      <td id="T_d0bfe_row10_col4" class="data row10 col4" >8</td>
-      <td id="T_d0bfe_row10_col5" class="data row10 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row11_col0" class="data row11 col0" >15</td>
-      <td id="T_d0bfe_row11_col1" class="data row11 col1" >2530</td>
-      <td id="T_d0bfe_row11_col2" class="data row11 col2" >2.45</td>
-      <td id="T_d0bfe_row11_col3" class="data row11 col3" >1100</td>
-      <td id="T_d0bfe_row11_col4" class="data row11 col4" >7</td>
-      <td id="T_d0bfe_row11_col5" class="data row11 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row12_col0" class="data row12 col0" >10</td>
-      <td id="T_d0bfe_row12_col1" class="data row12 col1" >2400</td>
-      <td id="T_d0bfe_row12_col2" class="data row12 col2" >2.14</td>
-      <td id="T_d0bfe_row12_col3" class="data row12 col3" >1000</td>
-      <td id="T_d0bfe_row12_col4" class="data row12 col4" >8</td>
-      <td id="T_d0bfe_row12_col5" class="data row12 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row13_col0" class="data row13 col0" >8</td>
-      <td id="T_d0bfe_row13_col1" class="data row13 col1" >2000</td>
-      <td id="T_d0bfe_row13_col2" class="data row13 col2" >2.95</td>
-      <td id="T_d0bfe_row13_col3" class="data row13 col3" >1010</td>
-      <td id="T_d0bfe_row13_col4" class="data row13 col4" >8</td>
-      <td id="T_d0bfe_row13_col5" class="data row13 col5" >[0.5, 0.5, 0.5]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row14_col0" class="data row14 col0" >8</td>
-      <td id="T_d0bfe_row14_col1" class="data row14 col1" >4000</td>
-      <td id="T_d0bfe_row14_col2" class="data row14 col2" >3.52</td>
-      <td id="T_d0bfe_row14_col3" class="data row14 col3" >2180</td>
-      <td id="T_d0bfe_row14_col4" class="data row14 col4" >5</td>
-      <td id="T_d0bfe_row14_col5" class="data row14 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row15_col0" class="data row15 col0" >8</td>
-      <td id="T_d0bfe_row15_col1" class="data row15 col1" >4000</td>
-      <td id="T_d0bfe_row15_col2" class="data row15 col2" >3.52</td>
-      <td id="T_d0bfe_row15_col3" class="data row15 col3" >0</td>
-      <td id="T_d0bfe_row15_col4" class="data row15 col4" >0</td>
-      <td id="T_d0bfe_row15_col5" class="data row15 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row16_col0" class="data row16 col0" >8</td>
-      <td id="T_d0bfe_row16_col1" class="data row16 col1" >4000</td>
-      <td id="T_d0bfe_row16_col2" class="data row16 col2" >3.52</td>
-      <td id="T_d0bfe_row16_col3" class="data row16 col3" >716</td>
-      <td id="T_d0bfe_row16_col4" class="data row16 col4" >5</td>
-      <td id="T_d0bfe_row16_col5" class="data row16 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row17_col0" class="data row17 col0" >5</td>
-      <td id="T_d0bfe_row17_col1" class="data row17 col1" >1750</td>
-      <td id="T_d0bfe_row17_col2" class="data row17 col2" >2.75</td>
-      <td id="T_d0bfe_row17_col3" class="data row17 col3" >900</td>
-      <td id="T_d0bfe_row17_col4" class="data row17 col4" >7</td>
-      <td id="T_d0bfe_row17_col5" class="data row17 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row18_col0" class="data row18 col0" >5</td>
-      <td id="T_d0bfe_row18_col1" class="data row18 col1" >1750</td>
-      <td id="T_d0bfe_row18_col2" class="data row18 col2" >2.74</td>
-      <td id="T_d0bfe_row18_col3" class="data row18 col3" >900</td>
-      <td id="T_d0bfe_row18_col4" class="data row18 col4" >8</td>
-      <td id="T_d0bfe_row18_col5" class="data row18 col5" >[0.75, 0.75, 0.75]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row19_col0" class="data row19 col0" >4</td>
-      <td id="T_d0bfe_row19_col1" class="data row19 col1" >1850</td>
-      <td id="T_d0bfe_row19_col2" class="data row19 col2" >2.84</td>
-      <td id="T_d0bfe_row19_col3" class="data row19 col3" >962</td>
-      <td id="T_d0bfe_row19_col4" class="data row19 col4" >8</td>
-      <td id="T_d0bfe_row19_col5" class="data row19 col5" >[0.597, 0.597, 0.6]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row20_col0" class="data row20 col0" >2</td>
-      <td id="T_d0bfe_row20_col1" class="data row20 col1" >2500</td>
-      <td id="T_d0bfe_row20_col2" class="data row20 col2" >2.22</td>
-      <td id="T_d0bfe_row20_col3" class="data row20 col3" >1090</td>
-      <td id="T_d0bfe_row20_col4" class="data row20 col4" >8</td>
-      <td id="T_d0bfe_row20_col5" class="data row20 col5" >[0.8, 0.8, 0.8]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row21_col0" class="data row21 col0" >2</td>
-      <td id="T_d0bfe_row21_col1" class="data row21 col1" >2500</td>
-      <td id="T_d0bfe_row21_col2" class="data row21 col2" >2.86</td>
-      <td id="T_d0bfe_row21_col3" class="data row21 col3" >1090</td>
-      <td id="T_d0bfe_row21_col4" class="data row21 col4" >8</td>
-      <td id="T_d0bfe_row21_col5" class="data row21 col5" >[0.799, 0.799, 0.8]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row22_col0" class="data row22 col0" >2</td>
-      <td id="T_d0bfe_row22_col1" class="data row22 col1" >2400</td>
-      <td id="T_d0bfe_row22_col2" class="data row22 col2" >2.86</td>
-      <td id="T_d0bfe_row22_col3" class="data row22 col3" >1000</td>
-      <td id="T_d0bfe_row22_col4" class="data row22 col4" >8</td>
-      <td id="T_d0bfe_row22_col5" class="data row22 col5" >[0.799, 0.799, 0.8]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row23_col0" class="data row23 col0" >2</td>
-      <td id="T_d0bfe_row23_col1" class="data row23 col1" >2700</td>
-      <td id="T_d0bfe_row23_col2" class="data row23 col2" >2.86</td>
-      <td id="T_d0bfe_row23_col3" class="data row23 col3" >1250</td>
-      <td id="T_d0bfe_row23_col4" class="data row23 col4" >8</td>
-      <td id="T_d0bfe_row23_col5" class="data row23 col5" >[0.799, 0.799, 0.8]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row24_col0" class="data row24 col0" >2</td>
-      <td id="T_d0bfe_row24_col1" class="data row24 col1" >2400</td>
-      <td id="T_d0bfe_row24_col2" class="data row24 col2" >2.32</td>
-      <td id="T_d0bfe_row24_col3" class="data row24 col3" >1000</td>
-      <td id="T_d0bfe_row24_col4" class="data row24 col4" >8</td>
-      <td id="T_d0bfe_row24_col5" class="data row24 col5" >[0.898, 0.898, 0.9]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row25_col0" class="data row25 col0" >2</td>
-      <td id="T_d0bfe_row25_col1" class="data row25 col1" >2300</td>
-      <td id="T_d0bfe_row25_col2" class="data row25 col2" >2.3</td>
-      <td id="T_d0bfe_row25_col3" class="data row25 col3" >900</td>
-      <td id="T_d0bfe_row25_col4" class="data row25 col4" >8</td>
-      <td id="T_d0bfe_row25_col5" class="data row25 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row26_col0" class="data row26 col0" >2</td>
-      <td id="T_d0bfe_row26_col1" class="data row26 col1" >2200</td>
-      <td id="T_d0bfe_row26_col2" class="data row26 col2" >2.77</td>
-      <td id="T_d0bfe_row26_col3" class="data row26 col3" >1000</td>
-      <td id="T_d0bfe_row26_col4" class="data row26 col4" >8</td>
-      <td id="T_d0bfe_row26_col5" class="data row26 col5" >[0.9, 0.9, 0.9]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row27_col0" class="data row27 col0" >1</td>
-      <td id="T_d0bfe_row27_col1" class="data row27 col1" >1500</td>
-      <td id="T_d0bfe_row27_col2" class="data row27 col2" >2.66</td>
-      <td id="T_d0bfe_row27_col3" class="data row27 col3" >538</td>
-      <td id="T_d0bfe_row27_col4" class="data row27 col4" >8</td>
-      <td id="T_d0bfe_row27_col5" class="data row27 col5" >[0.902, 0.902, 0.9]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row28_col0" class="data row28 col0" >1</td>
-      <td id="T_d0bfe_row28_col1" class="data row28 col1" >1750</td>
-      <td id="T_d0bfe_row28_col2" class="data row28 col2" >2.76</td>
-      <td id="T_d0bfe_row28_col3" class="data row28 col3" >900</td>
-      <td id="T_d0bfe_row28_col4" class="data row28 col4" >8</td>
-      <td id="T_d0bfe_row28_col5" class="data row28 col5" >[0.703, 0.703, 0.7]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row29_col0" class="data row29 col0" >1</td>
-      <td id="T_d0bfe_row29_col1" class="data row29 col1" >1750</td>
-      <td id="T_d0bfe_row29_col2" class="data row29 col2" >2.44</td>
-      <td id="T_d0bfe_row29_col3" class="data row29 col3" >400</td>
-      <td id="T_d0bfe_row29_col4" class="data row29 col4" >8</td>
-      <td id="T_d0bfe_row29_col5" class="data row29 col5" >[0.5, 0.5, 0.5]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row30_col0" class="data row30 col0" >1</td>
-      <td id="T_d0bfe_row30_col1" class="data row30 col1" >1750</td>
-      <td id="T_d0bfe_row30_col2" class="data row30 col2" >2.57</td>
-      <td id="T_d0bfe_row30_col3" class="data row30 col3" >900</td>
-      <td id="T_d0bfe_row30_col4" class="data row30 col4" >8</td>
-      <td id="T_d0bfe_row30_col5" class="data row30 col5" >[1.116, 1.116, 1.1]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row31_col0" class="data row31 col0" >1</td>
-      <td id="T_d0bfe_row31_col1" class="data row31 col1" >3500</td>
-      <td id="T_d0bfe_row31_col2" class="data row31 col2" >3.07</td>
-      <td id="T_d0bfe_row31_col3" class="data row31 col3" >2050</td>
-      <td id="T_d0bfe_row31_col4" class="data row31 col4" >5</td>
-      <td id="T_d0bfe_row31_col5" class="data row31 col5" >[0.898, 0.898, 0.9]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row32_col0" class="data row32 col0" >1</td>
-      <td id="T_d0bfe_row32_col1" class="data row32 col1" >3500</td>
-      <td id="T_d0bfe_row32_col2" class="data row32 col2" >3.07</td>
-      <td id="T_d0bfe_row32_col3" class="data row32 col3" >690</td>
-      <td id="T_d0bfe_row32_col4" class="data row32 col4" >5</td>
-      <td id="T_d0bfe_row32_col5" class="data row32 col5" >[0.898, 0.898, 0.9]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row33_col0" class="data row33 col0" >1</td>
-      <td id="T_d0bfe_row33_col1" class="data row33 col1" >3500</td>
-      <td id="T_d0bfe_row33_col2" class="data row33 col2" >3.07</td>
-      <td id="T_d0bfe_row33_col3" class="data row33 col3" >0</td>
-      <td id="T_d0bfe_row33_col4" class="data row33 col4" >0</td>
-      <td id="T_d0bfe_row33_col5" class="data row33 col5" >[0.898, 0.898, 0.9]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row34_col0" class="data row34 col0" >1</td>
-      <td id="T_d0bfe_row34_col1" class="data row34 col1" >1750</td>
-      <td id="T_d0bfe_row34_col2" class="data row34 col2" >2.58</td>
-      <td id="T_d0bfe_row34_col3" class="data row34 col3" >400</td>
-      <td id="T_d0bfe_row34_col4" class="data row34 col4" >8</td>
-      <td id="T_d0bfe_row34_col5" class="data row34 col5" >[0.604, 0.604, 0.6]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row35_col0" class="data row35 col0" >1</td>
-      <td id="T_d0bfe_row35_col1" class="data row35 col1" >1750</td>
-      <td id="T_d0bfe_row35_col2" class="data row35 col2" >2.59</td>
-      <td id="T_d0bfe_row35_col3" class="data row35 col3" >900</td>
-      <td id="T_d0bfe_row35_col4" class="data row35 col4" >8</td>
-      <td id="T_d0bfe_row35_col5" class="data row35 col5" >[1.215, 1.215, 1.22]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row36_col0" class="data row36 col0" >1</td>
-      <td id="T_d0bfe_row36_col1" class="data row36 col1" >1750</td>
-      <td id="T_d0bfe_row36_col2" class="data row36 col2" >2.63</td>
-      <td id="T_d0bfe_row36_col3" class="data row36 col3" >446</td>
-      <td id="T_d0bfe_row36_col4" class="data row36 col4" >8</td>
-      <td id="T_d0bfe_row36_col5" class="data row36 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row37_col0" class="data row37 col0" >1</td>
-      <td id="T_d0bfe_row37_col1" class="data row37 col1" >2530</td>
-      <td id="T_d0bfe_row37_col2" class="data row37 col2" >2.88</td>
-      <td id="T_d0bfe_row37_col3" class="data row37 col3" >1100</td>
-      <td id="T_d0bfe_row37_col4" class="data row37 col4" >7</td>
-      <td id="T_d0bfe_row37_col5" class="data row37 col5" >[1.071, 1.071, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row38_col0" class="data row38 col0" >1</td>
-      <td id="T_d0bfe_row38_col1" class="data row38 col1" >2530</td>
-      <td id="T_d0bfe_row38_col2" class="data row38 col2" >2.76</td>
-      <td id="T_d0bfe_row38_col3" class="data row38 col3" >1100</td>
-      <td id="T_d0bfe_row38_col4" class="data row38 col4" >7</td>
-      <td id="T_d0bfe_row38_col5" class="data row38 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row39_col0" class="data row39 col0" >1</td>
-      <td id="T_d0bfe_row39_col1" class="data row39 col1" >2530</td>
-      <td id="T_d0bfe_row39_col2" class="data row39 col2" >2.65</td>
-      <td id="T_d0bfe_row39_col3" class="data row39 col3" >1100</td>
-      <td id="T_d0bfe_row39_col4" class="data row39 col4" >7</td>
-      <td id="T_d0bfe_row39_col5" class="data row39 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row40_col0" class="data row40 col0" >1</td>
-      <td id="T_d0bfe_row40_col1" class="data row40 col1" >1750</td>
-      <td id="T_d0bfe_row40_col2" class="data row40 col2" >2.77</td>
-      <td id="T_d0bfe_row40_col3" class="data row40 col3" >688</td>
-      <td id="T_d0bfe_row40_col4" class="data row40 col4" >8</td>
-      <td id="T_d0bfe_row40_col5" class="data row40 col5" >[0.701, 0.701, 0.7]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row41_col0" class="data row41 col0" >1</td>
-      <td id="T_d0bfe_row41_col1" class="data row41 col1" >1750</td>
-      <td id="T_d0bfe_row41_col2" class="data row41 col2" >2.8</td>
-      <td id="T_d0bfe_row41_col3" class="data row41 col3" >446</td>
-      <td id="T_d0bfe_row41_col4" class="data row41 col4" >8</td>
-      <td id="T_d0bfe_row41_col5" class="data row41 col5" >[0.703, 0.703, 0.7]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row42_col0" class="data row42 col0" >1</td>
-      <td id="T_d0bfe_row42_col1" class="data row42 col1" >1750</td>
-      <td id="T_d0bfe_row42_col2" class="data row42 col2" >2.83</td>
-      <td id="T_d0bfe_row42_col3" class="data row42 col3" >400</td>
-      <td id="T_d0bfe_row42_col4" class="data row42 col4" >8</td>
-      <td id="T_d0bfe_row42_col5" class="data row42 col5" >[1.292, 1.292, 0.7]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row43_col0" class="data row43 col0" >1</td>
-      <td id="T_d0bfe_row43_col1" class="data row43 col1" >2400</td>
-      <td id="T_d0bfe_row43_col2" class="data row43 col2" >2.92</td>
-      <td id="T_d0bfe_row43_col3" class="data row43 col3" >1000</td>
-      <td id="T_d0bfe_row43_col4" class="data row43 col4" >7</td>
-      <td id="T_d0bfe_row43_col5" class="data row43 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row44_col0" class="data row44 col0" >1</td>
-      <td id="T_d0bfe_row44_col1" class="data row44 col1" >1750</td>
-      <td id="T_d0bfe_row44_col2" class="data row44 col2" >2.93</td>
-      <td id="T_d0bfe_row44_col3" class="data row44 col3" >900</td>
-      <td id="T_d0bfe_row44_col4" class="data row44 col4" >8</td>
-      <td id="T_d0bfe_row44_col5" class="data row44 col5" >[0.75, 0.75, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row45_col0" class="data row45 col0" >1</td>
-      <td id="T_d0bfe_row45_col1" class="data row45 col1" >1800</td>
-      <td id="T_d0bfe_row45_col2" class="data row45 col2" >2.61</td>
-      <td id="T_d0bfe_row45_col3" class="data row45 col3" >900</td>
-      <td id="T_d0bfe_row45_col4" class="data row45 col4" >8</td>
-      <td id="T_d0bfe_row45_col5" class="data row45 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row46_col0" class="data row46 col0" >1</td>
-      <td id="T_d0bfe_row46_col1" class="data row46 col1" >1800</td>
-      <td id="T_d0bfe_row46_col2" class="data row46 col2" >3.47</td>
-      <td id="T_d0bfe_row46_col3" class="data row46 col3" >900</td>
-      <td id="T_d0bfe_row46_col4" class="data row46 col4" >8</td>
-      <td id="T_d0bfe_row46_col5" class="data row46 col5" >[0.797, 0.797, 0.8]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row47_col0" class="data row47 col0" >1</td>
-      <td id="T_d0bfe_row47_col1" class="data row47 col1" >2080</td>
-      <td id="T_d0bfe_row47_col2" class="data row47 col2" >2.59</td>
-      <td id="T_d0bfe_row47_col3" class="data row47 col3" >1050</td>
-      <td id="T_d0bfe_row47_col4" class="data row47 col4" >8</td>
-      <td id="T_d0bfe_row47_col5" class="data row47 col5" >[1.0, 1.0, 1.0]</td>
-    </tr>
-    <tr>
-      <td id="T_d0bfe_row48_col0" class="data row48 col0" >1</td>
-      <td id="T_d0bfe_row48_col1" class="data row48 col1" >1000</td>
-      <td id="T_d0bfe_row48_col2" class="data row48 col2" >2.69</td>
-      <td id="T_d0bfe_row48_col3" class="data row48 col3" >500</td>
-      <td id="T_d0bfe_row48_col4" class="data row48 col4" >8</td>
-      <td id="T_d0bfe_row48_col5" class="data row48 col5" >[0.902, 0.902, 0.9]</td>
+      <td id="T_d74a0_row6_col0" class="data row6 col0" >100</td>
+      <td id="T_d74a0_row6_col1" class="data row6 col1" >1750</td>
+      <td id="T_d74a0_row6_col2" class="data row6 col2" >2.84</td>
+      <td id="T_d74a0_row6_col3" class="data row6 col3" >900</td>
+      <td id="T_d74a0_row6_col4" class="data row6 col4" >8</td>
+      <td id="T_d74a0_row6_col5" class="data row6 col5" >[0.6, 0.6, 0.6]</td>
+      <td id="T_d74a0_row6_col6" class="data row6 col6" >True</td>
     </tr>
   </tbody>
 </table>
 </div></div>
 </div>
-</div>
-</div>
-<div class="section" id="diffusion-weighted-mri">
-<h3><span class="section-number">3.1.1.2. </span>Diffusion-weighted MRI<a class="headerlink" href="#diffusion-weighted-mri" title="Permalink to this headline">¶</a></h3>
-</div>
-</div>
-<div class="section" id="functional-mri">
-<h2><span class="section-number">3.1.2. </span>Functional MRI<a class="headerlink" href="#functional-mri" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="rs-fmri">
-<h3><span class="section-number">3.1.2.1. </span>rs-fMRI<a class="headerlink" href="#rs-fmri" title="Permalink to this headline">¶</a></h3>
-</div>
-</div>
-</div>
+</section>
+</section>
+<section id="diffusion-weighted-mri">
+<h3><span class="section-number">3.1.1.2. </span>Diffusion-weighted MRI<a class="headerlink" href="#diffusion-weighted-mri" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="functional-mri">
+<h2><span class="section-number">3.1.2. </span>Functional MRI<a class="headerlink" href="#functional-mri" title="Permalink to this headline">#</a></h2>
+<section id="rs-fmri">
+<h3><span class="section-number">3.1.2.1. </span>rs-fMRI<a class="headerlink" href="#rs-fmri" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1380,9 +839,11 @@
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="methods.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1398,24 +859,28 @@
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Zvi Baratz<br/>
+  
+      &copy; Copyright 2021.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Zvi Baratz<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

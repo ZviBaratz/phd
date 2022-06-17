@@ -4,11 +4,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>4.1.3. Results &#8212; Ph.D. Thesis</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,21 +20,17 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,18 +38,18 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://zvibaratz.github.io/phd/front.html/chapters/labbing/results.html" />
     <link rel="shortcut icon" href="../../_static/favicon.jpg"/>
@@ -66,7 +64,21 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -75,9 +87,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -283,86 +296,176 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/chapters/labbing/results.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/ZviBaratz/PhD"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/ZviBaratz/PhD/issues/new?title=Issue%20on%20page%20%2Fchapters/labbing/results.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
         </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/ZviBaratz/PhD"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ZviBaratz/PhD/issues/new?title=Issue%20on%20page%20%2Fchapters/labbing/results.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/chapters/labbing/results.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#general-research-management-application">
    4.1.3.1. General Research Management Application
@@ -449,16 +552,20 @@
      </em>
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neuroimaging-research-database">
+     4.1.3.3.2. Neuroimaging Research Database
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Results</h1>
@@ -557,6 +664,11 @@
      </em>
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neuroimaging-research-database">
+     4.1.3.3.2. Neuroimaging Research Database
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -565,81 +677,92 @@
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="results">
-<span id="labbing-results"></span><h1><span class="section-number">4.1.3. </span>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="results">
+<span id="labbing-results"></span><h1><span class="section-number">4.1.3. </span>Results<a class="headerlink" href="#results" title="Permalink to this headline">#</a></h1>
 <hr>
 <p>The following section will detail the components of the <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> and <span class="muted-ref"><a class="reference external" href="https://vuejs.org/">Vue.js</a></span> web application developed for the purposes of this thesis, all available under the dedicated <span class="muted-ref"><a class="reference external" href="https://www.github.com/">GitHub</a></span> organization’s page at <a class="reference external" href="https://www.github.com/TheLabbingProject">https://www.github.com/TheLabbingProject</a>.</p>
-<div class="section" id="general-research-management-application">
-<span id="labbing-results-project"></span><h2><span class="section-number">4.1.3.1. </span>General Research Management Application<a class="headerlink" href="#general-research-management-application" title="Permalink to this headline">¶</a></h2>
+<section id="general-research-management-application">
+<span id="labbing-results-project"></span><h2><span class="section-number">4.1.3.1. </span>General Research Management Application<a class="headerlink" href="#general-research-management-application" title="Permalink to this headline">#</a></h2>
 <p>Even though it is built to support neuroimaging-based academic research, the core of the application is entirely domain-agnostic. Elementary research entities, such as subjects, studies, and experimental procedures, are managed independently of any particular data model.</p>
-<div class="section" id="pylabber">
-<span id="labbing-results-project-pylabber"></span><h3><span class="section-number">4.1.3.1.1. </span><em>pylabber</em><a class="headerlink" href="#pylabber" title="Permalink to this headline">¶</a></h3>
+<section id="pylabber">
+<span id="labbing-results-project-pylabber"></span><h3><span class="section-number">4.1.3.1.1. </span><em>pylabber</em><a class="headerlink" href="#pylabber" title="Permalink to this headline">#</a></h3>
 <p><span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/pylabber"><em>pylabber</em></a></span> (see <a class="reference external" href="https://www.github.com/TheLabbingProject/pylabber">https://www.github.com/TheLabbingProject/pylabber</a>) is the base project repository (see <a class="reference internal" href="methods.html#labbing-methods-backend-django"><span class="std std-ref">Django</span></a> section in <a class="reference internal" href="methods.html#labbing-methods"><span class="std std-ref">Materials and Methods</span></a>) for the complete web application. In addition to centralizing configurations and resources, it includes two general-purpose research apps:</p>
 <ul class="simple">
 <li><p><em>accounts</em>: Manages laboratory and researcher information, as well as data distribution. Administrators can register new laboratories and users (researchers), and users can provide <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">SSH</span></a></span> credentials (used to negotiate <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">SFTP</span></a></span> transport sessions) to remote machines, termed export destinations. Raw data as well as analysis results export methods are provided, and <span class="muted-ref"><a class="reference external" href="https://docs.celeryproject.org/"><em>Celery</em></a></span> tasks are available for initiating controlled and monitored export sessions as background processes.</p></li>
 <li><p><em>research</em>: Manages general research-related entities. Relies on external apps to associate models representing data acquisitions (such as an <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a></span> session) to the appropriate subject, and models representing data instances (such as an <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a></span> scan) to study groups. The decision to move group association from subjects to data instances was made in order to allow for flexible association of any part of the acquired data to any number of study groups. Each study may be assigned a number of study groups, as well as a number of experimental procedures. An experimental procedure consists of an ordered sequence of steps which may be categorized as either tasks or data acquisitions (see the <em>research</em> container nested within the <em>pylabber</em> container and highlighted in purple in <a class="reference internal" href="#labbing-schema"><span class="std std-numref">Fig. 4.4</span></a>).</p></li>
 </ul>
-<div class="figure align-default" id="labbing-schema">
+<figure class="align-default" id="labbing-schema">
 <a class="reference internal image-reference" href="../../_images/labbing_schema.png"><img alt="Web application's entity-relationship diagram." src="../../_images/labbing_schema.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.4 </span><span class="caption-text"><a class="reference external" href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model#Crow%27s_foot_notation">Crow’s foot</a> Entity-Relationship (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">ER</span></a></span>) diagram illustrating the database tables managed by the application and relationships between them.</span><a class="headerlink" href="#labbing-schema" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="admin-interface">
-<span id="labbing-results-project-admin"></span><h3><span class="section-number">4.1.3.1.2. </span>Admin Interface<a class="headerlink" href="#admin-interface" title="Permalink to this headline">¶</a></h3>
+<figcaption>
+<p><span class="caption-number">Fig. 4.4 </span><span class="caption-text"><a class="reference external" href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model#Crow%27s_foot_notation">Crow’s foot</a> Entity-Relationship (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">ER</span></a></span>) diagram illustrating the database tables managed by the application and relationships between them.</span><a class="headerlink" href="#labbing-schema" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="admin-interface">
+<span id="labbing-results-project-admin"></span><h3><span class="section-number">4.1.3.1.2. </span>Admin Interface<a class="headerlink" href="#admin-interface" title="Permalink to this headline">#</a></h3>
 <p><span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> provides powerful automated admin interface generation utilities (see <a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/contrib/admin/">https://docs.djangoproject.com/en/dev/ref/contrib/admin/</a>). The application makes extensive use of these features to provide highly detailed admin access to all the application’s models (i.e. database tables) including <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">CRUD</span></a></span> operations, useful filters, and summary plots.</p>
-<div class="figure align-default" id="subjects-admin">
+<figure class="align-default" id="subjects-admin">
 <a class="reference internal image-reference" href="../../_images/subjects_admin.png"><img alt="Subject model admin interface list view." src="../../_images/subjects_admin.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.5 </span><span class="caption-text">The subject model’s admin interface list view. Sex, dominant hand, and date of birth distribution plots are displayed to offer a visual summary of the displayed queryset. A general search field allows searching by first name, last name, or ID number. More filters are available on the right panel. Other models’ list views are available on the left panel.</span><a class="headerlink" href="#subjects-admin" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-</div>
-<div class="section" id="reusable-django-apps">
-<span id="labbing-results-apps"></span><h2><span class="section-number">4.1.3.2. </span>Reusable Django Apps<a class="headerlink" href="#reusable-django-apps" title="Permalink to this headline">¶</a></h2>
+<figcaption>
+<p><span class="caption-number">Fig. 4.5 </span><span class="caption-text">The subject model’s admin interface list view. Sex, dominant hand, and date of birth distribution plots are displayed to offer a visual summary of the displayed queryset. A general search field allows searching by first name, last name, or ID number. More filters are available on the right panel. Other models’ list views are available on the left panel.</span><a class="headerlink" href="#subjects-admin" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="reusable-django-apps">
+<span id="labbing-results-apps"></span><h2><span class="section-number">4.1.3.2. </span>Reusable Django Apps<a class="headerlink" href="#reusable-django-apps" title="Permalink to this headline">#</a></h2>
 <p>The integration of references to files and database access to metadata information is handled using reusable <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> apps and conforms with the <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> framework’s general design philosophy. Other than reusability, encapsulation of domain-specific logic also contributes to both the maintainability and extensibility of the code-base.</p>
-<div class="section" id="django-analyses">
-<span id="labbing-results-apps-django-analyses"></span><h3><span class="section-number">4.1.3.2.1. </span><em>django_analyses</em><a class="headerlink" href="#django-analyses" title="Permalink to this headline">¶</a></h3>
+<section id="django-analyses">
+<span id="labbing-results-apps-django-analyses"></span><h3><span class="section-number">4.1.3.2.1. </span><em>django_analyses</em><a class="headerlink" href="#django-analyses" title="Permalink to this headline">#</a></h3>
 <p><span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_analyses"><em>django_analyses</em></a></span> provides database-driven analysis registration and execution management (see the <span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_analyses"><em>django_analyses</em></a></span> container, highlighted in red in <a class="reference internal" href="#labbing-schema"><span class="std std-numref">Fig. 4.4</span></a>).</p>
-<div class="section" id="analysis-integration">
-<span id="labbing-results-apps-django-analyses-analysis"></span><h4><span class="section-number">4.1.3.2.1.1. </span>Analysis Integration<a class="headerlink" href="#analysis-integration" title="Permalink to this headline">¶</a></h4>
+<section id="analysis-integration">
+<span id="labbing-results-apps-django-analyses-analysis"></span><h4><span class="section-number">4.1.3.2.1.1. </span>Analysis Integration<a class="headerlink" href="#analysis-integration" title="Permalink to this headline">#</a></h4>
 <p>Analysis interfaces (i.e. Python classes or functions used to initialize the execution of an analysis) are registered with a particular analysis version, which represents it in the database and holds references to the appropriate input and output specifications. When an analysis version is executed, a new run instance is created to combine the information about the analysis version with the provided inputs and eventually outputs (or traceback information, if an exception was raised). If the same analysis version with the same input configuration is required again, the existing run instance is returned.</p>
 <p>Node instances are used as execution templates and provide a constant reference to runs of a specific analysis version with a particular configuration. Controlled execution of analyses with <span class="muted-ref"><a class="reference external" href="https://docs.celeryproject.org/"><em>Celery</em></a></span> is handled by providing nodes with input data and returning the created (or existing) run instances.</p>
-</div>
-<div class="section" id="pipeline-integration">
-<span id="labbing-results-apps-django-analyses-pipeline"></span><h4><span class="section-number">4.1.3.2.1.2. </span>Pipeline Integration<a class="headerlink" href="#pipeline-integration" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="pipeline-integration">
+<span id="labbing-results-apps-django-analyses-pipeline"></span><h4><span class="section-number">4.1.3.2.1.2. </span>Pipeline Integration<a class="headerlink" href="#pipeline-integration" title="Permalink to this headline">#</a></h4>
 <p>Pipelines, or workflows, may be registered in the database as a sequence of pipes. Each pipe describes the flow of data from one node’s output to another node’s input specification. A dedicated “pipeline runner” class is provided by the app to control the ordered execution of nodes according to the dependecies outlined by the pipes.</p>
 <p>For more information about <span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_analyses"><em>django_analyses</em></a></span> and complete usage examples, see the app’s <span class="muted-ref"><a class="reference external" href="https://django-analyses.readthedocs.io/">documentation site</a></span> (available at <a class="reference external" href="https://django-analyses.readthedocs.io/">https://django-analyses.readthedocs.io/</a>).</p>
-</div>
-</div>
-<div class="section" id="django-dicom">
-<span id="labbing-results-apps-django-dicom"></span><h3><span class="section-number">4.1.3.2.2. </span><em>django_dicom</em><a class="headerlink" href="#django-dicom" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="django-dicom">
+<span id="labbing-results-apps-django-dicom"></span><h3><span class="section-number">4.1.3.2.2. </span><em>django_dicom</em><a class="headerlink" href="#django-dicom" title="Permalink to this headline">#</a></h3>
 <p><span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_dicom"><em>django_dicom</em></a></span> is used to import <em>.dcm</em> files, extract metadata from the headers, and keep an organized archive of the included <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> entities (see <a class="reference external" href="https://dicom.nema.org/dicom/2013/output/chtml/part03/chapter_A.html">Part 3 Section A.1.2</a> of the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> Standard as well as the <span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_dicom"><em>django_dicom</em></a></span> container, highlighted in yellow in <a class="reference internal" href="#labbing-schema"><span class="std std-numref">Fig. 4.4</span></a>). All attributes associated with each information entity included in a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> header are serialized to the database together with principal acquisition parameters (e.g. <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">TE</span></a></span>, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">TI</span></a></span>, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">TR</span></a></span>, etc.).</p>
-<div class="section" id="dicom-parser">
-<span id="labbing-results-apps-django-dicom-dicom-parser"></span><h4><span class="section-number">4.1.3.2.2.1. </span><em>dicom_parser</em><a class="headerlink" href="#dicom-parser" title="Permalink to this headline">¶</a></h4>
+<section id="dicom-parser">
+<span id="labbing-results-apps-django-dicom-dicom-parser"></span><h4><span class="section-number">4.1.3.2.2.1. </span><em>dicom_parser</em><a class="headerlink" href="#dicom-parser" title="Permalink to this headline">#</a></h4>
 <p>Header information is read using <span class="muted-ref"><a class="reference external" href="https://www.github.com/open-dicom/dicom_parser"><em>dicom_parser</em></a></span> (see <a class="reference external" href="https://www.github.com/open-dicom/dicom_parser">https://www.github.com/open-dicom/dicom_parser</a>), a wrapper around <span class="muted-ref"><a class="reference external" href="https://pydicom.github.io/"><em>pydicom</em></a></span> (see <a class="reference external" href="https://pydicom.github.io/">https://pydicom.github.io/</a>) developed specifically for the purposes of the app. While <span class="muted-ref"><a class="reference external" href="https://pydicom.github.io/"><em>pydicom</em></a></span> focuses on low-level header parsing in compliance with the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DICOM</span></a></span> Standard, <span class="muted-ref"><a class="reference external" href="https://www.github.com/open-dicom/dicom_parser"><em>dicom_parser</em></a></span> provides a higher-level <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">API</span></a></span> to facilitate type conversion and vendor-specific metadata extraction methods. In addition, <span class="muted-ref"><a class="reference external" href="https://www.github.com/open-dicom/dicom_parser"><em>dicom_parser</em></a></span> includes a “sequence detection” utility, enabling the configuration of commonplace heuristics for automated categorization of the scanning protocol (e.g. <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MPRAGE</span></a></span>, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FLAIR</span></a></span>, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">fMRI</span></a></span>, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">dMRI</span></a></span>, etc.).</p>
-</div>
-</div>
-<div class="section" id="django-mri">
-<span id="labbing-results-apps-django-mri"></span><h3><span class="section-number">4.1.3.2.3. </span><em>django_mri</em><a class="headerlink" href="#django-mri" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="django-mri">
+<span id="labbing-results-apps-django-mri"></span><h3><span class="section-number">4.1.3.2.3. </span><em>django_mri</em><a class="headerlink" href="#django-mri" title="Permalink to this headline">#</a></h3>
 <p><span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_mri"><em>django_mri</em></a></span> provides an abstraction layer which is ultimately meant to keep the users practically agnostic of file-format and metadata extraction processes (see the <span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_mri"><em>django_mri</em></a></span> container, highlighted in orange in <a class="reference internal" href="#labbing-schema"><span class="std std-numref">Fig. 4.4</span></a>). It uses <span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_dicom"><em>django_dicom</em></a></span> alongside a supplementary <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">NIfTI</span></a></span> database table to simplify interaction with <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a></span> data by providing abstract “scan” and “session” representations. The scan data model keeps a reference to source files and automates whatever possible to allow shifting the focus from infrastructure and technical details to processing and results.</p>
 <p>In terms of file management, <span class="muted-ref"><a class="reference external" href="https://www.github.com/open-dicom/dicom_parser"><em>dicom_parser</em></a></span>’s sequence detection functionality provides information which is essential for automated <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span>-compliant organization. By taking advantage of the configured heuristics, <span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_mri"><em>django_mri</em></a></span> maintains a “global” <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span> dataset, which holds the combined datasets of multiple studies. All research information is maintained in the database and any available <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">BIDS</span></a></span> app may be applied (see <a class="reference external" href="https://bids-apps.neuroimaging.io/">https://bids-apps.neuroimaging.io/</a>).</p>
-<p>Finally, <span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_mri"><em>django_mri</em></a></span> makes extensive use of <span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_analyses"><em>django_analyses</em></a></span> and <span class="muted-ref"><a class="reference external" href="https://nipype.readthedocs.io/"><em>nipype</em></a></span> <span id="id1">[<a class="reference internal" href="../bibliography.html#id41">Gorgolewski <em>et al.</em>, 2011</a>]</span> to provide the specifications and analysis interfaces (see <a class="reference internal" href="#labbing-results-apps-django-analyses-analysis"><span class="std std-ref">Analysis Integration</span></a>) for numerous neuroimaging processing tools, including <span class="muted-ref"><a class="reference external" href="https://fmriprep.org/"><em>fMRIPrep</em></a></span> <span id="id2">[<a class="reference internal" href="../bibliography.html#id42">Esteban <em>et al.</em>, 2019</a>]</span>, <span class="muted-ref"><a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/"><em>FreeSurfer</em></a></span> <span id="id3">[<a class="reference internal" href="../bibliography.html#id43">Fischl, 2012</a>]</span>, <span class="muted-ref"><a class="reference external" href="https://qsiprep.readthedocs.io/"><em>QSIPrep</em></a></span> <span id="id4">[<a class="reference internal" href="../bibliography.html#id44">Cieslak <em>et al.</em>, 2021</a>]</span>, <span class="muted-ref"><a class="reference external" href="http://www.neuro.uni-jena.de/cat/"><em>CAT</em></a></span> (see <a class="reference external" href="http://www.neuro.uni-jena.de/cat/">http://www.neuro.uni-jena.de/cat/</a>), and more.</p>
-</div>
-</div>
-<div class="section" id="front-end-application">
-<span id="labbing-results-front-end"></span><h2><span class="section-number">4.1.3.3. </span>Front-end Application<a class="headerlink" href="#front-end-application" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="vuelabber">
-<span id="labbing-results-front-end-vuelabber"></span><h3><span class="section-number">4.1.3.3.1. </span><em>vuelabber</em><a class="headerlink" href="#vuelabber" title="Permalink to this headline">¶</a></h3>
-<p>A front-end application created with <span class="muted-ref"><a class="reference external" href="https://vuejs.org/">Vue.js</a></span> is used to provide users with a modern-looking and highly functional graphical user interface. Communication between the front-end and the server is based on the application’s <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">REST</span></a></span> <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">API</span></a></span> (see <a class="reference internal" href="methods.html#labbing-methods-backend-django-api"><span class="std std-ref">Application Programming Interface</span></a>) and may easily be extended, customized, and even replaced.</p>
-<div class="figure align-default" id="subjects-vue">
+<p>Finally, <span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_mri"><em>django_mri</em></a></span> makes extensive use of <span class="muted-ref"><a class="reference external" href="https://www.github.com/TheLabbingProject/django_analyses"><em>django_analyses</em></a></span> and <span class="muted-ref"><a class="reference external" href="https://nipype.readthedocs.io/"><em>nipype</em></a></span> <span id="id1">[<a class="reference internal" href="../bibliography.html#id41" title="Krzysztof Gorgolewski, Christopher D. Burns, Cindee Madison, Dav Clark, Yaroslav O. Halchenko, Michael L. Waskom, and Satrajit S. Ghosh. Nipype: A Flexible, Lightweight and Extensible Neuroimaging Data Processing Framework in Python. Frontiers in Neuroinformatics, 2011. URL: http://journal.frontiersin.org/article/10.3389/fninf.2011.00013/abstract (visited on 2022-02-10), doi:10.3389/fninf.2011.00013.">Gorgolewski <em>et al.</em>, 2011</a>]</span> to provide the specifications and analysis interfaces (see <a class="reference internal" href="#labbing-results-apps-django-analyses-analysis"><span class="std std-ref">Analysis Integration</span></a>) for numerous neuroimaging processing tools, including <span class="muted-ref"><a class="reference external" href="https://fmriprep.org/"><em>fMRIPrep</em></a></span> <span id="id2">[<a class="reference internal" href="../bibliography.html#id42" title="Oscar Esteban, Christopher J. Markiewicz, Ross W. Blair, Craig A. Moodie, A. Ilkay Isik, Asier Erramuzpe, James D. Kent, Mathias Goncalves, Elizabeth DuPre, Madeleine Snyder, Hiroyuki Oya, Satrajit S. Ghosh, Jessey Wright, Joke Durnez, Russell A. Poldrack, and Krzysztof J. Gorgolewski. fMRIPrep: a robust preprocessing pipeline for functional MRI. Nature Methods, 16(1):111–116, January 2019. Number: 1 Publisher: Nature Publishing Group. URL: https://www.nature.com/articles/s41592-018-0235-4, doi:10.1038/s41592-018-0235-4.">Esteban <em>et al.</em>, 2019</a>]</span>, <span class="muted-ref"><a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/"><em>FreeSurfer</em></a></span> <span id="id3">[<a class="reference internal" href="../bibliography.html#id43" title="Bruce Fischl. FreeSurfer. NeuroImage, 62(2):774–781, August 2012. URL: https://www.sciencedirect.com/science/article/pii/S1053811912000389, doi:10.1016/j.neuroimage.2012.01.021.">Fischl, 2012</a>]</span>, <span class="muted-ref"><a class="reference external" href="https://qsiprep.readthedocs.io/"><em>QSIPrep</em></a></span> <span id="id4">[<a class="reference internal" href="../bibliography.html#id44" title="Matthew Cieslak, Philip A. Cook, Xiaosong He, Fang-Cheng Yeh, Thijs Dhollander, Azeez Adebimpe, Geoffrey K. Aguirre, Danielle S. Bassett, Richard F. Betzel, Josiane Bourque, Laura M. Cabral, Christos Davatzikos, John A. Detre, Eric Earl, Mark A. Elliott, Shreyas Fadnavis, Damien A. Fair, Will Foran, Panagiotis Fotiadis, Eleftherios Garyfallidis, Barry Giesbrecht, Ruben C. Gur, Raquel E. Gur, Max B. Kelz, Anisha Keshavan, Bart S. Larsen, Beatriz Luna, Allyson P. Mackey, Michael P. Milham, Desmond J. Oathes, Anders Perrone, Adam R. Pines, David R. Roalf, Adam Richie-Halford, Ariel Rokem, Valerie J. Sydnor, Tinashe M. Tapera, Ursula A. Tooley, Jean M. Vettel, Jason D. Yeatman, Scott T. Grafton, and Theodore D. Satterthwaite. QSIPrep: an integrative platform for preprocessing and reconstructing diffusion MRI data. Nature Methods, 18(7):775–778, July 2021. Number: 7 Publisher: Nature Publishing Group. URL: https://www.nature.com/articles/s41592-021-01185-5, doi:10.1038/s41592-021-01185-5.">Cieslak <em>et al.</em>, 2021</a>]</span>, <span class="muted-ref"><a class="reference external" href="http://www.neuro.uni-jena.de/cat/"><em>CAT</em></a></span> (see <a class="reference external" href="http://www.neuro.uni-jena.de/cat/">http://www.neuro.uni-jena.de/cat/</a>), and more.</p>
+</section>
+</section>
+<section id="front-end-application">
+<span id="labbing-results-front-end"></span><h2><span class="section-number">4.1.3.3. </span>Front-end Application<a class="headerlink" href="#front-end-application" title="Permalink to this headline">#</a></h2>
+<section id="vuelabber">
+<span id="labbing-results-front-end-vuelabber"></span><h3><span class="section-number">4.1.3.3.1. </span><em>vuelabber</em><a class="headerlink" href="#vuelabber" title="Permalink to this headline">#</a></h3>
+<p>A front-end application created with <span class="muted-ref"><a class="reference external" href="https://vuejs.org/">Vue.js</a></span> is used to provide users with a modern-looking and highly functional graphical user interface. Communication between the front-end and the server is based on the application’s <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">REST</span></a></span> <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">API</span></a></span> (see <a class="reference internal" href="methods.html#labbing-methods-backend-django-api"><span class="std std-ref">Application Programming Interface</span></a>) and any part of it may easily be customized, extended, or replaced.</p>
+<figure class="align-default" id="subjects-vue">
 <a class="reference internal image-reference" href="../../_images/subjects_vue.png"><img alt="Subject list view in Vue.js front-end application." src="../../_images/subjects_vue.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.6 </span><span class="caption-text">Subjects list view as displayed in the <span class="muted-ref"><a class="reference external" href="https://vuejs.org/">Vue.js</a></span> front-end application. More detailed research information and filters are available compared to the admin interface, along with the same summary plots.</span><a class="headerlink" href="#subjects-vue" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-</div>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 4.6 </span><span class="caption-text">Subjects list view as displayed in the <span class="muted-ref"><a class="reference external" href="https://vuejs.org/">Vue.js</a></span> front-end application. More detailed research information and filters are available compared to the admin interface, along with the same summary plots.</span><a class="headerlink" href="#subjects-vue" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="neuroimaging-research-database">
+<span id="labbing-results-database"></span><h3><span class="section-number">4.1.3.3.2. </span>Neuroimaging Research Database<a class="headerlink" href="#neuroimaging-research-database" title="Permalink to this headline">#</a></h3>
+<p>The purpose of the application is to manage a large and highly variable <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a></span> dataset alongside relevant research information and derivatives. Currently, a single, local deployment (self-managed on a physical server) of the application is used to manage all independently resourced data, as well as other shared resources (e.g. the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">HCP</span></a></span> dataset) in our laboratory. This includes over 2800 <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MRI</span></a></span> scanning sessions from over 2300 subjects (including the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">HCP</span></a></span> dataset), as well as over 3000 preprocessing pipelines runs.</p>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -663,9 +786,11 @@
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="methods.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -681,24 +806,28 @@
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Zvi Baratz<br/>
+  
+      &copy; Copyright 2021.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Zvi Baratz<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

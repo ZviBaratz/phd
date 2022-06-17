@@ -91,7 +91,7 @@ Finally, {{djangomri}} makes extensive use of {{djangoanalyses}} and {{nipype}} 
 (labbing:results:front-end:vuelabber)=
 ### *vuelabber*
 
-A front-end application created with {{VueJS}} is used to provide users with a modern-looking and highly functional graphical user interface. Communication between the front-end and the server is based on the application's {{REST}} {{API}} (see {ref}`labbing:methods:backend:django:api`) and may easily be extended, customized, and even replaced.
+A front-end application created with {{VueJS}} is used to provide users with a modern-looking and highly functional graphical user interface. Communication between the front-end and the server is based on the application's {{REST}} {{API}} (see {ref}`labbing:methods:backend:django:api`) and any part of it may easily be customized, extended, or replaced.
 
 ```{figure} ./assets/subjects_vue.png
 ---
@@ -101,3 +101,8 @@ width: 750px
 ---
 Subjects list view as displayed in the {{VueJS}} front-end application. More detailed research information and filters are available compared to the admin interface, along with the same summary plots.
 ```
+
+(labbing:results:database)=
+### Neuroimaging Research Database
+
+The purpose of the application is to manage a large and highly variable {{MRI}} dataset alongside relevant research information and derivatives. Currently, a single, local deployment (self-managed on a physical server) of the application is used to manage all independently resourced data, as well as other shared resources (e.g. the {{HCP}} dataset) in our laboratory. This includes over 2800 {{MRI}} scanning sessions from over 2300 subjects (including the {{HCP}} dataset), as well as over 3000 preprocessing pipelines runs.

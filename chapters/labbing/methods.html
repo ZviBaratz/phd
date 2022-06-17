@@ -4,11 +4,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>4.1.2. Materials and Methods &#8212; Ph.D. Thesis</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,21 +20,17 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,18 +38,18 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://zvibaratz.github.io/phd/front.html/chapters/labbing/methods.html" />
     <link rel="shortcut icon" href="../../_static/favicon.jpg"/>
@@ -66,7 +64,21 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -75,9 +87,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -283,86 +296,176 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/chapters/labbing/methods.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/ZviBaratz/PhD"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/ZviBaratz/PhD/issues/new?title=Issue%20on%20page%20%2Fchapters/labbing/methods.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
         </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/ZviBaratz/PhD"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ZviBaratz/PhD/issues/new?title=Issue%20on%20page%20%2Fchapters/labbing/methods.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/chapters/labbing/methods.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#web-framework">
    4.1.2.1. Web Framework
@@ -442,12 +545,11 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Materials and Methods</h1>
@@ -543,68 +645,69 @@
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="materials-and-methods">
-<span id="labbing-methods"></span><h1><span class="section-number">4.1.2. </span>Materials and Methods<a class="headerlink" href="#materials-and-methods" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="materials-and-methods">
+<span id="labbing-methods"></span><h1><span class="section-number">4.1.2. </span>Materials and Methods<a class="headerlink" href="#materials-and-methods" title="Permalink to this headline">#</a></h1>
 <hr>
 <p>A dedicated <span class="muted-ref"><a class="reference external" href="https://www.github.com/">GitHub</a></span> organization titled “The Labbing Project” (see <a class="reference external" href="https://github.com/TheLabbingProject">https://github.com/TheLabbingProject</a>) has been created to centralize development efforts. The following section will detail the technological stack used to build the application.</p>
-<div class="section" id="web-framework">
-<span id="labbing-methods-backend"></span><h2><span class="section-number">4.1.2.1. </span>Web Framework<a class="headerlink" href="#web-framework" title="Permalink to this headline">¶</a></h2>
+<section id="web-framework">
+<span id="labbing-methods-backend"></span><h2><span class="section-number">4.1.2.1. </span>Web Framework<a class="headerlink" href="#web-framework" title="Permalink to this headline">#</a></h2>
 <p>Enabling secure remote access and providing robust infrastructure that can easily be deployed and scaled requires an uncompromising web application development framework. There are a number of Python-native high-level web frameworks (for a comprehensive review, see <a class="reference external" href="https://wiki.python.org/moin/WebFrameworks">https://wiki.python.org/moin/WebFrameworks</a>). However, the most popular option (by <span class="muted-ref"><a class="reference external" href="https://www.github.com/">GitHub</a></span> star counts at the time of writing) is <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span>.</p>
-<div class="section" id="django">
-<span id="labbing-methods-backend-django"></span><h3><span class="section-number">4.1.2.1.1. </span>Django<a class="headerlink" href="#django" title="Permalink to this headline">¶</a></h3>
+<section id="django">
+<span id="labbing-methods-backend-django"></span><h3><span class="section-number">4.1.2.1.1. </span>Django<a class="headerlink" href="#django" title="Permalink to this headline">#</a></h3>
 <p><span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> (see <a class="reference external" href="https://www.djangoproject.com/">https://www.djangoproject.com/</a>) is a widely used free and open-source web application development framework with a number of outstanding advantages. It is actively maintained by an independent non-profit organization and used by well-known websites, including <a class="reference external" href="https://www.instagram.com/">Instagram</a>, <a class="reference external" href="https://www.mozilla.org/">Mozilla</a>, <a class="reference external" href="https://www.pinterest.com/">Pinterest</a>, and more (see <a class="reference external" href="https://www.djangoproject.com/start/overview/">Overview</a> page in the <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> project’s website). The framework’s architecture promotes a modular design that is easily extensible and reusable. It also excels in database management, and includes a powerful Object-relational mapper (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">ORM</span></a></span>) which greatly reduces the complexity of database administration and interaction by enabling the representation of data models as simple Python classes. Many aspects of routine web application development, such as web security, user administration, session management, caching, logging, testing, etc., are integrated into the framework in compliance with the highest standards in the field. The documentation site (see <a class="reference external" href="https://docs.djangoproject.com/">https://docs.djangoproject.com/</a>) is exceptionally extensive and offers tutorials and educational content, thereby significantly reducing the learning-curve for potential contributors from the research community. Python’s renowned capacity of abstraction and intuitive syntax combined with <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span>’s fully-featured, scalable design, grants non-professional programmers unprecedented accessibility to actively participate in high-level web develpment.</p>
 <p><span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> web applications are written as a single <em>project</em>, providing general application-wide settings and resources, and <em>apps</em>, providing some custom, loosly-coupled and reusable functionality (for more information, see the <a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/applications/">“Applications”</a> and <a class="reference external" href="https://docs.djangoproject.com/en/dev/misc/design-philosophies/">“Design philosophies”</a> sections in the <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> project’s documentation site). This architecture enables the creation of a particularly stable and maintainable foundation by tremendously facilitating the extension, modification, or replacement of different parts as requirements change over time or across deployments.</p>
-<div class="section" id="application-programming-interface">
-<span id="labbing-methods-backend-django-api"></span><h4><span class="section-number">4.1.2.1.1.1. </span>Application Programming Interface<a class="headerlink" href="#application-programming-interface" title="Permalink to this headline">¶</a></h4>
+<section id="application-programming-interface">
+<span id="labbing-methods-backend-django-api"></span><h4><span class="section-number">4.1.2.1.1.1. </span>Application Programming Interface<a class="headerlink" href="#application-programming-interface" title="Permalink to this headline">#</a></h4>
 <p><span class="muted-ref"><a class="reference external" href="https://www.django-rest-framework.org/">Django REST framework</a></span> (see <a class="reference external" href="https://www.django-rest-framework.org/">https://www.django-rest-framework.org/</a>) was used to generate a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">REST</span></a></span> <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">API</span></a></span> for the application, exposing comprehensive database management and querying capabilities using simple web requests. In addition, returning generic, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">JSON</span></a></span>-encoded responses enables flexible interaction with any number of external services or independent user interfaces.</p>
-</div>
-</div>
-<div class="section" id="application-server">
-<span id="labbing-methods-backend-django-application-server"></span><h3><span class="section-number">4.1.2.1.2. </span>Application Server<a class="headerlink" href="#application-server" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="application-server">
+<span id="labbing-methods-backend-django-application-server"></span><h3><span class="section-number">4.1.2.1.2. </span>Application Server<a class="headerlink" href="#application-server" title="Permalink to this headline">#</a></h3>
 <p>An application server is used to translate <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">HTTP</span></a></span> requests between the web server (i.e. the machine running the web application) and the web application. <span class="muted-ref"><a class="reference external" href="https://gunicorn.org/"><em>gunicorn</em></a></span> (see <a class="reference external" href="https://gunicorn.org/">https://gunicorn.org/</a>) is a free and open-source <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">WSGI</span></a></span> <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">HTTP</span></a></span> server commonly used for this purpose. It is fast, secure, highly configurable, and simple to use.</p>
-</div>
-<div class="section" id="web-server">
-<span id="labbing-methods-backend-django-web-server"></span><h3><span class="section-number">4.1.2.1.3. </span>Web Server<a class="headerlink" href="#web-server" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="web-server">
+<span id="labbing-methods-backend-django-web-server"></span><h3><span class="section-number">4.1.2.1.3. </span>Web Server<a class="headerlink" href="#web-server" title="Permalink to this headline">#</a></h3>
 <p><span class="muted-ref"><a class="reference external" href="https://www.nginx.com/">NGINX</a></span> (see <a class="reference external" href="https://www.nginx.com/">https://www.nginx.com/</a>) is an open-source high-performance web server, reverse proxy, load balancer, and more. It is used as an intermediary between the web application and incoming requests and serves the returned static content. In also enables secure access over <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">HTTPS</span></a></span> using a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">TLS</span></a></span> certificate.</p>
-</div>
-</div>
-<div class="section" id="database">
-<span id="labbing-methods-backend-database"></span><h2><span class="section-number">4.1.2.2. </span>Database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="database">
+<span id="labbing-methods-backend-database"></span><h2><span class="section-number">4.1.2.2. </span>Database<a class="headerlink" href="#database" title="Permalink to this headline">#</a></h2>
 <p><span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> officially supports a number of databases (see <a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/databases/">https://docs.djangoproject.com/en/dev/ref/databases/</a>), with <span class="muted-ref"><a class="reference external" href="https://www.postgresql.org/">PostgreSQL</a></span> being a leading choice for applications with higher demands in terms of database performance and flexibility.</p>
-<div class="section" id="postgresql">
-<span id="labbing-methods-backend-database-postgresql"></span><h3><span class="section-number">4.1.2.2.1. </span>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this headline">¶</a></h3>
+<section id="postgresql">
+<span id="labbing-methods-backend-database-postgresql"></span><h3><span class="section-number">4.1.2.2.1. </span>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this headline">#</a></h3>
 <p><span class="muted-ref"><a class="reference external" href="https://www.postgresql.org/">PostgreSQL</a></span> is a free and open-source relational database management system (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">RDBMS</span></a></span>). It is one of the most popular <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">DBMS</span></a></span>s in general (e.g. see <a class="reference external" href="https://db-engines.com/en/ranking">https://db-engines.com/en/ranking</a>), boasting some of the most advanced functionality in terms of both security and performance. <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span>’s <span class="muted-ref"><a class="reference external" href="https://www.postgresql.org/">PostgreSQL</a></span> backend uses the psycopg (see <a class="reference external" href="https://www.psycopg.org/">https://www.psycopg.org/</a>) Python adapter, which is written mostly in the C programming language, and provides a feature-rich, fast, and secure integration with the application’s components.</p>
-</div>
-</div>
-<div class="section" id="task-orchestration">
-<span id="labbing-methods-backend-tasks"></span><h2><span class="section-number">4.1.2.3. </span>Task Orchestration<a class="headerlink" href="#task-orchestration" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="task-orchestration">
+<span id="labbing-methods-backend-tasks"></span><h2><span class="section-number">4.1.2.3. </span>Task Orchestration<a class="headerlink" href="#task-orchestration" title="Permalink to this headline">#</a></h2>
 <p>Execution of analytical workflows in a scalable manner requires an advanced, distributed task queuing system. Preprocessing and feature extraction pipelines used in neuroimaging range from simple transformations to exceptionally resource-heavy, long-running tasks. Being able to initialize background processes across threads and machines in batch and monitor progress is a core requirement.</p>
-<div class="section" id="celery">
-<span id="labbing-methods-backend-tasks-celery"></span><h3><span class="section-number">4.1.2.3.1. </span>Celery<a class="headerlink" href="#celery" title="Permalink to this headline">¶</a></h3>
+<section id="celery">
+<span id="labbing-methods-backend-tasks-celery"></span><h3><span class="section-number">4.1.2.3.1. </span>Celery<a class="headerlink" href="#celery" title="Permalink to this headline">#</a></h3>
 <p><span class="muted-ref"><a class="reference external" href="https://docs.celeryproject.org/"><em>Celery</em></a></span> is the most popular task queue manager written in Python (by <span class="muted-ref"><a class="reference external" href="https://www.github.com/">GitHub</a></span> stars count at the time of writing). It is free and open-source, actively maintained, in widespread use in industry, and provides native support for integration with <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> projects (see <a class="reference external" href="https://docs.celeryproject.org/en/stable/django/">https://docs.celeryproject.org/en/stable/django/</a>). By default, <span class="muted-ref"><a class="reference external" href="https://docs.celeryproject.org/"><em>Celery</em></a></span> uses RabbitMQ (see <a class="reference external" href="https://www.rabbitmq.com/">https://www.rabbitmq.com/</a>) to send and receive messages, however, other message brokers such as Redis (see <a class="reference external" href="https://redis.io/">https://redis.io/</a>) and Amazon SQS (see <a class="reference external" href="https://aws.amazon.com/sqs/">https://aws.amazon.com/sqs/</a>) are also supported.</p>
 <p><em>django-celery-results</em> (see <a class="reference external" href="https://django-celery-results.readthedocs.io/">https://django-celery-results.readthedocs.io/</a>) and <em>django-celery-beat</em> (see <a class="reference external" href="https://django-celery-beat.readthedocs.io/">https://django-celery-beat.readthedocs.io/</a>) are also enabled by default and complement <span class="muted-ref"><a class="reference external" href="https://docs.celeryproject.org/"><em>Celery</em></a></span> with database-integrated task monitoring and support for periodic task scheduling (respectively).</p>
-</div>
-</div>
-<div class="section" id="data-distribution">
-<span id="labbing-methods-backend-distribution"></span><h2><span class="section-number">4.1.2.4. </span>Data Distribution<a class="headerlink" href="#data-distribution" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="data-distribution">
+<span id="labbing-methods-backend-distribution"></span><h2><span class="section-number">4.1.2.4. </span>Data Distribution<a class="headerlink" href="#data-distribution" title="Permalink to this headline">#</a></h2>
 <p>While the application’s <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">REST</span></a></span> <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">API</span></a></span> does provide endpoints for downloading both data instances and analysis results, distributing large collections of files necessitates a more controlled approach.</p>
-<div class="section" id="paramiko">
-<span id="labbing-methods-backend-distribution-paramiko"></span><h3><span class="section-number">4.1.2.4.1. </span>Paramiko<a class="headerlink" href="#paramiko" title="Permalink to this headline">¶</a></h3>
+<section id="paramiko">
+<span id="labbing-methods-backend-distribution-paramiko"></span><h3><span class="section-number">4.1.2.4.1. </span>Paramiko<a class="headerlink" href="#paramiko" title="Permalink to this headline">#</a></h3>
 <p><span class="muted-ref"><a class="reference external" href="https://www.paramiko.org/"><em>Paramiko</em></a></span> (see <a class="reference external" href="https://www.paramiko.org/">https://www.paramiko.org/</a>) is a free and open-source Python implementation of the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">SSH</span></a></span>v2 protocol. It enables highly controlled <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">SFTP</span></a></span> session negotiation over <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">SSH</span></a></span>, thereby allowing researchers to safely transport files to any <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">SSH</span></a></span> accessible machine.</p>
-</div>
-</div>
-<div class="section" id="front-end-framework">
-<span id="labbing-methods-frontend"></span><h2><span class="section-number">4.1.2.5. </span>Front-end Framework<a class="headerlink" href="#front-end-framework" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="front-end-framework">
+<span id="labbing-methods-frontend"></span><h2><span class="section-number">4.1.2.5. </span>Front-end Framework<a class="headerlink" href="#front-end-framework" title="Permalink to this headline">#</a></h2>
 <p>While <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> does include a web templating system (the <span class="muted-ref"><a class="reference external" href="https://www.djangoproject.com/">Django</a></span> Template Language, see <a class="reference external" href="https://docs.djangoproject.com/en/dev/topics/templates/">https://docs.djangoproject.com/en/dev/topics/templates/</a>) allowing for the generation of dynamic web pages, initial attempts to leverage it and maintain the stack as minimal and exclusively Python-dependent as possible have failed to produce satisfactory results. In order for the application to offer a modern and responsive user experience, a dedicated front-end web development framework was deemed necessary.</p>
-<div class="section" id="vue-js">
-<span id="labbing-methods-frontend-vuejs"></span><h3><span class="section-number">4.1.2.5.1. </span>Vue.js<a class="headerlink" href="#vue-js" title="Permalink to this headline">¶</a></h3>
+<section id="vue-js">
+<span id="labbing-methods-frontend-vuejs"></span><h3><span class="section-number">4.1.2.5.1. </span>Vue.js<a class="headerlink" href="#vue-js" title="Permalink to this headline">#</a></h3>
 <p><span class="muted-ref"><a class="reference external" href="https://vuejs.org/">Vue.js</a></span> is a popular free and open-source <span class="muted-ref"><a class="reference external" href="https://www.javascript.com/">JavaScript</a></span> framework. It is lightweight, modular, rich in documentation and learning materials, and oriented towards both novice and expert developers. While some familiarity with <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">HTML</span></a></span>, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">CSS</span></a></span>, and <span class="muted-ref"><a class="reference external" href="https://www.javascript.com/">JavaScript</a></span> is required, <span class="muted-ref"><a class="reference external" href="https://vuejs.org/">Vue.js</a></span> greatly simplifies the complexities of rendering web content in a browser. By interacting with the web application’s <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">API</span></a></span>, the front-end application offers a convenient graphical user interface (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">GUI</span></a></span>) for researchers to query and retrieve data and derivatives from the server.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -628,9 +731,11 @@
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -646,24 +751,28 @@
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Zvi Baratz<br/>
+  
+      &copy; Copyright 2021.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Zvi Baratz<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
