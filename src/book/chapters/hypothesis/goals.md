@@ -15,7 +15,7 @@ This study will assess the ability to demonstrate a statistically significant re
 * Characterizing the distribution of the estimated parameters in the general population, as well as the differences manifested by grouping and comparing parts of it, will provide invaluable information for future investigations of similar subject or group-specific information.
 * Understanding the implications of sharing MRI data or subject-specific derivatives at various processing stages is crucial to maintaining the integrity of subject privacy and ethical conduct.
 
-The principal examined modality will be {{sMRI}}. It is the common denominator of the great majority of standard scanning protocols, and therefore also constitutes the largest available dataset. {{freesurfer}} will be used to estimate cortical thickness (mean and {{SD}}), surface area, and gray-matter volume per acquisition. **(Add rs-fMRI/dMRI parameters)**
+The principal examined modality will be {{sMRI}}. It is the common denominator of the great majority of standard scanning protocols, and therefore also constitutes the largest available dataset. *FreeSurfer* will be used to estimate cortical thickness (mean and {{SD}}), surface area, and gray-matter volume per acquisition.
 
 (content:hypothesis-and-goals:goals)=
 ## Goals

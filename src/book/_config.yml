@@ -117,7 +117,7 @@ sphinx:
       djangomri: "{{ PREMUTED }}[*django_mri*](https://www.github.com/TheLabbingProject/django_mri){{ POSTMUTED }}"
       DRF: "{{ PREMUTED }}[Django REST framework](https://www.django-rest-framework.org/){{ POSTMUTED }}"
       fmriprep: "{{ PREMUTED }}[*fMRIPrep*](https://fmriprep.org/){{ POSTMUTED }}"
-      freesurfer: "{{ PREMUTED }}[*FreeSurfer*](https://surfer.nmr.mgh.harvard.edu/){{ POSTMUTED }}"
+
       GitHub: "{{ PREMUTED }}[GitHub](https://www.github.com/){{ POSTMUTED }}"
       gunicorn: "{{ PREMUTED }}[*gunicorn*](https://gunicorn.org/){{ POSTMUTED }}"
       JavaScript: "{{ PREMUTED }}[JavaScript](https://www.javascript.com/){{ POSTMUTED }}"

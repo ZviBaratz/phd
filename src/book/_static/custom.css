@@ -52,14 +52,22 @@ p {
     text-align: justify;
 }
 /* Table formatting */
-table p.table-icon {
-    text-align: center;
-}
 table p {
     text-align: left;
 }
+table.cell-text-center p {
+    margin: 0;
+    text-align: center;
+}
+table p.table-icon {
+    text-align: center;
+    margin: 0px;
+}
 table td,th {
     vertical-align: middle!important;
+}
+table td.text-align:center {
+    padding: 0px;
 }
 table ul.simple {
     padding-left: 10px;
@@ -76,4 +84,5 @@ span.muted-ref a {
 }
 span.caption-text, span.caption-number {
     color: rgba(51,51,51,1);
+    font-family: "Times New Roman", Georgia, serif;
 }
