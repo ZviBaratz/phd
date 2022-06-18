@@ -83,7 +83,7 @@ Header information is read using {{dicomparser}} (see https://www.github.com/ope
 
 In terms of file management, {{dicomparser}}'s sequence detection functionality provides information which is essential for automated {{BIDS}}-compliant organization. By taking advantage of the configured heuristics, {{djangomri}} maintains a "global" {{BIDS}} dataset, which holds the combined datasets of multiple studies. All research information is maintained in the database and any available {{BIDS}} app may be applied (see https://bids-apps.neuroimaging.io/).
 
-Finally, {{djangomri}} makes extensive use of {{djangoanalyses}} and {{nipype}} {cite}`gorgolewskiNipypeFlexibleLightweight2011` to provide the specifications and analysis interfaces (see {ref}`labbing:results:apps:django-analyses:analysis`) for numerous neuroimaging processing tools, including {{fmriprep}} {cite}`estebanFMRIPrepRobustPreprocessing2019`, {{freesurfer}} {cite}`fischlFreeSurfer2012`, {{qsiprep}} {cite}`cieslakQSIPrepIntegrativePlatform2021`, {{CAT}} (see http://www.neuro.uni-jena.de/cat/), and more.
+Finally, {{djangomri}} makes extensive use of {{djangoanalyses}} and {{nipype}} {cite}`gorgolewskiNipypeFlexibleLightweight2011` to provide the specifications and analysis interfaces (see {ref}`labbing:results:apps:django-analyses:analysis`) for numerous neuroimaging processing tools, including {{fmriprep}} {cite}`estebanFMRIPrepRobustPreprocessing2019`, *FreeSurfer* {cite}`fischlFreeSurfer2012`, {{qsiprep}} {cite}`cieslakQSIPrepIntegrativePlatform2021`, {{CAT}} (see http://www.neuro.uni-jena.de/cat/), and more.
 
 (labbing:results:front-end)=
 ## Front-end Application
