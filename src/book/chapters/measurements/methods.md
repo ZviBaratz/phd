@@ -52,3 +52,5 @@ According to the *FreeSurfer* documentation site (see https://surfer.nmr.mgh.har
 | {{ redCross }} | {{ greenCheckmark }} | {{ greenCheckmark }} | {{ greenCheckmark }} |
 
 ```
+
+While these options are listed in the documentation website, only a very limited description of their respective effects is provided. In addition, it is unclear to what extent these options are, in fact, utilized by *FreeSurfer* users, and no existing evaluation of either expected effects or usage metrics could be found at the time of writing.
