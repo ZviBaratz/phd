@@ -29,7 +29,7 @@ bibtex_bibfiles:
 repository:
   url: https://github.com/ZviBaratz/PhD
   path_to_book: src/book
-  branch: master
+  branch: main
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
