@@ -1,5 +1,5 @@
 (measurements)=
-# Single Subject Representation Evaluation
+# Evaluation of Individual Subject Representation from Anatomical MRI
 
 ```{tableofcontents}
 ```

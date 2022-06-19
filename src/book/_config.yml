@@ -55,6 +55,7 @@ sphinx:
       ADNI: "{{ PREMUTED }}{ref}`ADNI <lists:acronyms>`{{ POSTMUTED }}"
       API: "{{ PREMUTED }}{ref}`API <lists:acronyms>`{{ POSTMUTED }}"
       BFI: "{{ PREMUTED }}{ref}`BFI <lists:acronyms>`{{ POSTMUTED }}"
+      BMI: "{{ PREMUTED }}{ref}`BMI <lists:acronyms>`{{ POSTMUTED }}"
       BIDS: "{{ PREMUTED }}{ref}`BIDS <lists:acronyms>`{{ POSTMUTED }}"
       CI: "{{ PREMUTED }}{ref}`CI <lists:acronyms>`{{ POSTMUTED }}"
       COINS: "{{ PREMUTED }}{ref}`COINS <lists:acronyms>`{{ POSTMUTED }}"
