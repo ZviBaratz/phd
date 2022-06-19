@@ -24,6 +24,8 @@
   - Alzheimer’s Disease Neuroimaging Initiative
 * - API
   - Application Programming Interface
+* - BMI
+  - Body Mass Index
 * - BFI
   - Big Five Inventory
 * - BIDS
