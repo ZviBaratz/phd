@@ -54,6 +54,8 @@
   - Functional Magnetic Resonance Imaging
 * - FOSS
   - Free and Open-source Software
+* - FOV
+  - Field of View
 * - GUI
   - Graphical User Interface
 * - HCP

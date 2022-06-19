@@ -72,6 +72,9 @@ table td.text-align:center {
 table ul.simple {
     padding-left: 10px;
 }
+table.small-table p {
+    font-size: 12px;
+}
 /* Cover page TAU logo styling */
 img[alt=TAUlogo] {
     display: block;
