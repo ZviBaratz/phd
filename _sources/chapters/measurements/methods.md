@@ -13,12 +13,13 @@ Participants were scanned in compliance with the {{TAU}} Brain Brank Initiative'
 
 ```{table} Summary of the {{TAU}} Brain Bank Initiative's {{sMRI}} acquisition parameters.
 :name: smri-sequences
+:class: small-table
 
-| **Sequence**    | TR (ms) | TE (ms) | TI (ms) | Spatial Resolution ($mm^3$) | Number of Slices |
-|:---------------:|:-------:|:-------:|:-------:|:---------------------------:|:----------------:|
-| **MPRAGE**      | 2400    | 2.78    | 1000    | 0.9 🞩 0.9 🞩 0.9           | 176              |
-| **T2-weighted** | 3200    | 554     | -       | 0.9 🞩 0.9 🞩 0.9           | 176              |
-| **FLAIR**       | 8000    | 81      | 2370    | 0.72 🞩 0.72 🞩 4           | 52               |
+| **Sequence**    | {{TR}} (ms) | {{TE}} (ms) | {{TI}} (ms) | Spatial Resolution ($mm^3$) | Number of Slices | Flip Angle | {{FOV}} (mm) | Orientation |
+|:---------------:|:-----------:|:-----------:|:-----------:|:---------------------------:|:----------------:|:----------:|:------------:|:-----------:|
+| **{{MPRAGE}}**  | 2400        | 2.78        | 1000        | 0.9 🞩 0.9 🞩 0.9             | 176              | 8°         | 230          | Axial       |
+| **{{T2w}}**     | 3200        | 554         | -           | 0.9 🞩 0.9 🞩 0.9             | 176              | 120°       | 231          | Axial       |
+| **{{FLAIR}}**   | 8000        | 81          | 2370        | 0.72 🞩 0.72 🞩 4             | 52               | 150°       | 287.5        | Axial       |
 
 ```
 
