@@ -24,6 +24,8 @@
   - Alzheimer’s Disease Neuroimaging Initiative
 * - API
   - Application Programming Interface
+* - AutoML
+  - Automated Machine Learning
 * - BMI
   - Body Mass Index
 * - BFI
@@ -52,12 +54,16 @@
   - Entity-relationship
 * - FLAIR
   - Fluid-attenuated Inversion-Recovery
+* - FLAML
+  - Fast and Lightweight AutoML
 * - fMRI
   - Functional Magnetic Resonance Imaging
 * - FOSS
   - Free and Open-source Software
 * - FOV
   - Field of View
+* - GP
+  - Genetic Programming
 * - GUI
   - Graphical User Interface
 * - HCP
@@ -72,6 +78,8 @@
   - JavaScript Object Notation
 * - JSP
   - Jakarta Server Pages
+* - KS
+  - Kolmogorov–Smirnov
 * - LORIS
   - Longitudinal Online Research and Imaging System
 * - MPRAGE
@@ -122,6 +130,8 @@
   - Inversion Time
 * - TLS
   - Transport Layer Security
+* - TPOT
+  - Tree-based Pipeline Optimization Tool
 * - TR
   - Repetition Time
 * - WSGI

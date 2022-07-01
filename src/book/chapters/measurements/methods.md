@@ -15,17 +15,17 @@ Participants were scanned in compliance with the {{TAU}} Brain Brank Initiative'
 :name: smri-sequences
 :class: small-table
 
-| **Sequence**    | {{TR}} (ms) | {{TE}} (ms) | {{TI}} (ms) | Spatial Resolution ($mm^3$) | Number of Slices | Flip Angle | {{FOV}} (mm) | Orientation |
-|:---------------:|:-----------:|:-----------:|:-----------:|:---------------------------:|:----------------:|:----------:|:------------:|:-----------:|
-| **{{MPRAGE}}**  | 2400        | 2.78        | 1000        | 0.9 🞩 0.9 🞩 0.9             | 176              | 8°         | 230          | Axial       |
-| **{{T2w}}**     | 3200        | 554         | -           | 0.9 🞩 0.9 🞩 0.9             | 176              | 120°       | 231          | Axial       |
-| **{{FLAIR}}**   | 8000        | 81          | 2370        | 0.72 🞩 0.72 🞩 4             | 52               | 150°       | 287.5        | Axial       |
+| **Sequence**    | {{TR}} (ms) | {{TE}} (ms) | {{TI}} (ms) | Spatial Resolution ($mm^3$) | Number of Slices | Flip Angle | {{FOV}} (mm) | Acquisition Matrix | Orientation |
+|:---------------:|:-----------:|:-----------:|:-----------:|:---------------------------:|:----------------:|:----------:|:------------:|:------------------:|:-----------:|
+| **{{MPRAGE}}**  | 2400        | 2.78        | 1000        | 0.9 🞩 0.9 🞩 0.9             | 176              | 8°         | 172 🞩 230    | 192 🞩 256          | Axial       |
+| **{{T2w}}**     | 3200        | 554         | -           | 0.9 🞩 0.9 🞩 0.9             | 176              | 120°       | 172 🞩 230    | 192 🞩 256          | Axial       |
+| **{{FLAIR}}**   | 8000        | 81          | 2370        | 0.72 🞩 0.72 🞩 4             | 52               | 150°       | 173 🞩 231    | 168 🞩 320          | Axial       |
 
 ```
 
 ## MRI Data Analysis
 
-To study the effects of various execution configurations, *FreeSurfer* v7.2.0 was used to preprocess the anatomical data cross-sectionally (i.e. as individual datasets, as opposed to longitudinally) using a number of predefined configurations. While *FreeSurfer* does also have a longitudinal processing stream which uses results from the cross-sectional analysis of all time points to create an unbiased within-subject template, the objective of this study is to evaluate inter-subject vs. intra-subject similarity independently of prior knowledge.
+To study the effects of various execution configurations, *FreeSurfer* v7.2.0 was used to preprocess the anatomical data cross-sectionally (i.e. as individual datasets, as opposed to longitudinally) using a number of predefined configurations. While *FreeSurfer* does also have a longitudinal processing stream which uses results from the cross-sectional analysis of all time points to create an unbiased within-subject template, the objective of this study is to evaluate inter-subject vs. intra-subject similarity independently of prior knowledge. All runs were executed on a single 64-bit Debian GNU/Linux workstation. Anatomical statistics were extracted for the Destrieux atlas {cite}`Fischl01012004`, which is the most detailed atlas included with *FreeSurfer*'s default reconstruction pipeline's results, and consists of 74 regions per hemisphere.
 
 ```{figure} ./assets/preprocessing_overview.png
 ---
@@ -40,7 +40,7 @@ According to the *FreeSurfer* documentation site (see https://surfer.nmr.mgh.har
 
 ```{table} *FreeSurfer*'s cross-sectional anatomical preprocessing workflow configurations included in this study.
 :name: freesurfer-parameters
-:class: cell-text-center
+:class: cell-text-center small-table
 
 | Use T2 | Use FLAIR | MPRAGE | 3T |
 |:------:|:---------:|:------:|:--:|
@@ -55,3 +55,30 @@ According to the *FreeSurfer* documentation site (see https://surfer.nmr.mgh.har
 ```
 
 While these options are listed in the documentation website, only a very limited description of their respective effects is provided. In addition, it is unclear to what extent these options are, in fact, utilized by *FreeSurfer* users, and no existing evaluation of either expected effects or usage metrics could be found at the time of writing.
+
+## Statistical Analysis
+
+### Comparison of Anatomical Statistics
+
+Region-wise statistics were generated per scan for the detailed execution configurations (see {numref}`freesurfer-parameters`). Each Destrieux atlas region was represented by four estimated statistics: mean and standard deviation of the cortical thickness, surface area, and grey matter volume. Both whole-brain and region-wise distributions of values were compared.
+
+#### Two-sample Kolmogorov–Smirnov test
+
+The Two-sample Kolmogorov–Smirnov ({{KS}}) test is a nonparametric test which qunatifies the distance between the two samples' empirical distribution functions and evaluates the probability of them having been sampled from the same probability distribution. The {{KS}}-test was applied using SciPy {cite}`virtanenSciPyFundamentalAlgorithms2020` (see https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ks_2samp.html) to all combinations of *FreeSurfer* execution configurations and p-values were corrected to account for multiple comparisons with statsmodels {cite}`seabold2010statsmodels` (see https://www.statsmodels.org/stable/generated/statsmodels.stats.multitest.multipletests.html) using the Bonferroni method {cite}`bonferroni1935calcolo`.
+
+### Model Selection and Optimization
+
+Two types of modeling tasks are evaluated in this study for each execution configuration; (a) classification of the differences between *FreeSurfer*-derived anatomical statistics computed from two independent scans to estimate the probability of a pair of scans belonging to the same participant, and (b) prediction of representative participant attributes (sex, age, and BMI) from these anatomical statistics.
+
+#### Automated Machine Learning
+
+The term Automated Machine Learning (often abbreviated as {{AutoML}}) is used in a number of ways, but generally refers to frameworks built for the automation and optimization of various commonplace procedures often implemented in the process of preparing, training, and tuning machine learning models, particularly on a limited computational budget {cite}`he2021automl`. Using {{AutoML}} frameworks enables searching a very large range of models and optimizing hyperparameters in an effective and reproducible manner.
+
+##### {{FLAML}}
+
+{{FLAML}} is a fast and lightweight {{AutoML}} Python library that finds accurate machine learning models automatically, efficiently and economically {cite}`wang2021flaml` (see https://github.com/microsoft/FLAML). {{FLAML}} is powered by a new, cost-effective hyperparameter optimization and learner selection method invented by Microsoft Research {cite}`wu2021cfo`. It uses a simple yet effective randomized search method termed FLOW<sup>2</sup> together with adaptive step sizes and random restarts.
+
+##### {{TPOT}}
+
+{{TPOT}} is a Python Automated Machine Learning tool that optimizes machine learning pipelines based on an evolutionary computation technique called genetic programming ({{GP}}) {cite}`OlsonGECCO2016, Olson2016EvoBio, le2020scaling` (see https://epistasislab.github.io/tpot/). Traditionally, {{GP}} builds trees of mathematical functions to optimize toward given criteria. In {{TPOT}}, GP is used to evolve the sequence of
+pipeline operators as well as each operators' parameters (e.g., the number of trees in a random forest or the number of feature pairs to select during feature selection) to maximize the classification accuracy of the pipeline.
