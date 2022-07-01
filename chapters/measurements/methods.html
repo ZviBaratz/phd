@@ -483,6 +483,59 @@ title="Print to PDF"
    4.2.2.3. MRI Data Analysis
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#statistical-analysis">
+   4.2.2.4. Statistical Analysis
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comparison-of-anatomical-statistics">
+     4.2.2.4.1. Comparison of Anatomical Statistics
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#two-sample-kolmogorovsmirnov-test">
+       4.2.2.4.1.1. Two-sample Kolmogorov–Smirnov test
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-selection-and-optimization">
+     4.2.2.4.2. Model Selection and Optimization
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#automated-machine-learning">
+       4.2.2.4.2.1. Automated Machine Learning
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#span-class-muted-ref-flaml-span">
+         4.2.2.4.2.1.1.
+         <span class="muted-ref">
+          <span class="xref std std-ref">
+           FLAML
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#span-class-muted-ref-tpot-span">
+         4.2.2.4.2.1.2.
+         <span class="muted-ref">
+          <span class="xref std std-ref">
+           TPOT
+          </span>
+         </span>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
 </ul>
 
     </nav>
@@ -517,6 +570,59 @@ title="Print to PDF"
    4.2.2.3. MRI Data Analysis
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#statistical-analysis">
+   4.2.2.4. Statistical Analysis
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comparison-of-anatomical-statistics">
+     4.2.2.4.1. Comparison of Anatomical Statistics
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#two-sample-kolmogorovsmirnov-test">
+       4.2.2.4.1.1. Two-sample Kolmogorov–Smirnov test
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-selection-and-optimization">
+     4.2.2.4.2. Model Selection and Optimization
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#automated-machine-learning">
+       4.2.2.4.2.1. Automated Machine Learning
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#span-class-muted-ref-flaml-span">
+         4.2.2.4.2.1.1.
+         <span class="muted-ref">
+          <span class="xref std std-ref">
+           FLAML
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#span-class-muted-ref-tpot-span">
+         4.2.2.4.2.1.2.
+         <span class="muted-ref">
+          <span class="xref std std-ref">
+           TPOT
+          </span>
+         </span>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
 </ul>
 
                         </nav>
@@ -548,6 +654,7 @@ title="Print to PDF"
 <th class="text-align:center head"><p>Number of Slices</p></th>
 <th class="text-align:center head"><p>Flip Angle</p></th>
 <th class="text-align:center head"><p><span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FOV</span></a></span> (mm)</p></th>
+<th class="text-align:center head"><p>Acquisition Matrix</p></th>
 <th class="text-align:center head"><p>Orientation</p></th>
 </tr>
 </thead>
@@ -559,7 +666,8 @@ title="Print to PDF"
 <td class="text-align:center"><p>0.9 🞩 0.9 🞩 0.9</p></td>
 <td class="text-align:center"><p>176</p></td>
 <td class="text-align:center"><p>8°</p></td>
-<td class="text-align:center"><p>230</p></td>
+<td class="text-align:center"><p>172 🞩 230</p></td>
+<td class="text-align:center"><p>192 🞩 256</p></td>
 <td class="text-align:center"><p>Axial</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p><strong><span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">T2w</span></a></span></strong></p></td>
@@ -569,7 +677,8 @@ title="Print to PDF"
 <td class="text-align:center"><p>0.9 🞩 0.9 🞩 0.9</p></td>
 <td class="text-align:center"><p>176</p></td>
 <td class="text-align:center"><p>120°</p></td>
-<td class="text-align:center"><p>231</p></td>
+<td class="text-align:center"><p>172 🞩 230</p></td>
+<td class="text-align:center"><p>192 🞩 256</p></td>
 <td class="text-align:center"><p>Axial</p></td>
 </tr>
 <tr class="row-even"><td class="text-align:center"><p><strong><span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FLAIR</span></a></span></strong></p></td>
@@ -579,7 +688,8 @@ title="Print to PDF"
 <td class="text-align:center"><p>0.72 🞩 0.72 🞩 4</p></td>
 <td class="text-align:center"><p>52</p></td>
 <td class="text-align:center"><p>150°</p></td>
-<td class="text-align:center"><p>287.5</p></td>
+<td class="text-align:center"><p>173 🞩 231</p></td>
+<td class="text-align:center"><p>168 🞩 320</p></td>
 <td class="text-align:center"><p>Axial</p></td>
 </tr>
 </tbody>
@@ -587,7 +697,7 @@ title="Print to PDF"
 </section>
 <section id="mri-data-analysis">
 <h2><span class="section-number">4.2.2.3. </span>MRI Data Analysis<a class="headerlink" href="#mri-data-analysis" title="Permalink to this headline">#</a></h2>
-<p>To study the effects of various execution configurations, <em>FreeSurfer</em> v7.2.0 was used to preprocess the anatomical data cross-sectionally (i.e. as individual datasets, as opposed to longitudinally) using a number of predefined configurations. While <em>FreeSurfer</em> does also have a longitudinal processing stream which uses results from the cross-sectional analysis of all time points to create an unbiased within-subject template, the objective of this study is to evaluate inter-subject vs. intra-subject similarity independently of prior knowledge.</p>
+<p>To study the effects of various execution configurations, <em>FreeSurfer</em> v7.2.0 was used to preprocess the anatomical data cross-sectionally (i.e. as individual datasets, as opposed to longitudinally) using a number of predefined configurations. While <em>FreeSurfer</em> does also have a longitudinal processing stream which uses results from the cross-sectional analysis of all time points to create an unbiased within-subject template, the objective of this study is to evaluate inter-subject vs. intra-subject similarity independently of prior knowledge. All runs were executed on a single 64-bit Debian GNU/Linux workstation. Anatomical statistics were extracted for the Destrieux atlas <span id="id1">[<a class="reference internal" href="../bibliography.html#id50" title="Bruce Fischl, André van der Kouwe, Christophe Destrieux, Eric Halgren, Florent Ségonne, David H. Salat, Evelina Busa, Larry J. Seidman, Jill Goldstein, David Kennedy, Verne Caviness, Nikos Makris, Bruce Rosen, and Anders M. Dale. Automatically Parcellating the Human Cerebral Cortex. Cerebral Cortex, 14(1):11-22, 2004. URL: http://cercor.oxfordjournals.org/content/14/1/11.abstract, arXiv:http://cercor.oxfordjournals.org/content/14/1/11.full.pdf+html, doi:10.1093/cercor/bhg087.">Fischl <em>et al.</em>, 2004</a>]</span>, which is the most detailed atlas included with <em>FreeSurfer</em>’s default reconstruction pipeline’s results, and consists of 74 regions per hemisphere.</p>
 <figure class="align-default" id="preprocessing-overview">
 <a class="reference internal image-reference" href="../../_images/preprocessing_overview.png"><img alt="An overview of the anatomical preprocessing workflow." src="../../_images/preprocessing_overview.png" style="width: 750px;" /></a>
 <figcaption>
@@ -595,7 +705,7 @@ title="Print to PDF"
 </figcaption>
 </figure>
 <p>According to the <em>FreeSurfer</em> documentation site (see <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferWiki">https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferWiki</a>), using <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">T2w</span></a></span> or <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FLAIR</span></a></span> data (mutually exclusive) improves pial surface estimation (see <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/recon-all">https://surfer.nmr.mgh.harvard.edu/fswiki/recon-all</a>), and specifying <em>3T</em> and <em>mprage</em> (non-mutually exclusive) alters various analysis assumptions and steps to optimize for the corresponding magnetic field magnitude and acquisition protocol (see <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/OtherUsefulFlags">https://surfer.nmr.mgh.harvard.edu/fswiki/OtherUsefulFlags</a>). <a class="reference internal" href="#freesurfer-parameters"><span class="std std-numref">Table 4.3</span></a> provides a summary of the execution configurations included in this study.</p>
-<table class="colwidths-auto cell-text-center table" id="freesurfer-parameters">
+<table class="colwidths-auto cell-text-center small-table table" id="freesurfer-parameters">
 <caption><span class="caption-number">Table 4.3 </span><span class="caption-text"><em>FreeSurfer</em>’s cross-sectional anatomical preprocessing workflow configurations included in this study.</span><a class="headerlink" href="#freesurfer-parameters" title="Permalink to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p>Use T2</p></th>
@@ -643,6 +753,34 @@ title="Print to PDF"
 </tbody>
 </table>
 <p>While these options are listed in the documentation website, only a very limited description of their respective effects is provided. In addition, it is unclear to what extent these options are, in fact, utilized by <em>FreeSurfer</em> users, and no existing evaluation of either expected effects or usage metrics could be found at the time of writing.</p>
+</section>
+<section id="statistical-analysis">
+<h2><span class="section-number">4.2.2.4. </span>Statistical Analysis<a class="headerlink" href="#statistical-analysis" title="Permalink to this headline">#</a></h2>
+<section id="comparison-of-anatomical-statistics">
+<h3><span class="section-number">4.2.2.4.1. </span>Comparison of Anatomical Statistics<a class="headerlink" href="#comparison-of-anatomical-statistics" title="Permalink to this headline">#</a></h3>
+<p>Region-wise statistics were generated per scan for the detailed execution configurations (see <a class="reference internal" href="#freesurfer-parameters"><span class="std std-numref">Table 4.3</span></a>). Each Destrieux atlas region was represented by four estimated statistics: mean and standard deviation of the cortical thickness, surface area, and grey matter volume. Both whole-brain and region-wise distributions of values were compared.</p>
+<section id="two-sample-kolmogorovsmirnov-test">
+<h4><span class="section-number">4.2.2.4.1.1. </span>Two-sample Kolmogorov–Smirnov test<a class="headerlink" href="#two-sample-kolmogorovsmirnov-test" title="Permalink to this headline">#</a></h4>
+<p>The Two-sample Kolmogorov–Smirnov (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">KS</span></a></span>) test is a nonparametric test which qunatifies the distance between the two samples’ empirical distribution functions and evaluates the probability of them having been sampled from the same probability distribution. The <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">KS</span></a></span>-test was applied using SciPy <span id="id2">[<a class="reference internal" href="../bibliography.html#id74" title="Pauli Virtanen, Ralf Gommers, Travis E. Oliphant, Matt Haberland, Tyler Reddy, David Cournapeau, Evgeni Burovski, Pearu Peterson, Warren Weckesser, Jonathan Bright, Stéfan J. van der Walt, Matthew Brett, Joshua Wilson, K. Jarrod Millman, Nikolay Mayorov, Andrew R. J. Nelson, Eric Jones, Robert Kern, Eric Larson, C. J. Carey, İlhan Polat, Yu Feng, Eric W. Moore, Jake VanderPlas, Denis Laxalde, Josef Perktold, Robert Cimrman, Ian Henriksen, E. A. Quintero, Charles R. Harris, Anne M. Archibald, Antônio H. Ribeiro, Fabian Pedregosa, and Paul van Mulbregt. SciPy 1.0: fundamental algorithms for scientific computing in Python. Nature Methods, 17(3):261–272, March 2020. doi:10.1038/s41592-019-0686-2.">Virtanen <em>et al.</em>, 2020</a>]</span> (see <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ks_2samp.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ks_2samp.html</a>) to all combinations of <em>FreeSurfer</em> execution configurations and p-values were corrected to account for multiple comparisons with statsmodels <span id="id3">[<a class="reference internal" href="../bibliography.html#id75" title="Skipper Seabold and Josef Perktold. Statsmodels: econometric and statistical modeling with python. In 9th Python in Science Conference. 2010.">Seabold and Perktold, 2010</a>]</span> (see <a class="reference external" href="https://www.statsmodels.org/stable/generated/statsmodels.stats.multitest.multipletests.html">https://www.statsmodels.org/stable/generated/statsmodels.stats.multitest.multipletests.html</a>) using the Bonferroni method <span id="id4">[<a class="reference internal" href="../bibliography.html#id41" title="Carlo E Bonferroni. Il calcolo delle assicurazioni su gruppi di teste. Studi in onore del professore salvatore ortu carboni, pages 13–60, 1935.">Bonferroni, 1935</a>]</span>.</p>
+</section>
+</section>
+<section id="model-selection-and-optimization">
+<h3><span class="section-number">4.2.2.4.2. </span>Model Selection and Optimization<a class="headerlink" href="#model-selection-and-optimization" title="Permalink to this headline">#</a></h3>
+<p>Two types of modeling tasks are evaluated in this study for each execution configuration; (a) classification of the differences between <em>FreeSurfer</em>-derived anatomical statistics computed from two independent scans to estimate the probability of a pair of scans belonging to the same participant, and (b) prediction of representative participant attributes (sex, age, and BMI) from these anatomical statistics.</p>
+<section id="automated-machine-learning">
+<h4><span class="section-number">4.2.2.4.2.1. </span>Automated Machine Learning<a class="headerlink" href="#automated-machine-learning" title="Permalink to this headline">#</a></h4>
+<p>The term Automated Machine Learning (often abbreviated as <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">AutoML</span></a></span>) is used in a number of ways, but generally refers to frameworks built for the automation and optimization of various commonplace procedures often implemented in the process of preparing, training, and tuning machine learning models, particularly on a limited computational budget <span id="id5">[<a class="reference internal" href="../bibliography.html#id76" title="Xin He, Kaiyong Zhao, and Xiaowen Chu. Automl: a survey of the state-of-the-art. Knowledge-Based Systems, 212:106622, 2021.">He <em>et al.</em>, 2021</a>]</span>. Using <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">AutoML</span></a></span> frameworks enables searching a very large range of models and optimizing hyperparameters in an effective and reproducible manner.</p>
+<section id="span-class-muted-ref-flaml-span">
+<h5><span class="section-number">4.2.2.4.2.1.1. </span><span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FLAML</span></a></span><a class="headerlink" href="#span-class-muted-ref-flaml-span" title="Permalink to this headline">#</a></h5>
+<p><span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FLAML</span></a></span> is a fast and lightweight <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">AutoML</span></a></span> Python library that finds accurate machine learning models automatically, efficiently and economically <span id="id6">[<a class="reference internal" href="../bibliography.html#id77" title="Chi Wang, Qingyun Wu, Markus Weimer, and Erkang Zhu. Flaml: a fast and lightweight automl library. In MLSys. 2021.">Wang <em>et al.</em>, 2021</a>]</span> (see <a class="reference external" href="https://github.com/microsoft/FLAML">https://github.com/microsoft/FLAML</a>). <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FLAML</span></a></span> is powered by a new, cost-effective hyperparameter optimization and learner selection method invented by Microsoft Research <span id="id7">[<a class="reference internal" href="../bibliography.html#id78" title="Qingyun Wu, Chi Wang, and Silu Huang. Frugal optimization for cost-related hyperparameters. In AAAI'21. 2021.">Wu <em>et al.</em>, 2021</a>]</span>. It uses a simple yet effective randomized search method termed FLOW<sup>2</sup> together with adaptive step sizes and random restarts.</p>
+</section>
+<section id="span-class-muted-ref-tpot-span">
+<h5><span class="section-number">4.2.2.4.2.1.2. </span><span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">TPOT</span></a></span><a class="headerlink" href="#span-class-muted-ref-tpot-span" title="Permalink to this headline">#</a></h5>
+<p><span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">TPOT</span></a></span> is a Python Automated Machine Learning tool that optimizes machine learning pipelines based on an evolutionary computation technique called genetic programming (<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">GP</span></a></span>) <span id="id8">[<a class="reference internal" href="../bibliography.html#id81" title="Randal S. Olson, Nathan Bartley, Ryan J. Urbanowicz, and Jason H. Moore. Evaluation of a tree-based pipeline optimization tool for automating data science. In Proceedings of the Genetic and Evolutionary Computation Conference 2016, GECCO '16, 485–492. New York, NY, USA, 2016. ACM. URL: http://doi.acm.org/10.1145/2908812.2908918, doi:10.1145/2908812.2908918.">Olson <em>et al.</em>, 2016</a>, <a class="reference internal" href="../bibliography.html#id80" title="Randal S. Olson, Ryan J. Urbanowicz, Peter C. Andrews, Nicole A. Lavender, La Creis Kidd, and Jason H. Moore. Applications of Evolutionary Computation: 19th European Conference, EvoApplications 2016, Porto, Portugal, March 30 – April 1, 2016, Proceedings, Part I, chapter Automating Biomedical Data Science Through Tree-Based Pipeline Optimization, pages 123–137. Springer International Publishing, 2016. URL: http://dx.doi.org/10.1007/978-3-319-31204-0_9, doi:10.1007/978-3-319-31204-0_9.">Olson <em>et al.</em>, 2016</a>, <a class="reference internal" href="../bibliography.html#id79" title="Trang T Le, Weixuan Fu, and Jason H Moore. Scaling tree-based automated machine learning to biomedical big data with a feature set selector. Bioinformatics, 36(1):250–256, 2020.">Le <em>et al.</em>, 2020</a>]</span> (see <a class="reference external" href="https://epistasislab.github.io/tpot/">https://epistasislab.github.io/tpot/</a>). Traditionally, <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">GP</span></a></span> builds trees of mathematical functions to optimize toward given criteria. In <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">TPOT</span></a></span>, GP is used to evolve the sequence of
+pipeline operators as well as each operators’ parameters (e.g., the number of trees in a random forest or the number of feature pairs to select during feature selection) to maximize the classification accuracy of the pipeline.</p>
+</section>
+</section>
+</section>
 </section>
 </section>
 
