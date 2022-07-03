@@ -340,6 +340,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/ZviBaratz/PhD/main?urlpath=tree/src/book/chapters/measurements/results.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -407,7 +436,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/chapters/measurements/results.md"
+        <a href="../../_sources/chapters/measurements/results.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -418,7 +447,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="headerbtn__text-container">.ipynb</span>
 </a>
 
       </li>
@@ -485,11 +514,6 @@ title="Print to PDF"
      4.2.3.2.1. Cosine Similarity
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#model-evaluation">
-     4.2.3.2.2. Model Evaluation
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -552,11 +576,6 @@ title="Print to PDF"
      4.2.3.2.1. Cosine Similarity
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#model-evaluation">
-     4.2.3.2.2. Model Evaluation
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -593,23 +612,198 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="results">
 <span id="measurements-results"></span><h1><span class="section-number">4.2.3. </span>Results<a class="headerlink" href="#results" title="Permalink to this headline">#</a></h1>
-<hr>
-<section id="a-comparison-of-estimated-anatomical-statistics-across-freesurfer-configurations">
+<hr><section id="a-comparison-of-estimated-anatomical-statistics-across-freesurfer-configurations">
 <h2><span class="section-number">4.2.3.1. </span>A Comparison of Estimated Anatomical Statistics Across <em>FreeSurfer</em> Configurations<a class="headerlink" href="#a-comparison-of-estimated-anatomical-statistics-across-freesurfer-configurations" title="Permalink to this headline">#</a></h2>
+<p>A two-sample Kolmogorov-Smirnov test was applied per metric both to whole-brain values and region-wise to estimate the probability of the two samples originating in the same distribution, and the Bonferroni method was used to correct for multiple comparisons. The <a class="reference internal" href="#whole-brain-ks"><span class="std std-ref">following table</span></a> contains a summary of the significant (corrected p-value is smaller than 0.05) whole-brain metrics:</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<figure class="align-default" id="whole-brain-ks">
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_8af65">
+  <thead>
+    <tr>
+      <th id="T_8af65_level0_col0" class="col_heading level0 col0" >Configuration</th>
+      <th id="T_8af65_level0_col1" class="col_heading level0 col1" >Metric</th>
+      <th id="T_8af65_level0_col2" class="col_heading level0 col2" >Statistic</th>
+      <th id="T_8af65_level0_col3" class="col_heading level0 col3" >p-value</th>
+      <th id="T_8af65_level0_col4" class="col_heading level0 col4" >p-value (corrected)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_8af65_row0_col0" class="data row0 col0" >With T2</td>
+      <td id="T_8af65_row0_col1" class="data row0 col1" >Average Thickness</td>
+      <td id="T_8af65_row0_col2" class="data row0 col2" >0.119</td>
+      <td id="T_8af65_row0_col3" class="data row0 col3" >1.37e-148</td>
+      <td id="T_8af65_row0_col4" class="data row0 col4" >2.19e-147</td>
+    </tr>
+    <tr>
+      <td id="T_8af65_row1_col0" class="data row1 col0" >With T2</td>
+      <td id="T_8af65_row1_col1" class="data row1 col1" >Thickness StdDev</td>
+      <td id="T_8af65_row1_col2" class="data row1 col2" >0.153</td>
+      <td id="T_8af65_row1_col3" class="data row1 col3" >2.77e-247</td>
+      <td id="T_8af65_row1_col4" class="data row1 col4" >4.43e-246</td>
+    </tr>
+    <tr>
+      <td id="T_8af65_row2_col0" class="data row2 col0" >With FLAIR</td>
+      <td id="T_8af65_row2_col1" class="data row2 col1" >Average Thickness</td>
+      <td id="T_8af65_row2_col2" class="data row2 col2" >0.136</td>
+      <td id="T_8af65_row2_col3" class="data row2 col3" >2.02e-195</td>
+      <td id="T_8af65_row2_col4" class="data row2 col4" >3.23e-194</td>
+    </tr>
+    <tr>
+      <td id="T_8af65_row3_col0" class="data row3 col0" >With FLAIR</td>
+      <td id="T_8af65_row3_col1" class="data row3 col1" >Gray Matter Volume</td>
+      <td id="T_8af65_row3_col2" class="data row3 col2" >0.107</td>
+      <td id="T_8af65_row3_col3" class="data row3 col3" >7.57e-120</td>
+      <td id="T_8af65_row3_col4" class="data row3 col4" >1.21e-118</td>
+    </tr>
+    <tr>
+      <td id="T_8af65_row4_col0" class="data row4 col0" >With FLAIR</td>
+      <td id="T_8af65_row4_col1" class="data row4 col1" >Thickness StdDev</td>
+      <td id="T_8af65_row4_col2" class="data row4 col2" >0.0376</td>
+      <td id="T_8af65_row4_col3" class="data row4 col3" >2.99e-15</td>
+      <td id="T_8af65_row4_col4" class="data row4 col4" >4.79e-14</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+<figcaption>
+<p><span class="caption-number">Fig. 4.8 </span><span class="caption-text">Two-sample Kolmogorov-Smirnov test results for significantly different (alpha = 0.05) whole-brain anatomical statistics distributions for various execution configurations, in comparison with the default configuration.</span><a class="headerlink" href="#whole-brain-ks" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Applying the same test region-wise yields a total of 1184 comparisons per execution configuration (2 hemispheres * 74 atlas regions * 8 anatomical statistics), the <a class="reference internal" href="#region-wise-counts"><span class="std std-ref">following table</span></a> contains a summary of the significant region counts per execution configuration.</p>
+<figure class="align-default" id="region-wise-counts">
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th># Regions</th>
+    </tr>
+    <tr>
+      <th>Configuration</th>
+      <th>Metric</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="3" valign="top">With FLAIR</th>
+      <th>Average Thickness</th>
+      <td>114</td>
+    </tr>
+    <tr>
+      <th>Gray Matter Volume</th>
+      <td>79</td>
+    </tr>
+    <tr>
+      <th>Thickness StdDev</th>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">With T2</th>
+      <th>Average Thickness</th>
+      <td>83</td>
+    </tr>
+    <tr>
+      <th>Gray Matter Volume</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Thickness StdDev</th>
+      <td>74</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+<figcaption>
+<p><span class="caption-number">Fig. 4.9 </span><span class="caption-text">Two-sample Kolmogorov-Smirnov test counts of significantly different (alpha = 0.05) region-wise anatomical statistics distributions for various execution configurations, in comparison with the default configuration.</span><a class="headerlink" href="#region-wise-counts" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="mean-thickness-pair-plot">
+<a class="reference internal image-reference" href="../../_images/pair_plot.png"><img alt="../../_images/pair_plot.png" src="../../_images/pair_plot.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-default" id="flair-thickness-diff">
+<a class="reference internal image-reference" href="../../_images/FLAIR_thickness_diff.png"><img alt="../../_images/FLAIR_thickness_diff.png" src="../../_images/FLAIR_thickness_diff.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-default" id="t2-thickness-diff">
+<a class="reference internal image-reference" href="../../_images/T2_thickness_diff.png"><img alt="../../_images/T2_thickness_diff.png" src="../../_images/T2_thickness_diff.png" style="width: 100%;" /></a>
+</figure>
 </section>
 <section id="within-vs-between-participant-classification">
 <h2><span class="section-number">4.2.3.2. </span>Within vs. Between-Participant Classification<a class="headerlink" href="#within-vs-between-participant-classification" title="Permalink to this headline">#</a></h2>
 <section id="cosine-similarity">
 <h3><span class="section-number">4.2.3.2.1. </span>Cosine Similarity<a class="headerlink" href="#cosine-similarity" title="Permalink to this headline">#</a></h3>
-</section>
-<section id="model-evaluation">
-<h3><span class="section-number">4.2.3.2.2. </span>Model Evaluation<a class="headerlink" href="#model-evaluation" title="Permalink to this headline">#</a></h3>
+<figure class="align-default" id="cosine-similarity-plot">
+<a class="reference internal image-reference" href="../../_images/cosine_similarity.png"><img alt="../../_images/cosine_similarity.png" src="../../_images/cosine_similarity.png" style="width: 100%;" /></a>
+</figure>
 </section>
 </section>
 <section id="prediction-of-participant-traits">
 <h2><span class="section-number">4.2.3.3. </span>Prediction of Participant Traits<a class="headerlink" href="#prediction-of-participant-traits" title="Permalink to this headline">#</a></h2>
 <section id="sex">
 <h3><span class="section-number">4.2.3.3.1. </span>Sex<a class="headerlink" href="#sex" title="Permalink to this headline">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Method</p></th>
+<th class="head"><p>Execution Configuration</p></th>
+<th class="head"><p>Model</p></th>
+<th class="text-align:center head"><p>Test Score</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>TPOT</p></td>
+<td><p>With T2</p></td>
+<td><p>GradientBoostingClassifier</p></td>
+<td class="text-align:center"><p>0.9222</p></td>
+</tr>
+<tr class="row-odd"><td><p>TPOT</p></td>
+<td><p>DEFAULT</p></td>
+<td><p>MLPClassifier</p></td>
+<td class="text-align:center"><p>0.9167</p></td>
+</tr>
+<tr class="row-even"><td><p>FLAML</p></td>
+<td><p>With FLAIR</p></td>
+<td><p>LogisticRegression</p></td>
+<td class="text-align:center"><p>0.8519</p></td>
+</tr>
+<tr class="row-odd"><td><p>FLAML</p></td>
+<td><p>With T2</p></td>
+<td><p>LogisticRegression</p></td>
+<td class="text-align:center"><p>0.8519</p></td>
+</tr>
+<tr class="row-even"><td><p>TPOT</p></td>
+<td><p>FLAIR</p></td>
+<td><p>MLPClassifier</p></td>
+<td class="text-align:center"><p>0.85</p></td>
+</tr>
+<tr class="row-odd"><td><p>FLAML</p></td>
+<td><p>DEFAULT</p></td>
+<td><p>LGBMClassifier</p></td>
+<td class="text-align:center"><p>0.7407</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="age">
 <h3><span class="section-number">4.2.3.3.2. </span>Age<a class="headerlink" href="#age" title="Permalink to this headline">#</a></h3>
