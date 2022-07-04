@@ -1,5 +1,5 @@
 (measurements)=
-# Evaluation of Individual Subject Representation from Anatomical MRI
+# Evaluation of *FreeSurfer*-derived Anatomical Statistics Across Execution Configurations
 
 ```{tableofcontents}
 ```
