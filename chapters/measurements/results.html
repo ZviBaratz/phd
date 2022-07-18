@@ -21,7 +21,7 @@
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -38,7 +38,7 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="canonical" href="https://zvibaratz.github.io/phd/front.html/chapters/measurements/results.html" />
     <link rel="shortcut icon" href="../../_static/favicon.jpg"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -620,7 +622,7 @@ title="Print to PDF"
 <span id="measurements-results"></span><h1><span class="section-number">4.2.3. </span>Results<a class="headerlink" href="#results" title="Permalink to this headline">#</a></h1>
 <hr><section id="two-sample-ks-test">
 <h2><span class="section-number">4.2.3.1. </span>Two-sample KS Test<a class="headerlink" href="#two-sample-ks-test" title="Permalink to this headline">#</a></h2>
-<p>To first provide a statistical indication that the empirical distributions of the collected metrics differ across execution configurations, a two-sample Kolmogorov-Smirnov test was applied to compare both whole-brain and region-wise values and estimate the probability of them originating from the same probability distribution as the default configuration’s empirical distribution function. The Bonferroni method was used to correct for multiple comparisons. <a class="reference internal" href="#whole-brain-ks"><span class="std std-numref">Fig. 4.8</span></a> contains a summary of the significant (corrected p-value is smaller than 0.05) whole-brain metrics:</p>
+<p>To first provide a statistical indication that the empirical distributions of the collected metrics differ across execution configurations, a two-sample Kolmogorov-Smirnov test was applied to compare both whole-brain and region-wise values and estimate the probability of them originating from the same probability distribution as the default configuration’s empirical distribution function. The Bonferroni method was used to correct for multiple comparisons. <a class="reference internal" href="#whole-brain-ks"><span class="std std-numref">Fig. 4.7</span></a> contains a summary of the significant (corrected p-value is smaller than 0.05) whole-brain metrics:</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 </div>
@@ -628,115 +630,235 @@ title="Print to PDF"
 <figure class="small-table align-center" id="whole-brain-ks">
 <div class="cell_output docutils container">
 <div class="output text_html"><style type="text/css">
-#T_28070 th {
+#T_35a02 th {
   text-align: center;
 }
-#T_28070_row0_col0, #T_28070_row1_col0, #T_28070_row2_col0, #T_28070_row3_col0, #T_28070_row4_col0, #T_28070_row5_col0, #T_28070_row6_col0, #T_28070_row7_col0, #T_28070_row8_col0, #T_28070_row9_col0 {
-  text-align: left;
+#T_35a02 .row0 {
+  border-top: 1px solid black;
 }
-#T_28070_row0_col1, #T_28070_row0_col2, #T_28070_row0_col3, #T_28070_row0_col4, #T_28070_row1_col1, #T_28070_row1_col2, #T_28070_row1_col3, #T_28070_row1_col4, #T_28070_row2_col1, #T_28070_row2_col2, #T_28070_row2_col3, #T_28070_row2_col4, #T_28070_row3_col1, #T_28070_row3_col2, #T_28070_row3_col3, #T_28070_row3_col4, #T_28070_row4_col1, #T_28070_row4_col2, #T_28070_row4_col3, #T_28070_row4_col4, #T_28070_row5_col1, #T_28070_row5_col2, #T_28070_row5_col3, #T_28070_row5_col4, #T_28070_row6_col1, #T_28070_row6_col2, #T_28070_row6_col3, #T_28070_row6_col4, #T_28070_row7_col1, #T_28070_row7_col2, #T_28070_row7_col3, #T_28070_row7_col4, #T_28070_row8_col1, #T_28070_row8_col2, #T_28070_row8_col3, #T_28070_row8_col4, #T_28070_row9_col1, #T_28070_row9_col2, #T_28070_row9_col3, #T_28070_row9_col4 {
+#T_35a02 .row1 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row2 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row3 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row4 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row5 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row6 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row7 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row8 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row9 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row10 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row11 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row12 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row13 {
+  border-top: 1px solid black;
+}
+#T_35a02 .row14 {
+  border-top: 1px solid black;
+}
+#T_35a02_row0_col0, #T_35a02_row0_col1, #T_35a02_row0_col2, #T_35a02_row1_col0, #T_35a02_row1_col1, #T_35a02_row1_col2, #T_35a02_row2_col0, #T_35a02_row2_col1, #T_35a02_row2_col2, #T_35a02_row3_col0, #T_35a02_row3_col1, #T_35a02_row3_col2, #T_35a02_row4_col0, #T_35a02_row4_col1, #T_35a02_row4_col2, #T_35a02_row5_col0, #T_35a02_row5_col1, #T_35a02_row5_col2, #T_35a02_row6_col0, #T_35a02_row6_col1, #T_35a02_row6_col2, #T_35a02_row7_col0, #T_35a02_row7_col1, #T_35a02_row7_col2, #T_35a02_row8_col0, #T_35a02_row8_col1, #T_35a02_row8_col2, #T_35a02_row9_col0, #T_35a02_row9_col1, #T_35a02_row9_col2, #T_35a02_row10_col0, #T_35a02_row10_col1, #T_35a02_row10_col2, #T_35a02_row11_col0, #T_35a02_row11_col1, #T_35a02_row11_col2, #T_35a02_row12_col0, #T_35a02_row12_col1, #T_35a02_row12_col2, #T_35a02_row13_col0, #T_35a02_row13_col1, #T_35a02_row13_col2, #T_35a02_row14_col0, #T_35a02_row14_col1, #T_35a02_row14_col2 {
   text-align: center;
 }
 </style>
-<table id="T_28070" style="margin-left: auto; margin-right: auto;">
+<table id="T_35a02" style="margin-left: auto; margin-right: auto; font-size: 12px;">
   <thead>
     <tr>
-      <th id="T_28070_level0_col0" class="col_heading level0 col0" >Configuration</th>
-      <th id="T_28070_level0_col1" class="col_heading level0 col1" >Metric</th>
-      <th id="T_28070_level0_col2" class="col_heading level0 col2" >Statistic</th>
-      <th id="T_28070_level0_col3" class="col_heading level0 col3" >p-value</th>
-      <th id="T_28070_level0_col4" class="col_heading level0 col4" >p-value (corrected)</th>
+      <th class="blank" >&nbsp;</th>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_35a02_level0_col0" class="col_heading level0 col0" >Statistic</th>
+      <th id="T_35a02_level0_col1" class="col_heading level0 col1" >p-value</th>
+      <th id="T_35a02_level0_col2" class="col_heading level0 col2" >p-value (corrected)</th>
+    </tr>
+    <tr>
+      <th class="index_name level0" >Configuration</th>
+      <th class="index_name level1" >Metric</th>
+      <th class="blank col0" >&nbsp;</th>
+      <th class="blank col1" >&nbsp;</th>
+      <th class="blank col2" >&nbsp;</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td id="T_28070_row0_col0" class="data row0 col0" >With FLAIR</td>
-      <td id="T_28070_row0_col1" class="data row0 col1" >Average Thickness</td>
-      <td id="T_28070_row0_col2" class="data row0 col2" >0.137</td>
-      <td id="T_28070_row0_col3" class="data row0 col3" >2.88e-217</td>
-      <td id="T_28070_row0_col4" class="data row0 col4" >9.23e-216</td>
+      <th id="T_35a02_level0_row0" class="row_heading level0 row0" rowspan="3">With FLAIR</th>
+      <th id="T_35a02_level1_row0" class="row_heading level1 row0" >Average Thickness</th>
+      <td id="T_35a02_row0_col0" class="data row0 col0" >0.132</td>
+      <td id="T_35a02_row0_col1" class="data row0 col1" >4.45e-96</td>
+      <td id="T_35a02_row0_col2" class="data row0 col2" >2.14e-94</td>
     </tr>
     <tr>
-      <td id="T_28070_row1_col0" class="data row1 col0" >With FLAIR</td>
-      <td id="T_28070_row1_col1" class="data row1 col1" >Gray Matter Volume</td>
-      <td id="T_28070_row1_col2" class="data row1 col2" >0.106</td>
-      <td id="T_28070_row1_col3" class="data row1 col3" >6.25e-129</td>
-      <td id="T_28070_row1_col4" class="data row1 col4" >2e-127</td>
+      <th id="T_35a02_level1_row1" class="row_heading level1 row1" >Gray Matter Volume</th>
+      <td id="T_35a02_row1_col0" class="data row1 col0" >0.103</td>
+      <td id="T_35a02_row1_col1" class="data row1 col1" >3.98e-58</td>
+      <td id="T_35a02_row1_col2" class="data row1 col2" >1.91e-56</td>
     </tr>
     <tr>
-      <td id="T_28070_row2_col0" class="data row2 col0" >With FLAIR</td>
-      <td id="T_28070_row2_col1" class="data row2 col1" >Thickness StdDev</td>
-      <td id="T_28070_row2_col2" class="data row2 col2" >0.0313</td>
-      <td id="T_28070_row2_col3" class="data row2 col3" >1.12e-11</td>
-      <td id="T_28070_row2_col4" class="data row2 col4" >3.6e-10</td>
+      <th id="T_35a02_level1_row2" class="row_heading level1 row2" >Thickness StdDev</th>
+      <td id="T_35a02_row2_col0" class="data row2 col0" >0.031</td>
+      <td id="T_35a02_row2_col1" class="data row2 col1" >1.1e-05</td>
+      <td id="T_35a02_row2_col2" class="data row2 col2" >0.000527</td>
     </tr>
     <tr>
-      <td id="T_28070_row3_col0" class="data row3 col0" >With FLAIR and MPRAGE Flag</td>
-      <td id="T_28070_row3_col1" class="data row3 col1" >Average Thickness</td>
-      <td id="T_28070_row3_col2" class="data row3 col2" >0.137</td>
-      <td id="T_28070_row3_col3" class="data row3 col3" >2.88e-217</td>
-      <td id="T_28070_row3_col4" class="data row3 col4" >9.23e-216</td>
+      <th id="T_35a02_level0_row3" class="row_heading level0 row3" rowspan="3">With FLAIR and MPRAGE Flag</th>
+      <th id="T_35a02_level1_row3" class="row_heading level1 row3" >Average Thickness</th>
+      <td id="T_35a02_row3_col0" class="data row3 col0" >0.132</td>
+      <td id="T_35a02_row3_col1" class="data row3 col1" >4.45e-96</td>
+      <td id="T_35a02_row3_col2" class="data row3 col2" >2.14e-94</td>
     </tr>
     <tr>
-      <td id="T_28070_row4_col0" class="data row4 col0" >With FLAIR and MPRAGE Flag</td>
-      <td id="T_28070_row4_col1" class="data row4 col1" >Gray Matter Volume</td>
-      <td id="T_28070_row4_col2" class="data row4 col2" >0.106</td>
-      <td id="T_28070_row4_col3" class="data row4 col3" >6.25e-129</td>
-      <td id="T_28070_row4_col4" class="data row4 col4" >2e-127</td>
+      <th id="T_35a02_level1_row4" class="row_heading level1 row4" >Gray Matter Volume</th>
+      <td id="T_35a02_row4_col0" class="data row4 col0" >0.103</td>
+      <td id="T_35a02_row4_col1" class="data row4 col1" >3.98e-58</td>
+      <td id="T_35a02_row4_col2" class="data row4 col2" >1.91e-56</td>
     </tr>
     <tr>
-      <td id="T_28070_row5_col0" class="data row5 col0" >With FLAIR and MPRAGE Flag</td>
-      <td id="T_28070_row5_col1" class="data row5 col1" >Thickness StdDev</td>
-      <td id="T_28070_row5_col2" class="data row5 col2" >0.0313</td>
-      <td id="T_28070_row5_col3" class="data row5 col3" >1.12e-11</td>
-      <td id="T_28070_row5_col4" class="data row5 col4" >3.6e-10</td>
+      <th id="T_35a02_level1_row5" class="row_heading level1 row5" >Thickness StdDev</th>
+      <td id="T_35a02_row5_col0" class="data row5 col0" >0.031</td>
+      <td id="T_35a02_row5_col1" class="data row5 col1" >1.1e-05</td>
+      <td id="T_35a02_row5_col2" class="data row5 col2" >0.000527</td>
     </tr>
     <tr>
-      <td id="T_28070_row6_col0" class="data row6 col0" >With T2</td>
-      <td id="T_28070_row6_col1" class="data row6 col1" >Average Thickness</td>
-      <td id="T_28070_row6_col2" class="data row6 col2" >0.119</td>
-      <td id="T_28070_row6_col3" class="data row6 col3" >4.29e-165</td>
-      <td id="T_28070_row6_col4" class="data row6 col4" >1.37e-163</td>
+      <th id="T_35a02_level0_row6" class="row_heading level0 row6" rowspan="3">With FLAIR and MPRAGE Flag and 3T Flag</th>
+      <th id="T_35a02_level1_row6" class="row_heading level1 row6" >Average Thickness</th>
+      <td id="T_35a02_row6_col0" class="data row6 col0" >0.119</td>
+      <td id="T_35a02_row6_col1" class="data row6 col1" >1.19e-77</td>
+      <td id="T_35a02_row6_col2" class="data row6 col2" >5.69e-76</td>
     </tr>
     <tr>
-      <td id="T_28070_row7_col0" class="data row7 col0" >With T2</td>
-      <td id="T_28070_row7_col1" class="data row7 col1" >Thickness StdDev</td>
-      <td id="T_28070_row7_col2" class="data row7 col2" >0.153</td>
-      <td id="T_28070_row7_col3" class="data row7 col3" >8.65e-273</td>
-      <td id="T_28070_row7_col4" class="data row7 col4" >2.77e-271</td>
+      <th id="T_35a02_level1_row7" class="row_heading level1 row7" >Gray Matter Volume</th>
+      <td id="T_35a02_row7_col0" class="data row7 col0" >0.102</td>
+      <td id="T_35a02_row7_col1" class="data row7 col1" >7.03e-57</td>
+      <td id="T_35a02_row7_col2" class="data row7 col2" >3.37e-55</td>
     </tr>
     <tr>
-      <td id="T_28070_row8_col0" class="data row8 col0" >With T2 and MPRAGE Flag</td>
-      <td id="T_28070_row8_col1" class="data row8 col1" >Average Thickness</td>
-      <td id="T_28070_row8_col2" class="data row8 col2" >0.119</td>
-      <td id="T_28070_row8_col3" class="data row8 col3" >4.29e-165</td>
-      <td id="T_28070_row8_col4" class="data row8 col4" >1.37e-163</td>
+      <th id="T_35a02_level1_row8" class="row_heading level1 row8" >Thickness StdDev</th>
+      <td id="T_35a02_row8_col0" class="data row8 col0" >0.03</td>
+      <td id="T_35a02_row8_col1" class="data row8 col1" >2.28e-05</td>
+      <td id="T_35a02_row8_col2" class="data row8 col2" >0.0011</td>
     </tr>
     <tr>
-      <td id="T_28070_row9_col0" class="data row9 col0" >With T2 and MPRAGE Flag</td>
-      <td id="T_28070_row9_col1" class="data row9 col1" >Thickness StdDev</td>
-      <td id="T_28070_row9_col2" class="data row9 col2" >0.153</td>
-      <td id="T_28070_row9_col3" class="data row9 col3" >8.65e-273</td>
-      <td id="T_28070_row9_col4" class="data row9 col4" >2.77e-271</td>
+      <th id="T_35a02_level0_row9" class="row_heading level0 row9" rowspan="2">With T2</th>
+      <th id="T_35a02_level1_row9" class="row_heading level1 row9" >Average Thickness</th>
+      <td id="T_35a02_row9_col0" class="data row9 col0" >0.119</td>
+      <td id="T_35a02_row9_col1" class="data row9 col1" >5.79e-78</td>
+      <td id="T_35a02_row9_col2" class="data row9 col2" >2.78e-76</td>
+    </tr>
+    <tr>
+      <th id="T_35a02_level1_row10" class="row_heading level1 row10" >Thickness StdDev</th>
+      <td id="T_35a02_row10_col0" class="data row10 col0" >0.159</td>
+      <td id="T_35a02_row10_col1" class="data row10 col1" >4.59e-139</td>
+      <td id="T_35a02_row10_col2" class="data row10 col2" >2.2e-137</td>
+    </tr>
+    <tr>
+      <th id="T_35a02_level0_row11" class="row_heading level0 row11" rowspan="2">With T2 and MPRAGE Flag</th>
+      <th id="T_35a02_level1_row11" class="row_heading level1 row11" >Average Thickness</th>
+      <td id="T_35a02_row11_col0" class="data row11 col0" >0.119</td>
+      <td id="T_35a02_row11_col1" class="data row11 col1" >5.79e-78</td>
+      <td id="T_35a02_row11_col2" class="data row11 col2" >2.78e-76</td>
+    </tr>
+    <tr>
+      <th id="T_35a02_level1_row12" class="row_heading level1 row12" >Thickness StdDev</th>
+      <td id="T_35a02_row12_col0" class="data row12 col0" >0.159</td>
+      <td id="T_35a02_row12_col1" class="data row12 col1" >4.59e-139</td>
+      <td id="T_35a02_row12_col2" class="data row12 col2" >2.2e-137</td>
+    </tr>
+    <tr>
+      <th id="T_35a02_level0_row13" class="row_heading level0 row13" rowspan="2">With T2 and MPRAGE Flag and 3T Flag</th>
+      <th id="T_35a02_level1_row13" class="row_heading level1 row13" >Average Thickness</th>
+      <td id="T_35a02_row13_col0" class="data row13 col0" >0.161</td>
+      <td id="T_35a02_row13_col1" class="data row13 col1" >1.42e-142</td>
+      <td id="T_35a02_row13_col2" class="data row13 col2" >6.8e-141</td>
+    </tr>
+    <tr>
+      <th id="T_35a02_level1_row14" class="row_heading level1 row14" >Thickness StdDev</th>
+      <td id="T_35a02_row14_col0" class="data row14 col0" >0.125</td>
+      <td id="T_35a02_row14_col1" class="data row14 col1" >1e-86</td>
+      <td id="T_35a02_row14_col2" class="data row14 col2" >4.8e-85</td>
     </tr>
   </tbody>
 </table>
 </div></div>
 <figcaption>
-<p><span class="caption-number">Fig. 4.8 </span><span class="caption-text">Two-sample Kolmogorov-Smirnov test results for significantly different (alpha = 0.05) whole-brain anatomical statistics distributions for various execution configurations, in comparison with the default configuration.</span><a class="headerlink" href="#whole-brain-ks" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.7 </span><span class="caption-text">Two-sample <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">KS</span></a></span> test results for significantly different (<span class="math notranslate nohighlight">\(\alpha=0.05\)</span>) whole-brain anatomical statistics distributions for various execution configurations, in comparison with the default configuration.</span><a class="headerlink" href="#whole-brain-ks" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Applying the same test region-wise yields a total of 1184 comparisons per execution configuration (2 hemispheres * 74 atlas regions * 8 anatomical statistics), <a class="reference internal" href="#region-wise-counts"><span class="std std-numref">Fig. 4.9</span></a> contains a summary of the significant region counts per execution configuration.</p>
+<p>Applying the same test region-wise yields a total of 1184 comparisons per execution configuration (2 hemispheres * 74 atlas regions * 8 anatomical statistics), <a class="reference internal" href="#region-wise-counts"><span class="std std-numref">Fig. 4.8</span></a> contains a summary of the significant region counts per execution configuration.</p>
 <figure class="small-table align-center" id="region-wise-counts">
 <div class="cell_output docutils container">
 <div class="output text_html"><style type="text/css">
+#T_8fe01 .row0 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row1 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row2 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row3 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row4 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row5 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row6 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row7 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row8 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row9 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row10 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row11 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row12 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row13 {
+  border-top: 1px solid black;
+}
+#T_8fe01 .row14 {
+  border-top: 1px solid black;
+}
 </style>
-<table id="T_32701" style="margin-left: auto; margin-right: auto;">
+<table id="T_8fe01" style="margin-left: auto; margin-right: auto; font-size: 12px;">
   <thead>
     <tr>
       <th class="blank" >&nbsp;</th>
       <th class="blank level0" >&nbsp;</th>
-      <th id="T_32701_level0_col0" class="col_heading level0 col0" ># Regions</th>
+      <th id="T_8fe01_level0_col0" class="col_heading level0 col0" ># Regions</th>
     </tr>
     <tr>
       <th class="index_name level0" >Configuration</th>
@@ -746,81 +868,97 @@ title="Print to PDF"
   </thead>
   <tbody>
     <tr>
-      <th id="T_32701_level0_row0" class="row_heading level0 row0" rowspan="3">With FLAIR</th>
-      <th id="T_32701_level1_row0" class="row_heading level1 row0" >Average Thickness</th>
-      <td id="T_32701_row0_col0" class="data row0 col0" >116</td>
+      <th id="T_8fe01_level0_row0" class="row_heading level0 row0" rowspan="3">With FLAIR</th>
+      <th id="T_8fe01_level1_row0" class="row_heading level1 row0" >Average Thickness</th>
+      <td id="T_8fe01_row0_col0" class="data row0 col0" >101</td>
     </tr>
     <tr>
-      <th id="T_32701_level1_row1" class="row_heading level1 row1" >Gray Matter Volume</th>
-      <td id="T_32701_row1_col0" class="data row1 col0" >79</td>
+      <th id="T_8fe01_level1_row1" class="row_heading level1 row1" >Gray Matter Volume</th>
+      <td id="T_8fe01_row1_col0" class="data row1 col0" >76</td>
     </tr>
     <tr>
-      <th id="T_32701_level1_row2" class="row_heading level1 row2" >Thickness StdDev</th>
-      <td id="T_32701_row2_col0" class="data row2 col0" >61</td>
+      <th id="T_8fe01_level1_row2" class="row_heading level1 row2" >Thickness StdDev</th>
+      <td id="T_8fe01_row2_col0" class="data row2 col0" >42</td>
     </tr>
     <tr>
-      <th id="T_32701_level0_row3" class="row_heading level0 row3" rowspan="3">With FLAIR and MPRAGE Flag</th>
-      <th id="T_32701_level1_row3" class="row_heading level1 row3" >Average Thickness</th>
-      <td id="T_32701_row3_col0" class="data row3 col0" >116</td>
+      <th id="T_8fe01_level0_row3" class="row_heading level0 row3" rowspan="3">With FLAIR and MPRAGE Flag</th>
+      <th id="T_8fe01_level1_row3" class="row_heading level1 row3" >Average Thickness</th>
+      <td id="T_8fe01_row3_col0" class="data row3 col0" >101</td>
     </tr>
     <tr>
-      <th id="T_32701_level1_row4" class="row_heading level1 row4" >Gray Matter Volume</th>
-      <td id="T_32701_row4_col0" class="data row4 col0" >79</td>
+      <th id="T_8fe01_level1_row4" class="row_heading level1 row4" >Gray Matter Volume</th>
+      <td id="T_8fe01_row4_col0" class="data row4 col0" >76</td>
     </tr>
     <tr>
-      <th id="T_32701_level1_row5" class="row_heading level1 row5" >Thickness StdDev</th>
-      <td id="T_32701_row5_col0" class="data row5 col0" >61</td>
+      <th id="T_8fe01_level1_row5" class="row_heading level1 row5" >Thickness StdDev</th>
+      <td id="T_8fe01_row5_col0" class="data row5 col0" >42</td>
     </tr>
     <tr>
-      <th id="T_32701_level0_row6" class="row_heading level0 row6" rowspan="3">With T2</th>
-      <th id="T_32701_level1_row6" class="row_heading level1 row6" >Average Thickness</th>
-      <td id="T_32701_row6_col0" class="data row6 col0" >85</td>
+      <th id="T_8fe01_level0_row6" class="row_heading level0 row6" rowspan="3">With FLAIR and MPRAGE Flag and 3T Flag</th>
+      <th id="T_8fe01_level1_row6" class="row_heading level1 row6" >Average Thickness</th>
+      <td id="T_8fe01_row6_col0" class="data row6 col0" >108</td>
     </tr>
     <tr>
-      <th id="T_32701_level1_row7" class="row_heading level1 row7" >Gray Matter Volume</th>
-      <td id="T_32701_row7_col0" class="data row7 col0" >1</td>
+      <th id="T_8fe01_level1_row7" class="row_heading level1 row7" >Gray Matter Volume</th>
+      <td id="T_8fe01_row7_col0" class="data row7 col0" >77</td>
     </tr>
     <tr>
-      <th id="T_32701_level1_row8" class="row_heading level1 row8" >Thickness StdDev</th>
-      <td id="T_32701_row8_col0" class="data row8 col0" >80</td>
+      <th id="T_8fe01_level1_row8" class="row_heading level1 row8" >Thickness StdDev</th>
+      <td id="T_8fe01_row8_col0" class="data row8 col0" >40</td>
     </tr>
     <tr>
-      <th id="T_32701_level0_row9" class="row_heading level0 row9" rowspan="3">With T2 and MPRAGE Flag</th>
-      <th id="T_32701_level1_row9" class="row_heading level1 row9" >Average Thickness</th>
-      <td id="T_32701_row9_col0" class="data row9 col0" >85</td>
+      <th id="T_8fe01_level0_row9" class="row_heading level0 row9" rowspan="2">With T2</th>
+      <th id="T_8fe01_level1_row9" class="row_heading level1 row9" >Average Thickness</th>
+      <td id="T_8fe01_row9_col0" class="data row9 col0" >58</td>
     </tr>
     <tr>
-      <th id="T_32701_level1_row10" class="row_heading level1 row10" >Gray Matter Volume</th>
-      <td id="T_32701_row10_col0" class="data row10 col0" >1</td>
+      <th id="T_8fe01_level1_row10" class="row_heading level1 row10" >Thickness StdDev</th>
+      <td id="T_8fe01_row10_col0" class="data row10 col0" >50</td>
     </tr>
     <tr>
-      <th id="T_32701_level1_row11" class="row_heading level1 row11" >Thickness StdDev</th>
-      <td id="T_32701_row11_col0" class="data row11 col0" >80</td>
+      <th id="T_8fe01_level0_row11" class="row_heading level0 row11" rowspan="2">With T2 and MPRAGE Flag</th>
+      <th id="T_8fe01_level1_row11" class="row_heading level1 row11" >Average Thickness</th>
+      <td id="T_8fe01_row11_col0" class="data row11 col0" >58</td>
+    </tr>
+    <tr>
+      <th id="T_8fe01_level1_row12" class="row_heading level1 row12" >Thickness StdDev</th>
+      <td id="T_8fe01_row12_col0" class="data row12 col0" >50</td>
+    </tr>
+    <tr>
+      <th id="T_8fe01_level0_row13" class="row_heading level0 row13" rowspan="2">With T2 and MPRAGE Flag and 3T Flag</th>
+      <th id="T_8fe01_level1_row13" class="row_heading level1 row13" >Average Thickness</th>
+      <td id="T_8fe01_row13_col0" class="data row13 col0" >81</td>
+    </tr>
+    <tr>
+      <th id="T_8fe01_level1_row14" class="row_heading level1 row14" >Thickness StdDev</th>
+      <td id="T_8fe01_row14_col0" class="data row14 col0" >36</td>
     </tr>
   </tbody>
 </table>
 </div></div>
 <figcaption>
-<p><span class="caption-number">Fig. 4.9 </span><span class="caption-text">Two-sample Kolmogorov-Smirnov test counts of significantly different (alpha = 0.05) region-wise anatomical statistics distributions for various execution configurations, in comparison with the default configuration. Maximal number of regions is 148 (74 regions per hemisphere).</span><a class="headerlink" href="#region-wise-counts" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.8 </span><span class="caption-text">Two-sample <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">KS</span></a></span> test counts of significantly different (<span class="math notranslate nohighlight">\(\alpha=0.05\)</span>) region-wise anatomical statistics distributions for various execution configurations, in comparison with the default configuration. Maximal number of regions is 148 (74 regions per hemisphere).</span><a class="headerlink" href="#region-wise-counts" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>These results demonstrate the very large effect configuration choices which are rarely reported may have on elementary statistics commonly extracted with <em>FreeSurfer</em>.</p>
+<p>These results demonstrate the very large effect the <em>use_<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FLAIR</span></a></span></em> and <em>use_<span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">T2w</span></a></span></em> flags may have on elementary statistics commonly extracted with <em>FreeSurfer</em>, and the negligble effect the <em><span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MPRAGE</span></a></span></em> flag has. To better understand the differences between these execution configurations, changes in each significantly different anatomical statistic will be evaluated seperately.</p>
 </section>
 <section id="average-cortical-thickness">
 <h2><span class="section-number">4.2.3.2. </span>Average Cortical Thickness<a class="headerlink" href="#average-cortical-thickness" title="Permalink to this headline">#</a></h2>
-<p>To better understand the relationship between the estimated values, average cortical thickness was calculated across all participants for each Destrieux atlas region and <em>FreeSurfer</em> execution configuration. <a class="reference internal" href="#mean-thickness-pair-plot"><span class="std std-numref">Fig. 4.10</span></a> shows the distributions and differences of mean average cortical thickness values per region. While both <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">T2w</span></a></span> and <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FLAIR</span></a></span> are considered to improve pial surface estimation, which explains the large effect both have on the estimated cortical thickness, this figure demonstrates an opposite trend manifested by each; adding a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">T2w</span></a></span> reference generally increases the estimated average thickness across almost all reigons, whereas a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FLAIR</span></a></span> reference generally decreases it, with a relatively uniform reduction across all average region thickness and an opposite trend for a large group of regions mostly around the center of the distribution.</p>
+<p>Average cortical thickness was calculated across all participants for each Destrieux atlas region and <em>FreeSurfer</em> execution configuration. <a class="reference internal" href="#mean-thickness-pair-plot"><span class="std std-numref">Fig. 4.9</span></a> shows the distributions and differences of mean average cortical thickness values per region. While both <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">T2w</span></a></span> and <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FLAIR</span></a></span> are considered to improve pial surface estimation, which explains the large effect both have on the estimated cortical thickness, this figure demonstrates an opposite trend manifested by each; adding a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">T2w</span></a></span> reference generally increases the estimated average thickness across almost all reigons, whereas a <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">FLAIR</span></a></span> reference generally decreases it, with a relatively uniform reduction across all average region thickness and an opposite trend for a large group of regions mostly around the center of the distribution. Using the <em><span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">MPRAGE</span></a></span></em> flag hardly has any effect at all, as shown by the <span class="muted-ref"><a class="reference internal" href="../../lists.html#lists-acronyms"><span class="std std-ref">KS</span></a></span> test in the previous section (see <a class="reference internal" href="#whole-brain-ks"><span class="std std-numref">Fig. 4.7</span></a> and <a class="reference internal" href="#region-wise-counts"><span class="std std-numref">Fig. 4.8</span></a>).</p>
 <figure class="align-default" id="mean-thickness-pair-plot">
-<a class="reference internal image-reference" href="../../_images/pair_plot.png"><img alt="../../_images/pair_plot.png" src="../../_images/pair_plot.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/average_thickness_pairplot.png"><img alt="../../_images/average_thickness_pairplot.png" src="../../_images/average_thickness_pairplot.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.10 </span><span class="caption-text">Mean estimated average thickness across participants per execution configuration. Green lines indicate an increase in value and red indicate decrease (from left to right).</span><a class="headerlink" href="#mean-thickness-pair-plot" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.9 </span><span class="caption-text">Mean estimated average thickness across participants per execution configuration. Green lines indicate an increase in value and red indicate decrease (from left to right).</span><a class="headerlink" href="#mean-thickness-pair-plot" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<p>The explore the distribution of these differences in the brain, the following two projections show the differences in mean region-wise average cortical thickness for the <em>T2</em> and <em>FLAIR</em> execution configurations.</p>
 <figure class="align-default" id="flair-thickness-diff">
 <a class="reference internal image-reference" href="../../_images/FLAIR_thickness_diff.png"><img alt="../../_images/FLAIR_thickness_diff.png" src="../../_images/FLAIR_thickness_diff.png" style="width: 100%;" /></a>
 </figure>
 <figure class="align-default" id="t2-thickness-diff">
 <a class="reference internal image-reference" href="../../_images/T2_thickness_diff.png"><img alt="../../_images/T2_thickness_diff.png" src="../../_images/T2_thickness_diff.png" style="width: 100%;" /></a>
 </figure>
+<p>Other than the opposite directionality of the effect that has already been established in <code class="docutils literal notranslate"><span class="pre">numref</span></code>{mean-thickness-pair-plot}, the projection of the mean differences onto the cortical surface demonstrate an additional contradiction — the <em>FLAIR</em> configuration’s general reduction in the average cortical thickness mostly effects gyri, whereas the increase with the <em>T2</em> configuration is mostly expressed is sulci.</p>
 </section>
 <section id="within-vs-between-participant-classification">
 <h2><span class="section-number">4.2.3.3. </span>Within vs. Between-Participant Classification<a class="headerlink" href="#within-vs-between-participant-classification" title="Permalink to this headline">#</a></h2>
