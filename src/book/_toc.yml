@@ -29,6 +29,7 @@ chapters:
               - file: chapters/labbing/methods
               - file: chapters/labbing/results
               - file: chapters/labbing/discussion
+              - file: chapters/labbing/supplementary
           - file: chapters/measurements/measurements
             sections:
               - file: chapters/measurements/intro
